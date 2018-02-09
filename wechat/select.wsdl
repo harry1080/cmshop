@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions name="Selectservice" targetNamespace="urn:Selectservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:Selectservice" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+<types xmlns="http://schemas.xmlsoap.org/wsdl/" />
+<portType name="SelectservicePort"><operation name="add">
+<input message="tns:addRequest" />
+<output message="tns:addResponse" />
+</operation>
+<operation name="say1">
+<input message="tns:say1Request" />
+<output message="tns:say1Response" />
+</operation>
+<operation name="say">
+<input message="tns:sayRequest" />
+<output message="tns:sayResponse" />
+</operation>
+<operation name="del">
+<input message="tns:delRequest" />
+<output message="tns:delResponse" />
+</operation>
+<operation name="getlist">
+<input message="tns:getlistRequest" />
+<output message="tns:getlistResponse" />
+</operation>
+<operation name="receiveCompanies">
+<input message="tns:receiveCompaniesRequest" />
+<output message="tns:receiveCompaniesResponse" />
+</operation>
+</portType>
+<binding name="SelectserviceBinding" type="tns:SelectservicePort">
+<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http" />
+<operation name="add">
+<soap:operation soapAction="urn:Selectservice#Select#add" />
+<input><soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="say1">
+<soap:operation soapAction="urn:Selectservice#Select#say1" />
+<input><soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="say">
+<soap:operation soapAction="urn:Selectservice#Select#say" />
+<input><soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="del">
+<soap:operation soapAction="urn:Selectservice#Select#del" />
+<input><soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="getlist">
+<soap:operation soapAction="urn:Selectservice#Select#getlist" />
+<input><soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+<operation name="receiveCompanies">
+<soap:operation soapAction="urn:Selectservice#Select#receiveCompanies" />
+<input><soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</input>
+<output>
+<soap:body use="encoded" namespace="urn:Selectservice" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+</output>
+</operation>
+</binding>
+<service name="Selectservice">
+<documentation />
+<port name="SelectservicePort" binding="tns:SelectserviceBinding"><soap:address location="http://www.mbizzone.com/wechat/server.php?service=select" />
+</port>
+</service>
+<message name="addRequest">
+<part name="name" type="xsd:string" />
+<part name="age" type="xsd:string" />
+</message>
+<message name="addResponse">
+<part name="add" type="xsd:string" />
+</message>
+<message name="say1Request">
+</message>
+<message name="say1Response">
+<part name="say1" type="xsd:string" />
+</message>
+<message name="sayRequest">
+</message>
+<message name="sayResponse">
+<part name="say" type="xsd:string" />
+</message>
+<message name="delRequest">
+<part name="id" type="xsd:string" />
+</message>
+<message name="delResponse">
+<part name="del" type="xsd:string" />
+</message>
+<message name="getlistRequest">
+<part name="type" type="xsd:string" />
+</message>
+<message name="getlistResponse">
+<part name="getlist" type="xsd:string" />
+</message>
+<message name="receiveCompaniesRequest">
+<part name="xmlContent" type="xsd:string" />
+</message>
+<message name="receiveCompaniesResponse">
+<part name="receiveCompanies" type="xsd:string" />
+</message>
+</definitions>

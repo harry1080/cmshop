@@ -1,0 +1,679 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{$page_title}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+
+    <link href="{$ectouch_themes}/css/vmcss.css?20170421" rel="stylesheet" type="text/css">
+    <link href="{$ectouch_themes}/css/main.css?20160326" rel="stylesheet" type="text/css">
+    <link href="{$ectouch_themes}/css/swiper.min.css" rel="stylesheet" type="text/css">
+
+    <script>
+        var mediaPath = "/";
+
+
+        var cartMaxNum = 100000;
+        var cartDomain = "http://cmshop.mbizzone.com/mobile";
+        var remarkDomain = "http://cmshop.mbizzone.com/mobile";
+        var rmsDomain = "http://cmshop.mbizzone.com/mobile";
+        var addressDomain = "http://cmshop.mbizzone.com/mobile";
+        var b2cDomain = "https://cmshop.mbizzone.com/mobile";
+        var provinceIpDomain = "http://cmshop.mbizzone.com/mobile";
+        var ucDomain = "http://cmshop.mbizzone.com/mobile";
+        var wapDomain = "http://cmshop.mbizzone.com/mobile";
+        var rbDomain = 'http://cmshop.mbizzone.com/mobile';
+        var yyDomain = 'http://cmshop.mbizzone.com/mobile';
+        var bIDomain = 'http://cmshop.mbizzone.com/mobile';
+        var cdsDomain = 'http://cmshop.mbizzone.com/mobile';
+        var amsDomain = 'http://cmshop.mbizzone.com/mobile';
+        var imagePath = "{$ectouch_themes}/images/"
+
+    </script>
+</head>
+
+<body style="">
+<article class="breadcrumb prod-breadcrumb" id="breadcrumb" style="top: 0px;">
+    <header>
+        <a id="btn-back" href="javascript:history.go(-1);"></a>
+    </header>
+    <div class="productNav">
+        <nav class="productNavTab">
+            <ul class="clearfix">
+                <li class="current">
+                    <a id="prdDetailbasicInfo" href="javascript:;"
+                       onclick="_paq.push(['trackLink', 'wap-pdp-basic-click_event', 'link', '']);ecWap.prodDetial.changeTab(this,'basicInfo')"><span>商品</span></a>
+                </li>
+                <li>
+                    <a id="prdDetailpicDetaii" href="javascript:;"
+                       onclick="_paq.push(['trackLink', 'wap-pdp-detail-click_event', 'link', '']);ecWap.prodDetial.changeTab(this,'picDetail')"><span>详情</span></a>
+                </li>
+                <li>
+                    <a id="prdDetailspecification" href="javascript:;"
+                       onclick="_paq.push(['trackLink', 'wap-pdp-specs-click_event', 'link', '']);ecWap.prodDetial.changeTab(this,'specification')"><span>参数</span></a>
+                </li>
+                <li>
+                    <a id="prdDetailreview" href="javascript:;"
+                       onclick="_paq.push(['trackLink', 'wap-pdp-comment-click_event', 'link', '']);ecWap.prodDetial.changeTab(this,'review');ecWap.remark.rmsQueryPrdRemarkDataList({$goods_id}, 1);"><span>评价</span></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section class="shortcut">
+        <ul>
+            <li>
+                <a href="javascript:;" onclick="_paq.push(['trackLink', 'wap-pdp-more-click_event', 'link', '']);"
+                   class="icon-header-menu" title="下拉菜单"></a>
+            </li>
+        </ul>
+    </section>
+
+
+    <div class="header-menu">
+        <nav>
+            <ul>
+                <li><a href="/search/index"
+                       onclick="_paq.push(['trackLink', 'wap-pdp-search-click_event', 'link', '']);"><i
+                                class="icon-menu-search"></i><span>搜索</span></a></li>
+                <li><a href="cat_all.php"
+                       onclick="_paq.push(['trackLink', 'wap-pdp-category-click_event', 'link', '']);"><i
+                                class="icon-menu-category"></i><span>分类</span></a></li>
+                <li><a href="javascript:;" id="productDetailShare"
+                       onclick="ecWap.prodDetial.share(); _paq.push(['trackLink', 'wap-pdp-share-click_event', 'link', '']);"><i
+                                class="icon-menu-share"></i><span>分享</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</article>
+
+
+<div class="hr-48"></div>
+
+<div id="basicInfo" class="tab" style="display: block;">
+
+    <!-- 商品图片画廊-start -->
+    <section class="pro-gallery" style="height:14.5em;">
+        <div id="slider" class="swiper-container-horizontal swiper-container-android">
+            <ul class="swiper-wrapper">
+                <!-- {foreach from=$pictures item=picture name=no}-->
+                <li class="swiper-slide" data-swiper-slide-index="{$picture.img_id}" onclick="ecWap.prodDetial.showImg({$picture.img_id})">
+                    <img src="/{$picture.img_original}">
+                </li>
+                <!--{/foreach}-->
+
+
+            </ul>
+        </div>
+        <div class="swiper-pagination swiper-pagination-fraction" id="sliderNav">
+            <span class="swiper-pagination-current"></span>/
+            <span class="swiper-pagination-total">{$pictures_num}</span></div>
+    </section>
+    <!-- 20170518-商品图片画廊-end -->
+
+    <section class="pro-property">
+
+
+        <input type="hidden" id="goods_id" value="{$goods_id}">
+        <!-- 20170518-基本信息-名称价格-start -->
+        <article class="pro-meta-area">
+            <div class="pro-meta-area-cont">
+                <article class="pro-meta-area-name">
+                    <a href="javascript:;" id="getCoupon" class="pro-coupons" style="display:none;"></a>
+                    <div class="p-name"><span id="pro-name">{$goods.goods_style_name}</span></div>
+                </article>
+                <div class="hide">
+                    <p class="p-point hide" id="skuWeight"></p>
+                </div>
+                <p class="p-price">
+                    <b>
+                        <em id="pro-price">
+                            {$goods.shop_price_formated}
+                        </em>
+                    </b>
+
+                    <del><em id="pro-prime-price">{$goods.market_price}</em></del>
+                </p>
+
+                <div class="j_promotionBox p-promotion-box" style="">
+                    <p class="p-promotion j_pro-skuPromWord">
+                        <span class="j_pagetimerPromWord" style="display: inline;">
+                            <a href="">
+                                <span></span>
+                            </a>
+                        </span>
+
+                        <span class="j_pageskuPromWord" style="display: inline;">
+                            {$goods.goods_brief}
+                        </span>
+                    </p>
+                    <i class="j_iconmore icon-more-bottom" style="display:none;"></i>
+
+                </div>
+            </div>
+            <div class="pro-meta-match">
+                <table border="0" class="t-product j_gif-prd-areawrap" style="display: none;">
+                    <!-- 赠品信息start -->
+                    <tbody>
+                    <tr class="t-product-2" id="gif-prd-area" style="display: none;">
+                    </tr>
+                    <!-- 赠品信息end -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="pro-meta-area-discount" id="getPromotion">
+                <p class="p-discount j_pdiscount">
+                    <span>支持分期</span>
+                    <span>赠送积分</span><i class="icon-more-right"></i>
+                </p>
+            </div>
+
+        </article>
+
+        <!-- 20170518-基本信息-名称价格-end -->
+        <!-- 20171016-sku属性-start -->
+        <article class="pro-meta-area">
+            <div class="sku-product-main">
+                <!-- 20170518-基本信息-sku-start -->
+                <div class="pro-meta-sku">
+                    <div class="pro-meta-sku-content" id="skuList">
+                        <!-- {foreach from=$specification item=spec name=specs } -->
+                        <dl class="clearfix">
+                            <dt><label>{$spec.name}</label></dt>
+
+
+                            <dd>
+                                <!-- {foreach from=$spec.values item=item} -->
+                                <a href="javascript:;" class="j_skuItem attr140891 attr137167 attr137183"
+                                   data-attrname="{$spec.name}" data-attrid="140891,137167,137183"
+                                   data-skuid="304300558,992476129,384803645">
+                                    <span>{$item.label}</span>
+                                </a>
+                                <!-- {/foreach}-->
+                            </dd>
+
+                        </dl>
+                        <!-- {/foreach}-->
+
+                    </div>
+                </div>
+                <!-- 数量操作区 start-->
+                <div class="pro-meta-sku pro-meta-sku-number">
+                    <div class="pro-meta-sku-content">
+                        <dl>
+                            <dt>
+                                <label style="position:relative; top:.2em;">数量</label>
+                            </dt>
+                            <dd>
+                                <p class="textbox">
+                                    <b class="minus minus-disabled" id="product-delNum" onclick="ecWap.prodDetial.delPrdNum()"></b>
+                                    <input id="quantity" type="tel" value="1" maxlength="3" oninput="ecWap.prodDetial.editPrdNum(this);" data-price="{$goods.shop_price_formated}" data-inventory="999" readonly="readonly">
+                                    <b id="product-addNum" class="add" onclick="ecWap.prodDetial.addPrdNum()"></b>
+                                </p>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 数量操作区 end-->
+            </div>
+        </article>
+        <!-- 20171016-sku属性-end -->
+
+        <!-- 20170518-基本信息-送货地址-start -->
+        <section class="pro-meta-area">
+            <div id="warrantEntry" class="pro-meta-insurance">
+                <div class="pro-other-cont">
+                    <div class="pro-service" id="guaranteeMessage">
+                        <div class="pro-service-box"><p class="p-guarantee"><span>保障服务</span><em>为商品保驾护航</em></p></div>
+                    </div>
+                    <div class="pro-service hide" id="extMessage" >
+                        <div class="pro-service-box"><p class="p-guarantee"><span></span><span></span></p></div>
+                    </div>
+                    <div class="pro-service hide" id="accMessage" >
+                        <div class="pro-service-box"><p class="p-guarantee"><span></span><span></span></p></div>
+                    </div>
+                    <i class="icon-more-right"></i>
+                    <i class="icon-insurance"></i>
+                </div>
+            </div>
+            <div class="pro-meta-area-cont pro-meta-address" id="productArrival" style="display:none;">
+                <div class="related-address-area">
+                    <i class="icon-send-address"></i>
+                    <div class="related-address-add" id="related-address-add">
+                        <span id="addressSelect"></span>
+                    </div>
+                    <div class="arrived-tips"></div>
+                    <span><i class="icon-more-right"></i></span>
+                </div>
+            </div>
+
+            <div class="pro-meta-service" id="getService">
+                <dl>
+                    <dt>
+                        <label>服务</label>
+                    </dt>
+                    <dd>
+                        <i class="icon-more-right"></i>
+                        <p class="j_pservice p-service"><span>24h售后保障</span></p>
+                    </dd>
+                </dl>
+            </div>
+            <!-- 以旧换新 -->
+        </section>
+
+
+        <!-- 20170518-基本信息-送货地址-end -->
+        <!--20170521 用户评论 start-->
+        <section class="pro-meta-area pro-meta-area-review" style="">
+            <header class="h">
+                <h3>
+                    <span>用户评价<em id="totalwRecord">（{$goods.comment_count}条）</em></span>
+                    <a href="javascript:;"  onclick="$('#prdDetailreview').click();">查看全部评价<i class="icon-more-right"></i>
+                    </a>
+                </h3>
+            </header>
+            <div class="review-area" id="scoreAreaw">
+                <div class="review-keyword clearfix" id="remarkLabelwDiv"></div>
+
+                <div class="review-content">
+                    <!--{foreach from=$goods.goods_comment item=comment name=comment}-->
+                    <!-- {if $smarty.foreach.comment.index == 0}-->
+                    <ul id="all-areaw">
+                        <li>
+                            <div class="info clearfix">
+                                <p class="fl">
+                                    <i><img src="{$ectouch_themes}/images/defaultface_user_small.png"></i>
+                                    <span><b><em>{$comment.username|escape:html}</em><time>{$comment.add_time}</time></b></span>
+                                </p>
+                                <p class="fr">
+                                    <span class="laud-area" onclick="$('#prdDetailreview').click();"><i></i><em>{$comment}</em></span>
+                                </p>
+                            </div>
+                            <div class="word">{$comment.content}</div>
+                        </li>
+                    </ul>
+                    <!--{/if}-->
+                    <!--{/foreach}-->
+                </div>
+            </div>
+        </section>
+        <!--20170521 用户评论 end-->
+
+
+
+        <!-- 关联商品start -->
+        <section class="pro-meta-area related-area">
+            <header class="h">
+                <h3><span>推荐商品</span></h3>
+            </header>
+            <section class="related-area-content">
+                <!--{foreach from=$related_goods item=goods name=relate_goods}-->
+                <!--{if $smarty.foreach.relate_goods.index%3 eq 0 }-->
+                <ul>
+                 <!--{/if}-->
+                    <li>
+                        <a href="{$goods.url}">
+                            <p class="p-img">
+                                <img src="/{$goods.goods_img}" onerror="javascript:this.src='{$ectouch_themes}/images/mask.png'">
+                            </p>
+                            <p class="p-name"><span>{$goods.goods_name}</span></p>
+                        </a>
+                    </li>
+                <!--{if $smarty.foreach.relate_goods.index%3 eq 2 }-->
+                </ul>
+                 <!--{/if}-->
+
+                <!--{/foreach}-->
+            </section>
+
+        </section>
+        <!-- 关联商品end -->
+    </section>
+    <div class="loading-action">
+        <span class="loading-action-btn"
+              onclick="_paq.push(['trackLink', 'wap-pdp-recommendation-click_event', 'link', '']);$('#prdDetailpicDetaii').click();">
+            <i class="icon-more-top"></i>&nbsp;点击查看详情
+        </span>
+    </div>
+</div>
+<!-- 20170518-商品-end -->
+
+
+<!-- 20170518-详情-start -->
+<div id="picDetail" class="tab">
+
+</div>
+<!-- 20170518-详情-end -->
+
+
+
+<!-- 20170518-参数-start -->
+<div id="specification" class="tab">
+</div>
+<!-- 20170518-参数-end -->
+
+<div id="review" class="tab">
+    <!-- 20170518-好评率-start -->
+    <section class="review-rate clearfix hide" id="evaluateRateID">
+
+
+        <div class="review-rate-praise hide" id="scoreArea">
+
+            <p class="p-title"><span>好评度</span></p>
+            <p class="p-rate"><em id="totalPercent"></em>%</p>
+        </div>
+
+        <!-- 热门标签-->
+        <div class="review-rate-keyword" id="remarkLabelDiv">
+
+        </div>
+    </section>
+    <!-- 20170518-好评率-end -->
+
+
+
+    <!-- 评论的类型-end -->
+    <section class="review-nav hide" id="evaluateTypeID">
+        <ul class="clearfix">
+            <li class=""><a href="javascript:;" onclick="ecWap.remark.rmsRefreshEvaluateList(this,570379791,1);"><span>最热门</span></a>
+            </li>
+            <li><a href="javascript:;" onclick="ecWap.remark.rmsRefreshEvaluateList(this,570379791,0);"><span>最新</span></a>
+            </li>
+            <li class="current"><a href="javascript:;" onclick="ecWap.remark.rmsRefreshEvaluateList(this,570379791,2);"><span>有图片</span></a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- 20170518-评价内容列表-start -->
+    <section class="review-content hide" id="reviewContentId">
+        <!-- 所有评论 -->
+        <ul id="all-area">
+        </ul>
+        <!-- 20170518-评价内容列表--end -->
+
+
+        <div class="loading" id="loading"><p class="icon-loading"><span></span></p></div>
+    </section>
+
+
+    <!-- 20170518-系统提示-空数据-start -->
+    <section class="system-empty hide" id="empty">
+        <header class="h">
+            <i class="icon-list-empty"></i>
+            <p class="system-empty-title"><span>该商品暂无评价</span></p>
+        </header>
+    </section>
+    <!-- 20170518-系统提示-空数据-end -->
+
+
+
+</div>
+<!-- 底部已选显示区域-start -->
+<div class="pro-property-selected j_showSkuBtn hide" id="skuResultBottom" >
+    <div class="pro-selected-box clearfix">
+        <p class="pro-sku-selected-title">已选</p>
+        <div class="pro-sku-selected"><em>&nbsp; x<i class="j_skuItemAmt"></i></em>
+            <p class="j_currentSkuInfo2"><span>极光蓝</span> <span>全网通高配版</span> <span>6GB+64GB</span> <span>官方标配</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 底部已选显示区域-start -->
+<!-- 底部倒计时显示区域-start -->
+<div class="pro-property-countdown j_showCountDown hide" id="mainCountdownArea">
+    <p class="time-left" id="pro_detail_time">
+        <span>
+            <time id="start"></time>开售  倒计时：
+            <em id="hour"></em>&nbsp;时&nbsp;<em id="minutes"></em>&nbsp;分&nbsp;
+            <em id="seconds"></em>&nbsp;秒&nbsp;</span>
+    </p>
+</div>
+<!-- 底部倒计时显示区域-start -->
+<!-- 底部抢购还有机会显示区域-start -->
+<div class="pro-property-countdown  j_rushbuyTipBtn hide" id="rushbuyTipBottom">
+    <p class="time-left">
+        <span class="j_rushbuyTip">还有机会，有用户未完成订单 15分钟内会被取消</span>
+    </p>
+</div>
+<!-- 底部抢购还有机会显示区域-start -->
+
+
+<!-- 底部按钮区域-start -->
+<section class="pro-property-action-area-big">
+    <div class="pro-property-action-area-btn">
+        <div class="pro-property-home">
+            <a href="/"></a>
+            <p>首页</p>
+        </div>
+        <div class="pro-property-shoppingCart">
+            <a id="prdDetailShoppingCart" onclick="_hmt.push(['_trackEvent', 'click icon2', 'click', '记录【购物车】图标按钮的点击次数'])" href="flow.php?step=cart" title="购物车">
+                <em><i id="cartNum">0</i></em>
+            </a>
+            <p>购物车</p>
+        </div>
+    </div>
+    <div class="pro-property-action-area-right" id="pro-operation">
+        <section class="pro-property-action-area">
+            <article class="pro-property-action">
+                <a href="flow.php" class="j_prdDetailAppointment button-style-1-big"><span>立即购买</span></a>
+            </article>
+        </section>
+    </div>
+</section>
+
+<!--商品详情页免责信息 -->
+<input type="hidden" id="prdDetailDisclaimerTemplate" name="prdDetailDisclaimerTemplate"
+       value="<p><span style=&quot;color:#c0504d;&quot;>特别提醒：</span><br /></p><p style=&quot;text-indent:2em;&quot;><span style=&quot;color:#262626;&quot;>※以上页面中的产品图片及屏幕内容仅作示意，实物产品效果（包括但不限于外观、颜色、尺寸）和屏幕显示内容（包括但不限于背景、<span>UI</span>、配图）可能略有差异，请以实物为准。</span></p><p style=&quot;text-indent:2em;&quot;><span style=&quot;color:#262626;&quot;>※以上页面中的数据为理论值，均来自</span><span style=&quot;color:red;&quot;>中移铁通智能产品分公司内部实验室</span><span style=&quot;color:#262626;&quot;>，于特定测试环境下所得（请见各项具体说明），实际使用中可能因产品个体差异、软件版本、使用条件和环境因素不同略有不同，请以实际使用的情况为准。</span></p><p style=&quot;text-indent:2em;&quot;><span style=&quot;color:#262626;&quot;>※为提供尽可能准确的产品信息、规格参数、产品特性，</span><span style=&quot;color:red;&quot;>中移铁通智能产品分公司或荣耀</span><span style=&quot;color:#262626;&quot;>可能实时调整和修订以上页面中的文字表述、图片效果等内容，以求与实际产品性能、规格、指数、零部件等信息相匹配，由于产品批次和生产供应因素实时变化，如遇确有进行上述修改和调整必要的情形，恕不专门通知。</span></p><p><br /></p><p><br /></p>">
+
+
+<script src="{$ectouch_themes}/js/ecWap.js?20170316"></script>
+<script src="{$ectouch_themes}/js/base.js?20170209"></script>
+
+
+<section class="images-view hide" id="bigImages" style="position:absolute;">
+</section>
+<!-- 评价预览 start -->
+<section class="big-img-box hide" id="bigImages2"></section>
+<!-- 评价预览 end -->
+
+<!--分仓 end -->
+
+
+<script src="{$ectouch_themes}/js/product-detail.js?20171228"></script>
+<script src="{$ectouch_themes}/js/product-remark.js?20171228"></script>
+<script src="{$ectouch_themes}/js/cartWap.min.js?20171228"></script>
+
+<script>
+    ecWap.prodDetial.hasContent = false;
+    ecWap.prodDetial.bigDefaultImg = "{$ectouch_themes}/images/mask.png";
+    ecWap.bigDefaultImg = "{$ectouch_themes}/images/mask.png";
+    ecWap.prodDetial.bigImgList = [];
+
+    setInterval(
+        function () {
+            ecWap.prodDetial.nowTime += 1000;
+        },
+        1000
+    );
+
+    //a,sku属性id；d 属性类型id；b属性名称；e 规格id;f 规格名称
+    ecWap.prodDetial.addSkuAttr("184231361", "152138", "颜色", "140809", "流光金");
+    ecWap.prodDetial.addSkuAttr("184231361", "439405", "制式", "140811", "全网通版");
+    ecWap.prodDetial.addSkuAttr("184231361", "583366", "容量", "140813", "4GB+64GB");
+    ecWap.prodDetial.addSkuAttr("184231361", "323374", "套餐", "140815", "官方标配");
+    ecWap.prodDetial.addSkuAttr("184231361", "1001", "定制", "140817", "无定制");
+
+    //sku列表是否为空
+    ecWap.prodDetial.isSkulistBlank = true;
+
+    //默认配置
+    ecWap.prodDetial.prdId = "{$goods_id}";
+    ecWap.prodDetial.defaultSku = "184231361";
+    ecWap.prodDetial.isFromWechat = false;
+    ecWap.prodDetial.status = "2";
+    ecWap.prodDetial.productType = "0";
+    var nowTime = new Date();
+    ecWap.prodDetial.nowTime = nowTime;
+    //是否显示配送
+    ecWap.prodDetial.isDisplayDelevery = "0";
+    ecWap.prodDetial.skuCodeStr = "";
+    ecWap.prodDetial.skuCodeArray = [];
+    ecWap.prodDetial.isShowExtendInfo = "1";
+    ecWap.prodDetial.isVirtual = "0";
+    ecWap.prodDetial.rushbuySkuIds = "";
+    ecWap.prodDetial.isConsignment = false;
+
+    var _imgName,
+        _giftList,
+        _promotionsList,
+        _bundlerList,
+        _bundlerProductList,
+        _extendProductList,
+        _accidentProductList,
+        _couponDataList,
+        _skuServiceInfo;
+    _imgName = [];
+    _giftList = [];
+    _extendProductList = [],
+        _accidentProductList = [],
+        _couponDataList = [],
+        _skuServiceInfo = [],
+        _skuPromoInfo = [];
+
+
+    var startTime;
+
+
+    ecWap.prodDetial.setSku("184231361", {
+        code: "1001010043203",
+        groupType: "0",
+        skuPromWord: "{$goods.goods_brief}",
+        price: '{$goods.shop_price}',
+        skuPrice: {$goods.shop_price},
+        inventory: 124,
+        name: "{$goods.goods_style_name}",
+
+        priceMode: "1",
+        tipsContent: "",
+        buttonMode: "1",
+        buttonUrl: "",
+        wapUrl: "",
+        isProm: false,
+
+
+        //限制的数量
+        limitedQuantity: "22",
+        //是否限制开关
+        limitedStatus: "1",
+        type: "normal",
+        integral: "",         //积分
+        photoName: "{$goods.original_img}", //相册名称
+        photoPath: "", //相册路径
+        imgName: _imgName,
+        giftList: _giftList,
+
+        hasBundle: 0, //套餐
+        hasComb: 0,
+        promotionLst: _promotionsList,
+        //套餐列表
+        bundlerList: _bundlerList,
+        //是否投保
+        isDepositProduct: "0",
+        activityStatus: '0',   //活动状态
+        startTime: startTime,
+        end_time: "2999/1/1",
+
+        //提示开始时间
+        timerPromStarttime: "{$goods.promote_start_date}",
+        timerPromEndtime: "{$goods.promote_end_date}",
+        timerPromWord: "{$goods.promote_word}",
+        timerPromLink4Wap: "{$goods.promLink4Wap}",
+
+        is_show_reminder: "0",
+        product_rush_countdown: "",
+        extWarranty: _extendProductList, //额外的保险
+        accWarranty: _accidentProductList, //事故保险
+        couponData: _couponDataList, //优惠券信息
+        skuServiceInfo: _skuServiceInfo, //服务信息
+        skuPromoInfo: _skuPromoInfo,     //促销活动
+
+
+        //立即购买
+        isEasybuy: 0,
+        easybuyStartTime: "",
+        easybuyEndTime: "",
+        easybuyWapUrl: ""
+    });
+
+
+    _imgName = [];
+    _giftList = [];
+    _promotionsList = []
+    _bundlerList = [],
+        _extendProductList = [],
+        _accidentProductList = [],
+        _couponDataList = [],
+        _skuServiceInfo = [],
+        _skuPromoInfo = [];
+
+
+    //服务
+    _skuServiceInfo.push({title : "已满48元包邮", content : "满48元即免运费" });
+    _skuServiceInfo.push({title : "中移铁通智能产品分公司终端 发货&售后", content : "由中移铁通智能产品分公司终端负责发货，并提供售后服务" });
+
+    //促销活动
+    _skuPromoInfo.push({title : "支持分期", content : "支持花呗分期支付" });
+    _skuPromoInfo.push({title : "分期免息", content : "花呗分期支付可享免息" });
+    _skuPromoInfo.push({title : "赠送积分", content : "购买即赠商城积分，积分可抵现" });
+
+
+    ecWap.remark.isEvaluateOn = true;
+    ecWap.remark.rmsQueryPrdDetailRemarkLevel(ecWap.prodDetial.prdId);
+
+    //轮播图
+    ecWap.prodDetial.initSwiper();
+
+    ecWap.prodDetial.execute("renderInventory", [true], true);
+
+    $(document).click(function () {
+        $(".header-menu").slideUp();
+    });
+    $(".icon-header-menu").click(function (event) {
+        $(".header-menu").slideToggle();
+        event.stopPropagation();
+    });
+
+</script>
+
+<div class="ecWap-mask" id="ecWap-box-bg-promotionMainBox" style="height:1586px; width:412px;position: absolute; left:0; top:0; z-index:990;display:none;"></div>
+<article class="ecWap-box-em ecWap-box-lower" id="ecWap-box-promotionMainBox"
+         style="position: fixed; left: 0px; width: 100%; z-index: 991; display: none; top: auto; height: 396px;">
+    <header class="ecWap-box-header"><span class="ecWap-box-title">促销</span>
+        <a href="javascript:;" style="z-index:990" class="j_boxclose ecWap-box-close box-close">关闭</a>
+    </header>
+    <section class="ecWap-box-content">
+        <div class="discount-cont">
+            <ul>
+                <li><i class="icon-discount"></i>
+                    <p class="p-discount-name">支持分期</p>
+                    <p class="p-discount-intro">支持花呗分期支付</p></li>
+                <li><i class="icon-discount"></i>
+                    <p class="p-discount-name">分期免息</p>
+                    <p class="p-discount-intro">花呗分期支付可享免息</p></li>
+                <li><i class="icon-discount"></i>
+                    <p class="p-discount-name">赠送积分</p>
+                    <p class="p-discount-intro">购买即赠商城积分，积分可抵现</p></li>
+            </ul>
+        </div>
+    </section>
+    <footer class="ecWap-box-footer"><a href="javascript:;" class="ecWap-box-ok box-ok">关闭</a></footer>
+</article>
+
+</body>
+</html>

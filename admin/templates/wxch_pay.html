@@ -1,0 +1,50 @@
+{include file="wxch_pageheader.htm"}
+<div class="tab-div">
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front">设置</span>
+        </p>
+    </div>
+    <div id="tabbody-div">
+        <form action="" method="post" name="form1" enctype="multipart/form-data">
+            <table id="general-table" align="center">
+                <tr>
+                    <td class="label">{$wxch_lang.ur_here}：</td>
+                    <td>
+                        <label><input type="radio" name="autoload" value="yes" {if $order.autoload eq yes}checked{/if}/>开启</label>
+                        <label><input type="radio" name="autoload" value="no" {if $order.autoload eq no}checked{/if}/>关闭</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">标题：</td>
+                    <td>
+                        <input name="title" type="text" value="{$order.title}"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">图片：</td>
+                    <td>
+                        <input type="file" name="image" size="35"/>
+                        {if $order.image}
+                        <a href="goods.php?act=show_image&img_url={$order.image}" target="_blank"><img
+                                src="images/yes.gif" border="0"/></a>
+                        {else}
+                        <img src="images/no.gif"/>
+                        {/if}
+                        <br/><input type="text" size="40" value="{$order.image}" style="color:#aaa;"
+                                    onfocus="if (this.value == '商品图片外部URL'){this.value='http://';this.style.color='#000';}"
+                                    name="img_url"/>
+                    </td>
+                </tr>
+            </table>
+            <div class="button-div">
+                <input type="submit" value="{$lang.button_submit}" class="button"/>
+                <input type="reset" value="{$lang.button_reset}" class="button"/>
+            </div>
+            <input type="hidden" name="act" value="{$form_act}"/>
+        </form>
+    </div>
+</div>
+<!-- end goods form -->
+{insert_scripts files="./js/validator.js,./js/tab.js"}
+{include file="wxch_pagefooter.htm"} 

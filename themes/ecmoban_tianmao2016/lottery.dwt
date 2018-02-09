@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="{$keywords}" />
+<meta name="Description" content="{$description}" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>免费抽奖</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="icon" href="animated_favicon.gif" type="image/gif" />
+<link href="{$ecs_css_path}" rel="stylesheet" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS|{$page_title}" href="{$feed_url}" />
+<link type="text/css" rel="stylesheet" href="themes/ecmoban_tianmao2016/qw_wish.css" />
+{* 包含脚本文件 *}
+{insert_scripts files='common.js,user.js,transport.js,qw-lottery.js'}
+</head>
+<body>
+<div id="container">
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div id="path" class="lottery_path">
+<img src="images/wish/arrow03.jpg" width="17" height="24" /><p>您当前所在位置:<a href="index.php"> 首页</a> >> {$ur_here}
+</div>
+<div class="block clearfix">
+<div  class="banner_wish">
+<div id="wish_banner_img_in"><font>{$totalwin}</font><span>人已中奖<a href="#do">快去抽奖吧>></a></span></div>
+</div>
+<!--{if $winlist}-->
+<div class="wish_other_box">
+    	<div class="wish_role_title">最新获奖名单</div>
+        <table width="90%" border="1" align="center" cellpadding="0" cellspacing="0" bordercolor="#ffffff">
+          <tr>
+            <td class="win_list_td_title" width="2" >&nbsp;</td>
+            <td class="win_list_td_title" width="208" >奖品</td>
+			<td class="win_list_td_title" width="149" >昵称</td>
+            <td class="win_list_td_title" width="406" >获奖感言</td>
+            <td class="win_list_td_title" width="128" >中奖时间</td>
+          </tr>
+		  <!-- {foreach from=$winlist item=wl} -->
+		   <tr>
+			<td align="center" valign="middle" class="win_list_td">
+              <a href="goods.php?id={$wl.goods_id}" target="_blank" title="{$wl.goods_name}" >
+            <img style="border:1px solid #cccccc; margin:5px;" src="{$wl.goods_thumb}" width="48" height="48"/></a>
+            </td>
+            <td class="win_list_td" style="line-height:14px;">
+              <a  href="goods.php?id={$wl.goods_id}" target="_blank" title="{$wl.goods_name}">{$wl.goods_name}</a>
+              <br />￥{$wl.shop_price}</td>
+			  <td class="win_list_td" style="line-height:14px;"><span>{$wl.user_name}{if $wl.address1}<br />来自:{$wl.address1}{/if}</span></td>
+             <td class="win_list_td"  style="line-height:14px; padding:3px;">{$wl.speech}</td>
+            <td class="win_list_td" style="line-height:14px;">{$wl.wintime}</td>
+          </tr>
+		  <!-- {/foreach} -->         
+      </table>
+        <div class="wish_look_more_list"><a href="?act=view" target="_blank">查看全部幸运儿名单</a></div>
+        <br/><div id="clear"></div>
+</div>
+<!--{/if}-->
+<div id="wish_banner_func">
+      <div id="wish_login_box_out">
+        	<div id="wish_login_box">
+        	  <!--{if $user_id > 0}-->                
+                <table width="100%" height="86" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td> <span id="wish_login_info"><font color="#000">欢迎你，{$user_name}</font></td>
+    <td><strong><font color="#ff0000">你还有 
+      <label id="user_credit">{$credit}</label> 
+      个积分</font></strong></td>
+    <td id="getmore_btn"><a href="account.php" target="_blank">赚取更多积分</a></td>
+	<td id="getgift_btn"><!--{if $fetch_rewards}-->
+                  <a href="{$fetch_rewards}">领取奖品</a>
+				  <!--{else}-->
+				  <a href="javascript:void(0)">领取0个奖品</a>
+				  <!--{/if}--></td>
+  </tr>
+</table>
+<!--{else}-->
+<table width="946" height="86" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="726" align="center"><img src="images/wish/bg_l_03.jpg" width="579" height="70" /></td>
+    <td width="120" align="center"><a href="user.php"><img src="images/wish/bg_l_04.jpg" width="81" height="26" border="0" /></a></td>
+    <td width="120"><a href="user.php?act=register"><img src="images/wish/bg_l_05.jpg" width="81" height="26" border="0" /></a></td>
+  </tr>
+</table>
+		  <!--{/if}-->
+        </div>
+  </div>
+</div>
+<a name="do"></a>
+<div class="wish_gift_box">
+
+<!--{if $lotterylist1}-->
+<div class="wish_gift_zone_title" ><img src="images/wish/wish_gift_zone1_bg.jpg" width="280" height="90" /></div>
+<div class="wish_gift_zone3" style="margin-left: auto; margin-right:auto;">
+<div style=" float:left; border-bottom:dashed #999999 1px; margin-top:8px;">
+<!-- {foreach from=$lotterylist1 item=lt} -->
+	<ul class="wish_gift_block_3" style="border: 0px solid red; float:left; margin-left:16px; margin-bottom:8px; width:280px; margin-right:3px">
+    <li class="wish_gift_block_img3"><a href="{$lt.url}" target="_blank"><img src="{$lt.thumb}"  alt="{$lt.goods_name|escape:html}" style="width:260px; height:260px;"/> </a></li>								    <div style="height:34px; border:0px solid #ccc; margin-bottom:10px; overflow:hidden; text-align:center;word-break:break-all">
+     <label class="wish_gift_block_name"><a href="{$lt.url}" target="_blank" title="{$lt.goods_name}">{$lt.goods_name|truncate:80:"..."}</a></label>
+	</div>
+	 <li class="wish_gift_block_price">价值：{$lt.shop_price}</li>
+	
+     <li class="wish_gift_block_btn"><a href="javascript:tryit({$lt.id},{$lt.winnum},{$lt.pro},{$lt.point});"><img src="images/wish/wish_btn.jpg" /></a></li>
+	<li class="wish_gift_block_price">需要{$lt.point}积分</li>
+   </ul>
+<!-- {/foreach} -->
+ </div>
+</div>
+<div style="clear: both;"> </div>
+<!--{/if}-->
+
+<!--{if $lotterylist2}-->
+<div class="wish_gift_zone_title" ><img src="images/wish/wish_gift_zone2_bg.jpg" width="280" height="90" /></div>
+<div class="wish_gift_zone3" style="margin-left: auto; margin-right:auto;">
+<div style=" float:left; border-bottom:dashed #999999 1px; margin-top:8px;">
+<!-- {foreach from=$lotterylist2 item=lt} -->
+	<ul class="wish_gift_block_3" style="border: 0px solid red; float:left; margin-left:9px; margin-bottom:8px; width:170px; margin-right:4px">
+    <li class="wish_gift_block_img3"><a href="{$lt.url}" target="_blank"><img src="{$lt.thumb}"  alt="{$lt.goods_name|escape:html}" style="width:160px; height:160px;"/> </a></li>								    <div style="height:34px; border:0px solid #ccc; margin-bottom:10px; overflow:hidden; text-align:center;word-break:break-all">
+     <label class="wish_gift_block_name"><a href="{$lt.url}" target="_blank" title="{$lt.goods_name}">{$lt.goods_name|truncate:80:"..."}</a></label>
+	</div>
+	 <li class="wish_gift_block_price">价值：{$lt.shop_price}</li>
+     <li class="wish_gift_block_btn"><a href="javascript:tryit({$lt.id},{$lt.winnum},{$lt.pro},{$lt.point});"><img src="images/wish/wish_btn.jpg" /></a></li>
+	 <li class="wish_gift_block_price">需要{$lt.point}积分</li>
+   </ul>
+<!-- {/foreach} -->
+ </div>
+</div>
+<div style="clear: both;"> </div>
+<!--{/if}-->
+
+<!--{if $lotterylist3}-->
+<div class="wish_gift_zone_title" ><img src="images/wish/wish_gift_zone3_bg.jpg" width="280" height="90" /></div>
+<div class="wish_gift_zone3" style="margin-left: auto; margin-right:auto;">
+<div style=" float:left; border-bottom:dashed #999999 1px; margin-top:8px;">
+<!-- {foreach from=$lotterylist3 item=lt} -->
+	<ul class="wish_gift_block_3aa" style="border: 0px solid red; float:left; margin-left:9px; margin-bottom:8px; width:170px; margin-right:4px;">
+    <li class="wish_gift_block_img3"><a href="{$lt.url}" target="_blank"><img src="{$lt.thumb}"  alt="{$lt.goods_name|escape:html}" style="width:160px; height:160px;"/> </a></li>								    <div style="height:34px; border:0px solid #ccc; margin-bottom:10px; overflow:hidden; text-align:center;word-break:break-all">
+     <label class="wish_gift_block_name"><a href="{$lt.url}" target="_blank" title="{$lt.goods_name}">{$lt.goods_name|truncate:80:"..."}</a></label>
+	</div>
+	 <li class="wish_gift_block_price">价值：{$lt.shop_price}</li>
+	
+     <li class="wish_gift_block_btn"><a href="javascript:tryit({$lt.id},{$lt.winnum},{$lt.pro},{$lt.point});"><img src="images/wish/wish_btn.jpg" /></a></li>
+	 <li class="wish_gift_block_price">需要{$lt.point}积分</li>
+   </ul>
+<!-- {/foreach} -->
+ </div>
+</div>
+<!--{/if}-->
+<div style="clear: both;"> </div>
+</div>
+<a name="rule"></a>
+<div class="wish_role_box">
+        <ol class="wish_role_list">
+   	    <li>本次活动仅限ec抽奖网网注册用户参与，ec抽奖网网员工及亲属不得参与本次活动；</li>
+            <li>为了保证活动的真实有效，所有参与活动的用户需要验证注册邮箱；</li>
+            <li>新注册用户可以得到30个积分；</li>  
+			<li><font color="#FF0000">如何赚取更多积分呢？</font>1.点击<a href="account.php" target="_blank"><font color="#FF0000"><strong>本页3个广告</strong></font></a>可以获得20个积分(一天一个IP限制1次有效).
+2.购买过该商品的用户才能发表评论，发布评论赠送5积分(一天一个IP最多评论3次有效)
+3.已注册的用户对文章发表评论，发布评论赠送5积分(一天一个IP最多评论3次有效).
+</li>         
+            <li>奖品价值越高，获得概率越低，如果没有中奖，用户可能会收到一张优惠券；</li>
+            <li>用户不需为奖品支付运费，中奖用户可以将奖品暂存入购物车，随奖品购物免收运费；</li>
+            <li>礼物的配送方式为普通快递，普通快递不能到达的地区将采用平邮方式配送；</li>
+            <li>用户收到奖品时，请在快递人员在场时开箱验货，如发现产品存在质量问题请立即联系ec抽奖网网客服，需要快递人员在场作证沟通换货事宜；</li>
+            <li>禁止以任何不正当手段参加活动，一经发现ec抽奖网网有权取消该用户的获奖资格；</li>
+            <li>活动不设结束时间，用户积累的幸运点长期有效；</li>
+            <li>活动最终解释权归ec抽奖网网所有。</li>
+        </ol>
+        <div class="clearfix"></div>
+</div>
+
+</div>
+<script type="text/javascript">
+var t = -100;
+var tt;
+var userid={$user_id};
+//var hash = {if $hash}{$hash}{else}0{/if};//是否验证邮箱
+var hash = 1;
+function tryit(id, winnum, pro, point)
+{
+	if(userid < 0)
+	{
+		checkuserstatus(-3,0,0);
+		return;
+	}
+	if(hash == 0)//邮箱未验证
+	{
+		checkuserstatus(-2,0,'{$email_url}');
+		return;
+	}
+
+    t  = setInterval('rollresult('+id+','+pro+')',50); 
+	tt = setTimeout('delaytry('+id+','+winnum+','+pro+','+point+')',2000); 
+
+	lotteryWindowMessageWait('a',1);
+}
+function delaytry(id, winnum, pro, point)
+{
+	var cmt = new Object;
+	cmt.id=id;
+	cmt.winnum=winnum;
+	cmt.pro=pro;
+	cmt.user_id=userid;
+	cmt.point=point;
+	Ajax.call('lottery.php?act=try', 'cmt=' + cmt.toJSONString(), tryitResponse, 'POST', 'JSON');
+	
+   	return false;
+}
+function tryitResponse(result)
+{
+	clearInterval(t);
+	clearTimeout(tt);
+
+	if(result.error==-1)
+	{
+	    checkuserstatus(-1,0,0);
+	}
+	else if(result.error==1 || result.error==0)
+	{
+		var user_credit = document.getElementById('user_credit');
+		user_credit.innerHTML=result.credit;
+		lotteryWindowMessage(result,result.error);
+	}
+}
+function rollresult(id,pro)
+{
+	var obj = document.getElementById('trying');
+	var num = Math.floor(Math.random()*pro+1);
+	obj.innerHTML=num;
+}
+</script>
+<!-- #BeginLibraryItem "/library/page_footer.lbi" --><!-- #EndLibraryItem -->
+</div>
+</body>
+</html>

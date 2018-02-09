@@ -1,0 +1,53 @@
+执行日期：2017-04-06 12:23:30
+responseTxt=false
+ return_url_log:isSign=false,code=alipay
+执行日期：2017-04-06 12:23:30
+传递过来的XML
+array (
+  'code' => 'alipay',
+)
+执行日期：2017-04-06 12:23:30
+传递过来的XML
+array (
+)
+执行日期：2017-04-06 12:23:30
+responseTxt=false
+ return_url_log:isSign=false,code=alipay
+执行日期：2017-04-06 12:23:30
+verify_result failed
+执行日期：2017-04-06 12:23:30
+verify_notify failed
+执行日期：2017-04-07 13:32:20
+responseTxt=true
+ return_url_log:isSign=true,code=alipay&body=2017040711896&is_success=T&notify_id=RqPnCoPT3K9%2Fvwbh3InYyPmCLQJT1fAT%2F%2BUUzybcL1lEqthdkqcPY6dMWfgUK4eI74Cx&notify_time=2017-04-07 13:32:35&notify_type=trade_status_sync&out_trade_no=2017040711896217&payment_type=1&seller_id=2088121905285245&service=alipay.wap.create.direct.pay.by.user&subject=2017040711896&total_fee=0.01&trade_no=2017040721001004070292158711&trade_status=TRADE_SUCCESS&sign=a25ea89989975d49c2afc77e589da8fe&sign_type=MD5
+执行日期：2017-04-07 13:32:20
+传递过来的XML
+array (
+  'code' => 'alipay',
+  'body' => '2017040711896',
+  'is_success' => 'T',
+  'notify_id' => 'RqPnCoPT3K9%2Fvwbh3InYyPmCLQJT1fAT%2F%2BUUzybcL1lEqthdkqcPY6dMWfgUK4eI74Cx',
+  'notify_time' => '2017-04-07 13:32:35',
+  'notify_type' => 'trade_status_sync',
+  'out_trade_no' => '2017040711896217',
+  'payment_type' => '1',
+  'seller_id' => '2088121905285245',
+  'service' => 'alipay.wap.create.direct.pay.by.user',
+  'subject' => '2017040711896',
+  'total_fee' => '0.01',
+  'trade_no' => '2017040721001004070292158711',
+  'trade_status' => 'TRADE_SUCCESS',
+  'sign' => 'a25ea89989975d49c2afc77e589da8fe',
+  'sign_type' => 'MD5',
+)
+执行日期：2017-04-07 13:32:20
+传递过来的XML
+array (
+)
+执行日期：2017-04-07 13:32:20
+responseTxt=true
+ return_url_log:isSign=true,code=alipay&body=2017040711896&is_success=T&notify_id=RqPnCoPT3K9%2Fvwbh3InYyPmCLQJT1fAT%2F%2BUUzybcL1lEqthdkqcPY6dMWfgUK4eI74Cx&notify_time=2017-04-07 13:32:35&notify_type=trade_status_sync&out_trade_no=2017040711896217&payment_type=1&seller_id=2088121905285245&service=alipay.wap.create.direct.pay.by.user&subject=2017040711896&total_fee=0.01&trade_no=2017040721001004070292158711&trade_status=TRADE_SUCCESS&sign=a25ea89989975d49c2afc77e589da8fe&sign_type=MD5
+执行日期：2017-04-07 13:32:20
+verify_result success
+执行日期：2017-04-07 13:32:20
+支付宝订单号：2017040711896217写入日志成功.

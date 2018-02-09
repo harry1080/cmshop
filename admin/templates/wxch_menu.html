@@ -1,0 +1,219 @@
+{include file="wxch_pageheader.htm"}
+<div class="tab-div">
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front" id="one-table">菜单一</span>
+            <span class="tab-back" id="two-table">菜单二</span>
+            <span class="tab-back" id="three-table">菜单三</span>
+        </p>
+    </div>
+    <div id="tabbody-div">
+        <form enctype="multipart/form-data" action="" method="post" name="theForm">
+            <table id="one-table">
+                <tr>
+                    <td align="center"><strong>级别</strong></td>
+                    <td align="center"><strong>类型</strong></td>
+                    <td align="center"><strong>名称</strong></td>
+                    <td align="center"><strong>值</strong></td>
+                </tr>
+                <tr>
+                    <td align="center"><strong>一级菜单：</strong></td>
+                    <td>
+                        <select name="first_type[]">
+                            <option value="click" {if $data.first.0.menu_type eq click}selected{/if}>click</option>
+                            <option value="view" {if $data.first.0.menu_type eq view}selected{/if}>view</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><input type="text" name="first[]" value="{$data.first.0.name}" size="8"/></label>
+                    </td>
+                    <td>
+                        <label><input type="text" name="first_value[]" value="{$data.first.0.value}" size="50"/></label>
+                    </td>
+                </tr>
+                {foreach from=$data.second1 item=items}
+                <tr>
+                    <td align="center"><strong>二级菜单{$items.num}：</strong></td>
+                    <td>
+                        <select name="menu_type1[]">
+                            <option value="click" {if $items.menu_type eq click}selected{/if}>click</option>
+                            <option value="view" {if $items.menu_type eq view}selected{/if}>view</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><input type="text" name="second1[]" value="{$items.name}" size="8"/></label>
+                    </td>
+                    <td>
+                        <label><input type="text" name="value1[]" value="{$items.value}" size="50"/></label>
+                    </td>
+                </tr>
+                {/foreach}
+            </table>
+            <table width="100%" id="two-table" style="display:none">
+                <tr>
+                    <td align="center"><strong>级别</strong></td>
+                    <td align="center"><strong>类型</strong></td>
+                    <td align="center"><strong>名称</strong></td>
+                    <td align="center"><strong>值</strong></td>
+                </tr>
+                <tr>
+                    <td align="center"><strong>一级菜单：</strong></td>
+                    <td>
+                        <select name="first_type[]">
+                            <option value="click" {if $data.first.1.menu_type eq click}selected{/if} >click</option>
+                            <option value="view" {if $data.first.1.menu_type eq view}selected{/if} >view</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><input type="text" name="first[]" value="{$data.first.1.name}" size="8"/></label>
+                    </td>
+                    <td>
+                        <label><input type="text" name="first_value[]" value="{$data.first.1.value}" size="50"/></label>
+                    </td>
+                </tr>
+                {foreach from=$data.second2 item=items}
+                <tr>
+                    <td align="center"><strong>二级菜单{$items.num}：</strong></td>
+                    <td>
+                        <select name="menu_type2[]">
+                            <option value="click" {if $items.menu_type eq click}selected{/if} >click</option>
+                            <option value="view" {if $items.menu_type eq view}selected{/if} >view</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><input type="text" name="second2[]" value="{$items.name}" size="8"/></label>
+                    </td>
+                    <td>
+                        <label><input type="text" name="value2[]" value="{$items.value}" size="50"/></label>
+                    </td>
+                </tr>
+                {/foreach}
+
+            </table>
+            <table id="three-table" style="display:none">
+                <tr>
+                    <td align="center"><strong>级别</strong></td>
+                    <td align="center"><strong>类型</strong></td>
+                    <td align="center"><strong>名称</strong></td>
+                    <td align="center"><strong>值</strong></td>
+                </tr>
+                <tr>
+                    <td align="center"><strong>一级菜单：</strong></td>
+                    <td>
+                        <select name="first_type[]">
+                            <option value="click" {if $data.first.2.menu_type eq click}selected{/if}>click</option>
+                            <option value="view" {if $data.first.2.menu_type eq view}selected{/if}>view</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><input type="text" name="first[]" value="{$data.first.2.name}" size="8"/></label>
+                    </td>
+                    <td>
+                        <label><input type="text" name="first_value[]" value="{$data.first.2.value}" size="50"/></label>
+                    </td>
+                </tr>
+                {foreach from=$data.second3 item=items}
+                <tr>
+                    <td align="center"><strong>二级菜单{$items.num}：</strong></td>
+                    <td>
+                        <select name="menu_type3[]">
+                            <option value="click" {if $items.menu_type eq click}selected{/if} >click</option>
+                            <option value="view" {if $items.menu_type eq view}selected{/if} >view</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label><input type="text" name="second3[]" value="{$items.name}" size="8"/></label>
+                    </td>
+                    <td>
+                        <label><input type="text" name="value3[]" value="{$items.value}" size="50"/></label>
+                    </td>
+                </tr>
+                {/foreach}
+            </table>
+
+            <div class="button-div">
+                <input type="submit" value="{$lang.button_submit}" class="button"/>
+                <input type="reset" value="{$lang.button_reset}" class="button"/>
+            </div>
+            <input type="hidden" name="act" value="{$form_act}"/>
+        </form>
+    </div>
+</div>
+<!-- end goods form -->
+{insert_scripts files="./js/tab.js"}
+<script>
+    var tabdiv =  document.getElementById("tabbar-div");
+    onload = function()
+    {
+        // 开始检查订单
+        startCheckOrder();
+    }
+
+    tabdiv.onmouseover = function(e)
+    {
+        var obj = Utils.srcElement(e);
+
+        if (obj.className == "tab-back")
+        {
+            obj.className = "tab-hover";
+        }
+    }
+
+    tabdiv.onmouseout = function(e)
+    {
+        var obj = Utils.srcElement(e);
+
+        if (obj.className == "tab-hover")
+        {
+            obj.className = "tab-back";
+        }
+    }
+
+    tabdiv.onclick = function(e)
+    {
+        var obj = Utils.srcElement(e);
+        if (obj.className != "tab-front")
+        {
+            var objTable = obj.id.substring(0, obj.id.lastIndexOf("-")) + "-table";
+            var tables = document.getElementsByTagName("table");
+            var spans  = document.getElementsByTagName("span");
+
+            for (var i = 0; i < tables.length; i++)
+            {
+                if (tables[i].id == objTable)
+                {
+                    tables[i].style.display = (Browser.isIE) ? "block" : "table";
+                }
+                else
+                {
+                    tables[i].style.display = "none";
+                }
+            }
+            for (var j = 0; spans.length; j++)
+            {
+                if (spans[j].className == "tab-front")
+                {
+                    spans[j].className = "tab-back";
+                    obj.className = "tab-front";
+                    break;
+                }
+            }
+        }
+    }
+    function showNotice(objId)
+    {
+        var obj = document.getElementById(objId);
+        if (obj)
+        {
+            if (obj.style.display != "block")
+            {
+                obj.style.display = "block";
+            }
+            else
+            {
+                obj.style.display = "none";
+            }
+        }
+    }
+</script>
+{include file="wxch_pagefooter.htm"}

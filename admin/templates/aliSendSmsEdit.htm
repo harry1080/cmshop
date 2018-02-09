@@ -1,0 +1,35 @@
+{include file="pageheader.htm"}
+<div class="main-div">
+    <form method="POST" action="aliSendSms.php?act=aliSendSmsUpdate">
+        <table>
+            <tr>
+                <td class="label">本地调用</td>
+                <td><input type="text" name="dayu_local" value="{$info.dayu_local}"></td>
+            </tr>
+            <tr>
+                <td class="label">标签</td>
+                <td><input type="text" name="dayu_tag" value="{$info.dayu_tag}"></td>
+            </tr>
+            <tr>
+                <td class="label">名字</td>
+                <td><input type="text" name="dayu_name" value="{$info.dayu_name}"></td>
+            </tr>
+
+            <tr>
+                <td class="label">说明</td>
+                <td><textarea name="dayu_note" cols="50" rows="10"> {$info.dayu_note}</textarea></td>
+            </tr>
+
+            <input type="hidden" name="id" value="{$id}" class="button" />
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="提交" class="button" />
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</div>
+{include file="pagefooter.htm"}

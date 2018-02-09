@@ -1,0 +1,166 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>自动注册</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link href="styles/general.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+    {insert_scripts files="../../js/transport.js,./js/common.js,../js/utils.js"}
+</head>
+<body>
+<h1>
+    <span class="action-span1"><a href="index.php?act=main">管理中心</a> </span>
+    <span id="search_id"></span>
+    <div style="clear:both"></div>
+</h1>
+<div class="form-div" id="conent_area">
+    <form method="post" name="theForm" action="wxch-ent.php?act=autoreg">
+        <table id="general-table" align="center">
+            <tbody>
+            <tr>
+                <td style="font-weight: bold;color:#192E32; " width="20%">用户名前缀:</td>
+                <td>
+                    <input type="text" name="username" value="{$data.autoreg_name}">
+                    <span> wx_+user_id 生成：wx_113</span>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; color:#192E32;" width="20%">密码前缀:</td>
+                <td><input type="text" name="userpwd" value="{$cfg.cfg_value}"></td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold; color:#192E32;" width="20%">随机密码位数:</td>
+                <td>
+                    <input type="text" name="rand" value="{$data.autoreg_rand}">
+                    <span> 密码前缀+随机密码 生成：wxch23159</span>
+                </td>
+
+            </tr>
+            <tr>
+                <td style="font-weight: bold;color:#192E32;">状态:</td>
+                <td>
+                    <input type="radio" name="state" value="1" {if $data.state==1}checked="checked" {/if}/>开启
+                    <input type="radio" name="state" value="0" {if $data.state==0}checked="checked" {/if}/>关闭
+
+                    <input type="hidden" name="tpl" value="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value=" 确定 " class="button"></td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+</div>
+
+<script language="JavaScript">
+    document.onmousemove = function (e) {
+        var obj = Utils.srcElement(e);
+        if (typeof(obj.onclick) == 'function' && obj.onclick.toString().indexOf('listTable.edit') != -1) {
+            obj.title = '点击修改内容';
+            obj.style.cssText = 'background: #278296;';
+            obj.onmouseout = function (e) {
+                this.style.cssText = '';
+            }
+        }
+        else if (typeof(obj.href) != 'undefined' && obj.href.indexOf('listTable.sort') != -1) {
+            obj.title = '点击对列表排序';
+        }
+    }
+    var MyTodolist;
+    function showTodoList(adminid) {
+        if (!MyTodolist) {
+            var global = $import("../js/global.js", "js");
+            global.onload = global.onreadystatechange = function () {
+                if (this.readyState && this.readyState == "loading")return;
+                var md5 = $import("js/md5.js", "js");
+                md5.onload = md5.onreadystatechange = function () {
+                    if (this.readyState && this.readyState == "loading")return;
+                    var todolist = $import("js/todolist.js", "js");
+                    todolist.onload = todolist.onreadystatechange = function () {
+                        if (this.readyState && this.readyState == "loading")return;
+                        MyTodolist = new Todolist();
+                        MyTodolist.show();
+                    }
+                }
+            }
+        }
+        else {
+            if (MyTodolist.visibility) {
+                MyTodolist.hide();
+            }
+            else {
+                MyTodolist.show();
+            }
+        }
+    }
+
+    if (Browser.isIE) {
+        onscroll = function () {
+            document.getElementById('popMsg').style.top = (document.body.scrollTop + document.body.clientHeight - document.getElementById('popMsg').offsetHeight) + "px";
+        }
+    }
+
+    if (document.getElementById("listDiv")) {
+        document.getElementById("listDiv").onmouseover = function (e) {
+            obj = Utils.srcElement(e);
+
+            if (obj) {
+                if (obj.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode;
+                else if (obj.parentNode.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode.parentNode;
+                else return;
+
+                for (i = 0; i < row.cells.length; i++) {
+                    if (row.cells[i].tagName != "TH") row.cells[i].style.backgroundColor = '#F4FAFB';
+                }
+            }
+
+        }
+
+        document.getElementById("listDiv").onmouseout = function (e) {
+            obj = Utils.srcElement(e);
+
+            if (obj) {
+                if (obj.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode;
+                else if (obj.parentNode.parentNode.tagName.toLowerCase() == "tr") row = obj.parentNode.parentNode;
+                else return;
+
+                for (i = 0; i < row.cells.length; i++) {
+                    if (row.cells[i].tagName != "TH") row.cells[i].style.backgroundColor = '#FFF';
+                }
+            }
+        }
+
+        document.getElementById("listDiv").onclick = function (e) {
+            var obj = Utils.srcElement(e);
+
+            if (obj.tagName == "INPUT" && obj.type == "checkbox") {
+                if (!document.forms['listForm']) {
+                    return;
+                }
+                var nodes = document.forms['listForm'].elements;
+                var checked = false;
+
+                for (i = 0; i < nodes.length; i++) {
+                    if (nodes[i].checked) {
+                        checked = true;
+                        break;
+                    }
+                }
+
+                if (document.getElementById("btnSubmit")) {
+                    document.getElementById("btnSubmit").disabled = !checked;
+                }
+                for (i = 1; i <= 10; i++) {
+                    if (document.getElementById("btnSubmit" + i)) {
+                        document.getElementById("btnSubmit" + i).disabled = !checked;
+                    }
+                }
+            }
+        }
+
+    }
+</script>
+{include file="wxch_pagefooter.htm"}
+</body>
+</html>

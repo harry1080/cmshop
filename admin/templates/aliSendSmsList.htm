@@ -1,0 +1,27 @@
+{include file="pageheader.htm"}
+<div class="list-div" id="listDiv">
+
+    <table cellspacing='1' cellpadding='3' id='list-table'>
+        <tr>
+            <th>id</th>
+            <th>标签</th>
+            <th>调用</th>
+            <th>名字</th>
+            <th>模板</th>
+            <th>操作</th>
+        </tr>
+        {foreach from=$list item=item}
+        <tr>
+            <td align="center" width="40px">{$item.id}</td>
+            <td align="center">{$item.dayu_tag}</td>
+            <td align="center">{$item.dayu_local}</td>
+            <td align="center">{$item.dayu_name}</td>
+            <td align="center">{$item.dayu_note}</td>
+            <td align="center">
+                <a href="aliSendSms.php?act=aliSendSmsEdit&id={$item.id}" title="{$lang.aliSendSmsEdit}"><img src="images/icon_edit.gif" border="0" height="16" width="16"></a>&nbsp;&nbsp;
+            </td>
+        </tr>
+        {/foreach}
+    </table>
+</div>
+{include file="pagefooter.htm"}

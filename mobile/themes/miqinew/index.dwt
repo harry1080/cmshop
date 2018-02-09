@@ -1,0 +1,192 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{$page_title}</title>
+    <meta name="keywords" content="{$keywords}">
+    <meta name="description" content="{$description}">
+
+    <script>
+        var imagePath = "{$ectouch_themes}/images/"
+    </script>
+    <link href="{$ectouch_themes}/css/vmcss.css?20170421" rel="stylesheet" type="text/css">
+    <link href="{$ectouch_themes}/images/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="{$ectouch_themes}/css/main.css?20160326" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{$ectouch_themes}/css/swiper.min.css">
+</head>
+
+
+<body style="">
+
+<div class="index-top">
+    <!-- 21030531-头部-start -->
+    <header class="header" id="index-header">
+        <!--  <section class="logo">
+            <a id="index-href" href="/">
+                <img id="index-img" src="">
+            </a>
+        </section> -->
+        <!-- 21030531-logo-end -->
+
+        <section class="search">
+            <a id="indexSearch" href="search.php"
+               onclick="_hmt.push(['_trackEvent', 'click icon3', 'click', '记录【搜索】按钮的点击次数'])">
+                <input type="text" placeholder="中移动路由器" readonly="readonly">
+            </a>
+        </section>
+
+        <section class="shortcut">
+            <ul>
+
+                <li class="hide">
+                    <a id="loginIcon" class="icon-login" title="登录" href="user.php"><span>登录</span></a>
+                </li>
+            </ul>
+        </section>
+    </header>
+    <!-- 21030531-头部-start -->
+</div>
+
+
+<section class="pro-gallery" style="height:7.6em;">
+    <div id="slider-huawei" class="swiper-container swiper-container-horizontal swiper-container-android">
+        <ul class="swiper-wrapper swiper-slide-prev">
+
+            <!--{foreach from=$ads item=ad}-->
+
+            <li class="swiper-slide" style="width: 360px;" data-swiper-slide-index="{$key}">
+                <a href="{$ad.ad_link}">
+                    <img src="data/afficheimg/{$ad.ad_code}"  onerror="javascript:this.src='{$ectouch_themes}/images/mask.png'">
+                </a>
+            </li>
+            <!--{/foreach}-->
+
+        </ul>
+    </div>
+    <nav class="swiper-pagination-white swiper-pagination-clickable swiper-pagination-bullets" id="sliderNav-huawei">
+        <!--{foreach from=$ads item=ad}-->
+        <span class="swiper-pagination-bullet"></span>
+        <!--{/foreach}-->
+    </nav>
+</section>
+<!-- 20160328-华为子频道首页轮播图广告-end -->
+
+
+<!-- 20160328-华为子频道首页宫格菜单-start -->
+<section class="quicklink">
+    <ul class="clearfix">
+        <!-- {foreach name=nav_middle_list from=$navigator_list.middle item=nav} -->
+        <!-- {if $smarty.foreach.nav_middle_list.index < 5 } -->
+        <li>
+            <a href="{$nav.url}" {if $nav.opennew eq 1} target="_blank"{/if} >
+                <i><img src="{$nav.pic}" width="50" height="50"
+                        onerror="javascript:this.src='{$ectouch_themes}/images/mask.png'"></i>
+                <p>{$nav.name}</p>
+            </a>
+        </li>
+
+        <!-- {/if} -->
+        <!-- {/foreach} -->
+
+
+    </ul>
+</section>
+<!-- 20160328-华为子频道首页宫格菜单-end -->
+
+<!-- 20160328-华为子频道首页按钮对称广告图-start -->
+<section class="channel-floor">
+    <div class="hot-area">
+        <div class="b">
+            <ul>
+                <li><a href="https://msale.vmall.com/hwmate10.html"><img
+                                src="https://res.vmallres.com/pimages//sale/2017-11/20171114201730217.jpg"
+                                title="移动端小图.jpg" style="float:none;"></a></li>
+                <li><a href="https://m.vmall.com/product/879920339.html"><img
+                                src="https://res.vmallres.com/pimages//sale/2017-12/20171207172216866.jpg" title="4.jpg"
+                                style="float:none;"></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- 20160328-华为子频道首页按钮对称广告图-end -->
+
+<!-- 20160328-华为子频道首页区域行-start -->
+<!-- 样式5：一行两列 -->
+
+<section class="channel-floor channel-floor-hw channel-floor-list3">
+    <header class="h">
+        <h3><span>精品推荐</span></h3>
+    </header>
+    <div class="b">
+        <!--{foreach from=$best_goods item=goods name=best_goods}-->
+            <!--{if $smarty.foreach.best_goods.index%3 eq 0 }-->
+            <ul>
+            <!--{/if}-->
+            <li>
+                <a href="{$goods.url}">
+                    <p class="p-img">
+                        <img src="/{$goods.goods_img}" width="480" height="480"  onerror="javascript:this.src='{$ectouch_themes}/images/mask.png'">
+                        <i class="icon-tag">
+                            <img src="https://res0.vmallres.com/pimages//tag/87/1489666525347.png&#10;">
+                        </i>
+                    </p>
+                    <p class="p-name">{$goods.name}</p>
+                    <p class="p-promotion">{$goods.brief}</p>
+                    <p class="p-price"><b>{$goods.shop_price}</b></p>
+                </a>
+            </li>
+            <!--{if $smarty.foreach.best_goods.index%3 eq 2 }-->
+                </ul>
+            <!--{/if}-->
+        <!--{/foreach}-->
+
+
+    </div>
+</section>
+<!-- 样式5：一行两列 -->
+<section class="channel-floor channel-floor-hw channel-floor-list2" style="margin-bottom: 80px">
+    <header class="h">
+        <h3><span>新品推荐</span></h3>
+    </header>
+    <div class="b">
+        <!--{foreach from=$new_goods item=goods name=best_goods}-->
+            <!--{if $smarty.foreach.best_goods.index%3 eq 0 }-->
+                <ul>
+            <!--{/if}-->
+            <li>
+                <a href="{$goods.url}">
+                    <p class="p-img">
+                        <img src="/{$goods.thumb}" width="480" height="480">
+                        <i class="icon-tag">
+                            <img src="https://res0.vmallres.com/pimages//tag/87/1489666525347.png&#10;">
+                        </i>
+                    </p>
+                    <p class="p-name">{$goods.name}</p>
+                    <p class="p-promotion">{$goods.brief}</p>
+                    <p class="p-price"><b>{$goods.shop_price}</b></p>
+                </a>
+            </li>
+            <!--{if $smarty.foreach.best_goods.index%3 eq 2 }-->
+                </ul>
+            <!--{/if}-->
+        <!--{/foreach}-->
+    </div>
+</section>
+
+
+<!-- #BeginLibraryItem "/library/my_page_footer.lbi" --><!-- #EndLibraryItem -->
+<!-- 20160328-华为子频道首页区域行-end -->
+
+<!-- 20160328-华为子频道首页回顶部-start -->
+<section class="hungBar"><a href="javascript:scroll(0, 0);" class="button-top"><span>返回顶部</span></a></section>
+<!-- 20160328-华为子频道首页回顶部-end -->
+
+<script src="{$ectouch_themes}/js/ecWap.js?20170316"></script>
+<script src="{$ectouch_themes}/js/huawei_index.js?20170426"></script>
+<script src="https://res9.vmallres.com/nwap/20171124/js/echannelApp/cart/cartNew/dist/cartSys.min.js?20170729"></script>
+
+
+
+</body>
+</html>

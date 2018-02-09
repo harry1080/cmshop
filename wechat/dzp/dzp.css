@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(images/bg.png) repeat-x;
+    background-size: cover;
+}
+
+.grid {
+    width: 320px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#banner {
+    /*margin-top: 20px;*/
+    /*background: url(images/zhuanbg.png) no-repeat;*/
+    /*background-size: 320px auto;*/
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+#banner .inner {
+    width: 320px;
+    height: 320px;
+    background: url(images/zhuanpan.png) no-repeat;
+    margin: 0px auto;
+    background-size: 320px auto;
+    position: relative;
+}
+
+#banner .inner  #zhen {
+    position: absolute;
+    height: 120px;
+    width: 95px;
+    margin: 0px auto;
+    top:90px;
+    left:112px;
+    background: url(images/zhizhen.png) no-repeat;
+    background-size: 95px auto;
+
+}
+.grid .jifen{
+    height: 55px;
+    width: 300px;
+    margin: 25px auto;
+    background: url(images/jifen.png) no-repeat;
+    background-size: 300px auto;
+
+}
+.grid .jifen .num{
+    float: right;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+.grid .gift{
+    height: 55px;
+    width: 300px;
+    margin: 25px auto;
+    background: url(images/gift.png) no-repeat;
+    background-size: 300px auto;
+
+}
+.contion{
+    background-color: #FF5959;
+}
+.block {
+    background-color: #FF7F7E;
+    border: 2px solid #306931;
+    margin: 20px 10px 10px 10px;
+    border-radius: 8px;
+    padding: 8px;
+    position: relative;
+    font-size: 12px;
+}
+
+.block .title {
+    font-size: 16px;
+    line-height: 24px;
+    background: url(images/tit.png) no-repeat;
+    padding-left: 7px;
+    width: 123px;
+    color: #fff;
+    height: 24px;
+    -webkit-background-size: 123px auto;
+    background-size: 123px auto;
+}
+
+.block p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0, 0, 0, .4);
+    display: none;
+}
+
+#dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 276px;
+    margin-left: -150px;
+    margin-top: -50px;
+
+    border: 2px solid #ff2650;
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+    z-index: 6;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px
+}
+
+#dialog.yes {
+    color: #900;
+    background-image: url(images/y.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100px auto;
+    background-size: 100px auto;
+}
+
+#dialog.yes a {
+    display: block;
+}
+
+#dialog.no {
+    color: #333;
+}
+
+#dialog.no button {
+    display: block;
+}
+
+#content {
+    text-align: center;
+}
+
+#dialog button, #dialog a {
+    display: none;
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    height: 30px;
+    width: 80px;
+    line-height: 30px;
+    margin-left: -40px;
+    background-color: #ff1c21;
+    border: none;
+    color: #fff;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.jilu {
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.jilu li {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}

@@ -1,0 +1,1012 @@
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 09:58:13',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'YKmikuE704nMbo1Kz/H7/LU+R5zCI8dzp7J28NuhwwE8Tbw5TicFPkmcAEjAyr5jPJFdanjWWcc/KsWRXbINO4zwmPXytapLCOi/m0Di2W0dT5S25GBxfRUB6uoXmdG0jqECcowNVAWSKsMYbcaCyk/D/Um3+sxHr+nl4NfKmOk=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 09:58:13',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'YKmikuE704nMbo1Kz/H7/LU+R5zCI8dzp7J28NuhwwE8Tbw5TicFPkmcAEjAyr5jPJFdanjWWcc/KsWRXbINO4zwmPXytapLCOi/m0Di2W0dT5S25GBxfRUB6uoXmdG0jqECcowNVAWSKsMYbcaCyk/D/Um3+sxHr+nl4NfKmOk=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 09:58:10
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+  'code' => 'alipaywap',
+  'total_amount' => '0.01',
+  'timestamp' => '2017-04-14 09:58:14',
+  'sign' => 'pugA5NeXzhOI925RtbcWQd8lg6/j9qQuJKUF3/OkrW+udpUUCKOe9O5bohGHzY0CwJ127TZbcw8YTc1h2cAD1+v21mbVzLlBGpbZ62bszHrVT0NK5Xsy8cN7BLHUBqeS93KVsDJTJn1nQsrzp89HGPH2HhgsN/DJ21CWbH0NCvs=',
+  'trade_no' => '2017041421001004070204667044',
+  'sign_type' => 'RSA',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'seller_id' => '2088121905285245',
+  'method' => 'alipay.trade.wap.pay.return',
+  'app_id' => '2017040506559385',
+  'out_trade_no' => '2017041461924168',
+  'version' => '1.0',
+)
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+)
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+  'code' => 'alipaywap',
+  'total_amount' => '0.01',
+  'timestamp' => '2017-04-14 09:58:14',
+  'sign' => 'pugA5NeXzhOI925RtbcWQd8lg6/j9qQuJKUF3/OkrW+udpUUCKOe9O5bohGHzY0CwJ127TZbcw8YTc1h2cAD1+v21mbVzLlBGpbZ62bszHrVT0NK5Xsy8cN7BLHUBqeS93KVsDJTJn1nQsrzp89HGPH2HhgsN/DJ21CWbH0NCvs=',
+  'trade_no' => '2017041421001004070204667044',
+  'sign_type' => 'RSA',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'seller_id' => '2088121905285245',
+  'method' => 'alipay.trade.wap.pay.return',
+  'app_id' => '2017040506559385',
+  'out_trade_no' => '2017041461924168',
+  'version' => '1.0',
+)
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+)
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 09:58:12
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:05:34',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'ewKGJm12k08nS8U8vEGS72ynnsrSxtpL1VKdbt31mwbU32QCe3MElrkjqEHvYqxtZjbixXzGmyOMrj7Sf+z+aoG+TaYZw5HuRG0FP+dT+HVP5lVGM5vRTUkxrBEnRa3ihmKQYMATr7V4qIsAA5LK1TOsIFANyEChW9zhfzY8gHQ=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:05:34',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'ewKGJm12k08nS8U8vEGS72ynnsrSxtpL1VKdbt31mwbU32QCe3MElrkjqEHvYqxtZjbixXzGmyOMrj7Sf+z+aoG+TaYZw5HuRG0FP+dT+HVP5lVGM5vRTUkxrBEnRa3ihmKQYMATr7V4qIsAA5LK1TOsIFANyEChW9zhfzY8gHQ=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:05:30
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:12:48',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'JgVmqZizMKi1OFh8N1g+GGxm/ENKzat2RaemAH5g94sB5gljKjWWbt7YsMEUoo1cz5y4rrHrnEPEk+0aA5l/Xb/fqR6sjL5Ud4RDEZziG3spR4J5wMDwTI5linU6nXO/FMsuqsIsL4AEjUt3PrmgZ3SUktf/AoQctYQmz1MgzKs=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:12:48',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'JgVmqZizMKi1OFh8N1g+GGxm/ENKzat2RaemAH5g94sB5gljKjWWbt7YsMEUoo1cz5y4rrHrnEPEk+0aA5l/Xb/fqR6sjL5Ud4RDEZziG3spR4J5wMDwTI5linU6nXO/FMsuqsIsL4AEjUt3PrmgZ3SUktf/AoQctYQmz1MgzKs=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:12:45
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:23:35',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'bVCStK/tRzPdEshN8Gjq+RwiPwCltKAq9i16Ovrt8TG/6a3nU7CSPrDFuG1VWUmhSwsvToGaSLanSJ7BgPz5meY2YXvLvPVt29krI+yy2lETn54nNZg640ss/UQ40b4R6yqIAcCGo2C+GaU8cRq1ZbQiM9EAjvPJfrLNkC7GfLY=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:23:35',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'bVCStK/tRzPdEshN8Gjq+RwiPwCltKAq9i16Ovrt8TG/6a3nU7CSPrDFuG1VWUmhSwsvToGaSLanSJ7BgPz5meY2YXvLvPVt29krI+yy2lETn54nNZg640ss/UQ40b4R6yqIAcCGo2C+GaU8cRq1ZbQiM9EAjvPJfrLNkC7GfLY=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:23:31
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:26:21',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'jRdx03VCOYfDUrwnkgdhLtbeCYyAGUBsenLQQjgjrymMsij7Yy7WUTwHR1QAvvWlPQn77xO2NZoeMUTn2qzBk4cg4LxccFDIcK34p6B9PxRjaz62Q64ICar3b7G6ODDDQKefA7UCl3+aRm4f3r/TyGnX3e1pkcejUjZC+kNzjV8=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 10:26:21',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'jRdx03VCOYfDUrwnkgdhLtbeCYyAGUBsenLQQjgjrymMsij7Yy7WUTwHR1QAvvWlPQn77xO2NZoeMUTn2qzBk4cg4LxccFDIcK34p6B9PxRjaz62Q64ICar3b7G6ODDDQKefA7UCl3+aRm4f3r/TyGnX3e1pkcejUjZC+kNzjV8=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 10:26:17
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 11:22:27',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'jpz2i0FAdsinzKMdJgY1Xc/hhVs+oZbH5W6rLZR5WC5H5Np3kOo+BE7+Ngdum6oFD1A69h8NyvhQtWwuXeQJx8jHwThFh8/3tf41v5jgTbw1Js2sm3T/on+c9DAzalC4CVU5xbT1wbp7YynTW73P58Knp62hae+JV910dG4j5eo=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 11:22:27',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'jpz2i0FAdsinzKMdJgY1Xc/hhVs+oZbH5W6rLZR5WC5H5Np3kOo+BE7+Ngdum6oFD1A69h8NyvhQtWwuXeQJx8jHwThFh8/3tf41v5jgTbw1Js2sm3T/on+c9DAzalC4CVU5xbT1wbp7YynTW73P58Knp62hae+JV910dG4j5eo=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 11:22:23
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 12:25:15',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'f+7WZk/79wS0lsQv5TfijCwGXoAbPjIce/Fd8pyMgOAQE3sUgEwB0oJoPBHyQcYE8gMVg9NGvHd9zX2reFXqiAaFeOD3mwFqogBPIUUb/j7kzUqa3lx2vLZEnJkTJEnA02/dR1+EeumosOLbk0u2Y70cZJSHr8mFsmxjrRrC0Cw=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 12:25:15',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'f+7WZk/79wS0lsQv5TfijCwGXoAbPjIce/Fd8pyMgOAQE3sUgEwB0oJoPBHyQcYE8gMVg9NGvHd9zX2reFXqiAaFeOD3mwFqogBPIUUb/j7kzUqa3lx2vLZEnJkTJEnA02/dR1+EeumosOLbk0u2Y70cZJSHr8mFsmxjrRrC0Cw=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 12:25:11
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 13:22:29',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'uQFO763jWGeejEcsvI5UI9nAsNk4wL5CbUyzwOH2zKZqKva6Nh8C3jYlqnNh23nGwGzbnzFLFbZwy3Gj1Lo5L8E71QQbbpQahHgXsGPgS00BskE3dDlRv7/HOWedrbzQcSp40be5tYKEF3Z2oPKsM4EWd5HrnykPVc3pOEWecPU=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 13:22:29',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'uQFO763jWGeejEcsvI5UI9nAsNk4wL5CbUyzwOH2zKZqKva6Nh8C3jYlqnNh23nGwGzbnzFLFbZwy3Gj1Lo5L8E71QQbbpQahHgXsGPgS00BskE3dDlRv7/HOWedrbzQcSp40be5tYKEF3Z2oPKsM4EWd5HrnykPVc3pOEWecPU=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 13:22:25
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+  'code' => 'alipaywap',
+  'total_amount' => '0.01',
+  'timestamp' => '2017-04-14 09:58:14',
+  'sign' => 'pugA5NeXzhOI925RtbcWQd8lg6/j9qQuJKUF3/OkrW+udpUUCKOe9O5bohGHzY0CwJ127TZbcw8YTc1h2cAD1+v21mbVzLlBGpbZ62bszHrVT0NK5Xsy8cN7BLHUBqeS93KVsDJTJn1nQsrzp89HGPH2HhgsN/DJ21CWbH0NCvs=',
+  'trade_no' => '2017041421001004070204667044',
+  'sign_type' => 'RSA',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'seller_id' => '2088121905285245',
+  'method' => 'alipay.trade.wap.pay.return',
+  'app_id' => '2017040506559385',
+  'out_trade_no' => '2017041461924168',
+  'version' => '1.0',
+)
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+)
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+  'code' => 'alipaywap',
+  'total_amount' => '0.01',
+  'timestamp' => '2017-04-14 09:58:14',
+  'sign' => 'pugA5NeXzhOI925RtbcWQd8lg6/j9qQuJKUF3/OkrW+udpUUCKOe9O5bohGHzY0CwJ127TZbcw8YTc1h2cAD1+v21mbVzLlBGpbZ62bszHrVT0NK5Xsy8cN7BLHUBqeS93KVsDJTJn1nQsrzp89HGPH2HhgsN/DJ21CWbH0NCvs=',
+  'trade_no' => '2017041421001004070204667044',
+  'sign_type' => 'RSA',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'seller_id' => '2088121905285245',
+  'method' => 'alipay.trade.wap.pay.return',
+  'app_id' => '2017040506559385',
+  'out_trade_no' => '2017041461924168',
+  'version' => '1.0',
+)
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+)
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 13:29:12
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 18:26:32',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'WPNKkPKm1tNcJFIPK4SBjI+5tkef/HXrsqiqKIdTOVpwB7tqgXGsCaX4WxRwr8Cf/G3i0iqBFLuma4ft5Mnc/HpSRLRDZGOwNXVOpeRSPeqlookGkoat0yA+vjgJJ3sQTBaQhC/D3ObewI07JCLBJAoNgBY/bIZ1OrQqTFJ1OiQ=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 18:26:32',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'WPNKkPKm1tNcJFIPK4SBjI+5tkef/HXrsqiqKIdTOVpwB7tqgXGsCaX4WxRwr8Cf/G3i0iqBFLuma4ft5Mnc/HpSRLRDZGOwNXVOpeRSPeqlookGkoat0yA+vjgJJ3sQTBaQhC/D3ObewI07JCLBJAoNgBY/bIZ1OrQqTFJ1OiQ=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 18:26:27
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 19:24:36',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'l9FYQhEpMdFEZWh1VwJ/FNukAkuLb5tyFv8UAQLUSa2iihgoP7pWaWf+cRMXUzSUGsnLkUJOSIV7EYTzYujiXkz2dpeaf2Fr1Acy9etN9qIXkoLu3VvhL9vIosbPevRKQxzAxMFu5x1sSkBlRK/uC1rtwXhc8kvozJjd5knknQ8=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-14 19:24:36',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'l9FYQhEpMdFEZWh1VwJ/FNukAkuLb5tyFv8UAQLUSa2iihgoP7pWaWf+cRMXUzSUGsnLkUJOSIV7EYTzYujiXkz2dpeaf2Fr1Acy9etN9qIXkoLu3VvhL9vIosbPevRKQxzAxMFu5x1sSkBlRK/uC1rtwXhc8kvozJjd5knknQ8=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP verify_result failed
+执行日期：2017-04-14 19:24:32
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-15 09:26:48',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'ubod68S+6SMsoY3kcKN0ppAaQ9h5/c9o3ECD0yxki1MGARyyP8i9UL9F0d0YiZdL9aFVw0OD9hkz8aTHijoqc6azdWCme5SL/nZNir0r5USWMTf7Zz380bkCu7qZop66mAxBe1jweuuklNDfQsezOdrMX4XPk/yuMnbH8tX5zak=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP verify_result failed
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.02',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204583698',
+  'body' => 'test',
+  'notify_time' => '2017-04-15 09:26:48',
+  'subject' => '2017041472625',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.02',
+  'out_trade_no' => '2017041472625167',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:01:55',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'ubod68S+6SMsoY3kcKN0ppAaQ9h5/c9o3ECD0yxki1MGARyyP8i9UL9F0d0YiZdL9aFVw0OD9hkz8aTHijoqc6azdWCme5SL/nZNir0r5USWMTf7Zz380bkCu7qZop66mAxBe1jweuuklNDfQsezOdrMX4XPk/yuMnbH8tX5zak=',
+  'gmt_create' => '2017-04-14 09:01:55',
+  'buyer_pay_amount' => '0.02',
+  'receipt_amount' => '0.02',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.02\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '571bb17990e8ce4b9154672b72776e0gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP verify_result failed
+执行日期：2017-04-15 09:26:43
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-15 10:23:20',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'Zt1n9xXIWW8OATHx6sWMeHNFsjaxLnc4DMANMEZvsc2STsPDmphsnr6YIWUZBclwvI9Li/SKzTsAD1Gq8smHj6a0e1eAL3BqHGebZ6IQb6cdbGMsL+d8+rQJknI+ljsRaqm8CdvpQ5054XUuVYZXe7YsDRObt2CafxXkXvOpJOc=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP verify_result failed
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP verify_notify failed
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP GET:传递过来的GET_XML
+array (
+)
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP POST:传递过来的POST_XML
+array (
+  'total_amount' => '0.01',
+  'buyer_id' => '2088702006857072',
+  'trade_no' => '2017041421001004070204667044',
+  'body' => 'test',
+  'notify_time' => '2017-04-15 10:23:20',
+  'subject' => '2017041461924',
+  'sign_type' => 'RSA',
+  'buyer_logon_id' => 'ton***@163.com',
+  'auth_app_id' => '2017040506559385',
+  'charset' => 'UTF-8',
+  'notify_type' => 'trade_status_sync',
+  'invoice_amount' => '0.01',
+  'out_trade_no' => '2017041461924168',
+  'trade_status' => 'TRADE_SUCCESS',
+  'gmt_payment' => '2017-04-14 09:58:13',
+  'version' => '1.0',
+  'point_amount' => '0.00',
+  'sign' => 'Zt1n9xXIWW8OATHx6sWMeHNFsjaxLnc4DMANMEZvsc2STsPDmphsnr6YIWUZBclwvI9Li/SKzTsAD1Gq8smHj6a0e1eAL3BqHGebZ6IQb6cdbGMsL+d8+rQJknI+ljsRaqm8CdvpQ5054XUuVYZXe7YsDRObt2CafxXkXvOpJOc=',
+  'gmt_create' => '2017-04-14 09:58:12',
+  'buyer_pay_amount' => '0.01',
+  'receipt_amount' => '0.01',
+  'fund_bill_list' => '[{\\"amount\\":\\"0.01\\",\\"fundChannel\\":\\"ALIPAYACCOUNT\\"}]',
+  'app_id' => '2017040506559385',
+  'seller_id' => '2088121905285245',
+  'notify_id' => '33bd79df67bc62aa7e46b13bfcd5425gji',
+  'seller_email' => 'zztt_zwzx@163.com',
+)
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP verify_result failed
+执行日期：2017-04-15 10:23:15
+ALIPAYWAP verify_notify failed

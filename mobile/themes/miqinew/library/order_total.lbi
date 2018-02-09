@@ -1,0 +1,132 @@
+
+<div id="ECS_ORDERTOTAL">
+
+    <dl>
+        <dd class="dd1">{$lang.goods_all_price}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b" style="font-size:14px">{$total.goods_price_formated}</font></dd>
+    </dl>
+
+    <!-- {if $smarty.session.user_id > 0 and ($config.use_integral or $config.use_bonus)} -->
+    <!-- {if $config.use_integral and $total.will_get_integral >0} 是否使用积分-->
+    <dl>
+        <dd class="dd1">积分奖励</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.will_get_integral}</font>{$points_name}</dd>
+    </dl>
+    <!-- {/if} -->
+    <!-- {if $config.use_bonus and $total.will_get_bonus >0} 是否使用红包-->
+    <dl>
+        <dd class="dd1">红包奖励</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.will_get_bonus}</font>{$lang.de}{$lang.bonus}</dd>
+    </dl>
+    <!-- {/if} -->
+    <!-- {/if} -->
+
+
+    <!-- {if $total.discount gt 0} 折扣 -->
+    <dl>
+        <dd class="dd1">{$lang.discount}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.discount_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.tax gt 0} 税收-->
+    <dl>
+        <dd class="dd1">{$lang.tax}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.tax_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+
+    <!-- {if $total.shipping_fee > 0} 配送费用 -->
+    <dl>
+        <dd class="dd1">{$lang.shipping_fee}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"> <font class="f4_b">{$total.shipping_fee_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.shipping_insure > 0} 保价费用 -->
+    <dl>
+        <dd class="dd1">{$lang.insure_fee}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3'><font class="f4_b">{$total.shipping_insure_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.pay_fee > 0} 支付费用 -->
+    <dl>
+        <dd class="dd1">{$lang.pay_fee}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"> <font class="f4_b">{$total.pay_fee_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.pack_fee > 0} 包装费用-->
+    <dl>
+        <dd class="dd1">{$lang.pack_fee}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.pack_fee_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.card_fee > 0} 贺卡费用-->
+    <dl>
+        <dd class="dd1">{$lang.card_fee}:</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"> <font class="f4_b">{$total.card_fee_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.surplus > 0 or $total.integral > 0 or $total.bonus > 0} 使用余额或积分或红包 -->
+    <!-- {if $total.surplus > 0} 使用余额 -->
+    <dl>
+        <dd class="dd1">{$lang.use_surplus}</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"> <font class="f4_b">{$total.surplus_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.integral > 0} 使用积分 -->
+    <dl>
+        <dd class="dd1">{$lang.use_integral}</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.integral_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+
+    <!-- {if $total.bonus > 0} 使用红包 -->
+    <dl>
+        <dd class="dd1">{$lang.use_bonus}</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.bonus_formated}</font></dd>
+    </dl>
+    <!-- {/if} -->
+    <!-- {/if} -->
+
+
+    <dl>
+        <dd class="dd1">{$lang.total_fee}</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"> <font class="f4_b" style="font-size:15px;font-weight:bolder;">{$total.amount_formated}</font></dd>
+    </dl>
+
+
+    <!--{if $is_group_buy }-->
+    <dl>
+        <dd>{$lang.notice_gb_order_amount}</dd>
+    </dl>
+    <!--{/if}-->
+
+    <!--{if $total.exchange_integral}消耗积分-->
+    <dl>
+        <dd class="dd1">{$lang.notice_eg_integral}</dd>
+        <dd class="dd2"></dd>
+        <dd class="dd3"><font class="f4_b">{$total.exchange_integral}</font></dd>
+    </dl>
+    <!--{/if}-->
+</div>

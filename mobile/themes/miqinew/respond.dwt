@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>{$lang.system_info}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<link href="{$ectouch_themes}/images/touch-icon.png" rel="apple-touch-icon-precomposed" />
+<link href="{$ectouch_themes}/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="{$ectouch_themes}/js/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="{$ectouch_themes}/ectouch.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="page">
+  <header id="header">
+    <div class="header_l"> <a class="ico_10" href="user.php"> 返回</a></div>
+    <h1> 提示消息 </h1>
+    <div class="header_r"> <a class="ico_08" href="index.php"> 删除 </a></div>
+  </header>
+</div>
+<div class="blank3"></div>
+<section class="order_box padd1 radius10">
+    <div class="table_box table_box3">
+        <dl>
+            <!--{if $status} -->
+            <dd style="color:green;text-align:center"><i class="fa fa-check fa-4x" aria-hidden="true" ></i>&nbsp;</dd>
+           <!--{else} -->
+            <dd style="color:red;text-align:center;"><i class="fa fa-remove fa-4x" aria-hidden="true" ></i>&nbsp;</dd>
+           <!--{/if} -->
+            <dd style="font-size:1rem;vertical-align:middle">{$message}</dd>
+        </dl>
+    </div>
+</section>
+<a href="{$shop_url}" class="c-btn3">{$lang.back_home}</a>
+<div style="width:1px; height:1px; overflow:hidden">{foreach from=$lang.p_y item=pv}{$pv}{/foreach}</div>
+</body>
+</html>

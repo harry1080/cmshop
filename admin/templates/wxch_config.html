@@ -1,0 +1,37 @@
+{include file="wxch_pageheader.htm"}
+
+<!-- start goods form -->
+<div class="tab-div">
+    <!-- tab bar -->
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front" id="general-tab">设置</span>
+        </p>
+    </div>
+    <!-- tab body -->
+    <div id="tabbody-div">
+        <form enctype="multipart/form-data" action="" method="post" name="theForm">
+            <!-- 通用信息 -->
+            <table id="general-table" align="center">
+                {foreach from=$wxchdata item=list}
+                <tr>
+                    <td class="label">{$list.title}：</td>
+                    <td>
+                        <label><input type="text" name="{$list.cfg_name}" value="{$list.cfg_value}"/></label>
+                        {if $list.cfg_name=='tianxin_url'}<a href="http://jingyan.baidu.com/article/63acb44ae5da2f61fdc17e7b.html" target="_blank">点击查看制作教程</a>{/if}
+                        {if $list.cfg_name=='murl'}默认是"mobile/"不用修改{/if}
+                        {if $list.cfg_name=='baseurl'}如："www.baidu.cn/"带上"/" {/if}
+                    </td>
+                </tr>
+                {/foreach}
+            </table>
+
+            <div class="button-div">
+                <input type="submit" value="{$lang.button_submit}" class="button"/>
+                <input type="reset" value="{$lang.button_reset}" class="button"/>
+            </div>
+            <input type="hidden" name="act" value="{$form_act}"/>
+        </form>
+    </div>
+</div>
+{include file="wxch_pagefooter.htm"}

@@ -1,0 +1,2323 @@
+-----------2017-01-09 09:39:44-----------------签名失败
+
+
+
+-----------2017-01-09 09:40:01-----------------签名失败
+
+
+
+-----------2017-01-09 09:40:19-----------------签名失败
+
+
+
+-----------2017-01-09 09:40:59-----------------签名失败
+
+
+
+-----------2017-01-09 09:43:58-----------------签名失败
+
+
+
+-----------2017-01-09 10:14:01-----------------签名失败
+
+
+
+-----------2017-01-09 10:44:11-----------------签名失败
+
+
+
+-----------2017-01-09 10:49:56-----------------签名失败
+
+
+
+-----------2017-01-09 10:50:08-----------------签名失败
+
+
+
+-----------2017-01-09 10:50:25-----------------签名失败
+
+
+
+-----------2017-01-09 10:51:03-----------------签名失败
+
+
+
+-----------2017-01-09 10:54:03-----------------签名失败
+
+
+
+-----------2017-01-09 11:14:11-----------------签名失败
+
+
+
+-----------2017-01-09 11:24:04-----------------签名失败
+
+
+
+-----------2017-01-09 11:44:19-----------------签名失败
+
+
+
+-----------2017-01-09 11:49:35-----------------签名失败
+
+
+
+-----------2017-01-09 11:49:44-----------------签名失败
+
+
+
+-----------2017-01-09 11:50:01-----------------签名失败
+
+
+
+-----------2017-01-09 11:50:32-----------------签名失败
+
+
+
+-----------2017-01-09 11:53:44-----------------签名失败
+
+
+
+-----------2017-01-09 11:54:05-----------------签名失败
+
+
+
+-----------2017-01-09 12:23:41-----------------签名失败
+
+
+
+-----------2017-01-09 12:24:06-----------------签名失败
+
+
+
+-----------2017-01-09 12:44:19-----------------签名失败
+
+
+
+-----------2017-01-09 12:53:44-----------------签名失败
+
+
+
+-----------2017-01-09 12:54:09-----------------签名失败
+
+
+
+-----------2017-01-09 13:23:46-----------------签名失败
+
+
+
+-----------2017-01-09 13:53:52-----------------签名失败
+
+
+
+-----------2017-01-09 13:54:11-----------------签名失败
+
+
+
+-----------2017-01-09 14:36:25-----------------签名失败
+
+
+
+-----------2017-01-09 14:36:40-----------------签名失败
+
+
+
+-----------2017-01-09 14:36:58-----------------签名失败
+
+
+
+-----------2017-01-09 14:37:29-----------------签名失败
+
+
+
+-----------2017-01-09 14:40:30-----------------签名失败
+
+
+
+-----------2017-01-09 14:53:54-----------------签名失败
+
+
+
+-----------2017-01-09 15:10:32-----------------签名失败
+
+
+
+-----------2017-01-09 15:34:19-----------------签名失败
+
+
+
+-----------2017-01-09 15:34:33-----------------签名失败
+
+
+
+-----------2017-01-09 15:34:49-----------------签名失败
+
+
+
+-----------2017-01-09 15:35:21-----------------签名失败
+
+
+
+-----------2017-01-09 15:38:35-----------------
+
+
+-----------2017-01-09 15:38:35-----------------签名失败
+
+
+
+-----------2017-01-09 15:40:37-----------------
+
+
+-----------2017-01-09 15:40:37-----------------签名失败
+
+
+
+-----------2017-01-09 15:47:57-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 15:47:57-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 15:47:57-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 15:47:57-----------------Array
+
+
+-----------2017-01-09 15:47:57-----------------签名失败
+
+
+
+-----------2017-01-09 15:48:07-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 15:48:07-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 15:48:07-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 15:48:07-----------------Array
+
+
+-----------2017-01-09 15:48:07-----------------签名失败
+
+
+
+-----------2017-01-09 15:48:24-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 15:48:24-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 15:48:24-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 15:48:24-----------------Array
+
+
+-----------2017-01-09 15:48:24-----------------签名失败
+
+
+
+-----------2017-01-09 15:48:56-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 15:48:56-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 15:48:56-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 15:48:56-----------------Array
+
+
+-----------2017-01-09 15:48:56-----------------签名失败
+
+
+
+-----------2017-01-09 15:51:58-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 15:51:58-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 15:51:58-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 15:51:58-----------------Array
+
+
+-----------2017-01-09 15:51:58-----------------签名失败
+
+
+
+-----------2017-01-09 16:08:35-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[112]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[07rn0z3rd609zjtbw3ktefkgsrdprmvu]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010972850]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[E74D15089335AD2ACF560CEAE0603005]]></sign>
+<time_end><![CDATA[20170109153418]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095738748837]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 16:08:35-----------------E686953C8208CFFFE067DF0CB64B17CE
+
+
+-----------2017-01-09 16:08:35-----------------E74D15089335AD2ACF560CEAE0603005
+
+
+-----------2017-01-09 16:08:35-----------------Array
+
+
+-----------2017-01-09 16:08:35-----------------签名失败
+
+
+
+-----------2017-01-09 16:10:40-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[111]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[n66l3lkgibjz0wdsb5sp2rgns66qfql0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010935654]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BCD78A011BFCED999225B0DDB213C944]]></sign>
+<time_end><![CDATA[20170109143625]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095735065114]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 16:10:40-----------------BD95D3F31C7E1F878C950771F63DA0E4
+
+
+-----------2017-01-09 16:10:40-----------------BCD78A011BFCED999225B0DDB213C944
+
+
+-----------2017-01-09 16:10:40-----------------Array
+
+
+-----------2017-01-09 16:10:40-----------------签名失败
+
+
+
+-----------2017-01-09 16:22:07-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 16:22:07-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 16:22:07-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 16:22:07-----------------Array
+
+
+-----------2017-01-09 16:22:07-----------------签名失败
+
+
+
+-----------2017-01-09 16:38:36-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[112]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[07rn0z3rd609zjtbw3ktefkgsrdprmvu]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010972850]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[E74D15089335AD2ACF560CEAE0603005]]></sign>
+<time_end><![CDATA[20170109153418]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095738748837]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 16:38:36-----------------E686953C8208CFFFE067DF0CB64B17CE
+
+
+-----------2017-01-09 16:38:36-----------------E74D15089335AD2ACF560CEAE0603005
+
+
+-----------2017-01-09 16:38:36-----------------Array
+
+
+-----------2017-01-09 16:38:36-----------------签名失败
+
+
+
+-----------2017-01-09 16:40:42-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[111]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[n66l3lkgibjz0wdsb5sp2rgns66qfql0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010935654]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BCD78A011BFCED999225B0DDB213C944]]></sign>
+<time_end><![CDATA[20170109143625]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095735065114]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 16:40:42-----------------BD95D3F31C7E1F878C950771F63DA0E4
+
+
+-----------2017-01-09 16:40:42-----------------BCD78A011BFCED999225B0DDB213C944
+
+
+-----------2017-01-09 16:40:42-----------------Array
+
+
+-----------2017-01-09 16:40:42-----------------签名失败
+
+
+
+-----------2017-01-09 16:52:06-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 16:52:06-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 16:52:06-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 16:52:06-----------------Array
+
+
+-----------2017-01-09 16:52:06-----------------签名失败
+
+
+
+-----------2017-01-09 17:08:38-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[112]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[07rn0z3rd609zjtbw3ktefkgsrdprmvu]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010972850]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[E74D15089335AD2ACF560CEAE0603005]]></sign>
+<time_end><![CDATA[20170109153418]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095738748837]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 17:08:38-----------------E686953C8208CFFFE067DF0CB64B17CE
+
+
+-----------2017-01-09 17:08:38-----------------E74D15089335AD2ACF560CEAE0603005
+
+
+-----------2017-01-09 17:08:38-----------------Array
+
+
+-----------2017-01-09 17:08:38-----------------签名失败
+
+
+
+-----------2017-01-09 17:22:08-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 17:22:08-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 17:22:08-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 17:22:08-----------------Array
+
+
+-----------2017-01-09 17:22:08-----------------签名失败
+
+
+
+-----------2017-01-09 17:38:42-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[112]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[07rn0z3rd609zjtbw3ktefkgsrdprmvu]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010972850]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[E74D15089335AD2ACF560CEAE0603005]]></sign>
+<time_end><![CDATA[20170109153418]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095738748837]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 17:38:42-----------------E686953C8208CFFFE067DF0CB64B17CE
+
+
+-----------2017-01-09 17:38:42-----------------E74D15089335AD2ACF560CEAE0603005
+
+
+-----------2017-01-09 17:38:42-----------------Array
+
+
+-----------2017-01-09 17:38:42-----------------签名失败
+
+
+
+-----------2017-01-09 17:40:44-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[111]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[n66l3lkgibjz0wdsb5sp2rgns66qfql0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010935654]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[BCD78A011BFCED999225B0DDB213C944]]></sign>
+<time_end><![CDATA[20170109143625]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095735065114]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 17:40:44-----------------BD95D3F31C7E1F878C950771F63DA0E4
+
+
+-----------2017-01-09 17:40:44-----------------BCD78A011BFCED999225B0DDB213C944
+
+
+-----------2017-01-09 17:40:44-----------------Array
+
+
+-----------2017-01-09 17:40:44-----------------签名失败
+
+
+
+-----------2017-01-09 17:52:10-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 17:52:10-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 17:52:10-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 17:52:10-----------------Array
+
+
+-----------2017-01-09 17:52:10-----------------签名失败
+
+
+
+-----------2017-01-09 18:38:43-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[112]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[07rn0z3rd609zjtbw3ktefkgsrdprmvu]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010972850]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[E74D15089335AD2ACF560CEAE0603005]]></sign>
+<time_end><![CDATA[20170109153418]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095738748837]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 18:38:43-----------------E686953C8208CFFFE067DF0CB64B17CE
+
+
+-----------2017-01-09 18:38:43-----------------E74D15089335AD2ACF560CEAE0603005
+
+
+-----------2017-01-09 18:38:43-----------------Array
+
+
+-----------2017-01-09 18:38:43-----------------签名失败
+
+
+
+-----------2017-01-09 18:52:10-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[113]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[k5w8lt1llvtn29wzk50itfdc3u97jgb3]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010975445]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[5F7257CE48181A3D0E487087ACDA819F]]></sign>
+<time_end><![CDATA[20170109154757]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095742645149]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 18:52:10-----------------231B2F30C16A4CCEBE84AC05D114639A
+
+
+-----------2017-01-09 18:52:10-----------------5F7257CE48181A3D0E487087ACDA819F
+
+
+-----------2017-01-09 18:52:10-----------------Array
+
+
+-----------2017-01-09 18:52:10-----------------签名失败
+
+
+
+-----------2017-01-09 21:09:32-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 21:09:32-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 21:09:32-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 21:09:32-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 21:09:32-----------------签名失败
+
+
+
+-----------2017-01-09 21:09:43-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 21:09:43-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 21:09:43-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 21:09:43-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 21:09:43-----------------签名失败
+
+
+
+-----------2017-01-09 21:10:00-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 21:10:00-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 21:10:00-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 21:10:00-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 21:10:00-----------------签名失败
+
+
+
+-----------2017-01-09 21:10:31-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 21:10:31-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 21:10:31-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 21:10:31-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 21:10:31-----------------签名失败
+
+
+
+-----------2017-01-09 21:13:33-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 21:13:33-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 21:13:33-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 21:13:33-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 21:13:33-----------------签名失败
+
+
+
+-----------2017-01-09 21:43:36-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 21:43:36-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 21:43:36-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 21:43:36-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 21:43:36-----------------签名失败
+
+
+
+-----------2017-01-09 22:13:40-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 22:13:40-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 22:13:40-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 22:13:40-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 22:13:40-----------------签名失败
+
+
+
+-----------2017-01-09 22:43:42-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 22:43:42-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 22:43:42-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 22:43:42-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 22:43:42-----------------签名失败
+
+
+
+-----------2017-01-09 23:13:43-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-09 23:13:43-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-09 23:13:43-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-09 23:13:43-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-09 23:13:43-----------------签名失败
+
+
+
+-----------2017-01-10 00:10:52-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 00:10:52-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 00:10:52-----------------3DDFEFAB45A8095E7ABE6D6296CE7B3B
+
+
+-----------2017-01-10 00:10:52-----------------9A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 00:10:52-----------------签名失败
+
+
+
+-----------2017-01-10 00:11:03-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 00:11:03-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 00:11:03-----------------3DDFEFAB45A8095E7ABE6D6296CE7B3B
+
+
+-----------2017-01-10 00:11:03-----------------9A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 00:11:03-----------------签名失败
+
+
+
+-----------2017-01-10 00:11:20-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 00:11:20-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 00:11:20-----------------3DDFEFAB45A8095E7ABE6D6296CE7B3B
+
+
+-----------2017-01-10 00:11:20-----------------9A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 00:11:20-----------------签名失败
+
+
+
+-----------2017-01-10 00:11:52-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 00:11:52-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 00:11:52-----------------3DDFEFAB45A8095E7ABE6D6296CE7B3B
+
+
+-----------2017-01-10 00:11:52-----------------9A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 00:11:52-----------------签名失败
+
+
+
+-----------2017-01-10 00:13:45-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 00:13:45-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[114]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[h3tvx9y8ee1s8nm5nmeydmsi39fky9de]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010941385]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[549F11CA4007BFD04BFA63C354A9514F]]></sign>
+<time_end><![CDATA[20170109210930]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095770389207]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 00:13:45-----------------F8F3285387B7AB86AA6F4B4A10CCD5A0
+
+
+-----------2017-01-10 00:13:45-----------------549F11CA4007BFD04BFA63C354A9514F
+
+
+-----------2017-01-10 00:13:45-----------------签名失败
+
+
+
+-----------2017-01-10 00:14:55-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 00:14:55-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 00:14:55-----------------3DDFEFAB45A8095E7ABE6D6296CE7B3B
+
+
+-----------2017-01-10 00:14:55-----------------9A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 00:14:55-----------------签名失败
+
+
+
+-----------2017-01-10 00:44:57-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 00:44:57-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 00:44:57-----------------3DDFEFAB45A8095E7ABE6D6296CE7B3B
+
+
+-----------2017-01-10 00:44:57-----------------9A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 00:44:57-----------------签名失败
+
+
+
+-----------2017-01-10 01:14:59-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 01:14:59-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 01:14:59-----------------3DDFEFAB45A8095E7ABE6D6296CE7B3B
+
+
+-----------2017-01-10 01:14:59-----------------9A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 01:14:59-----------------签名失败
+
+
+
+-----------2017-01-10 01:54:11-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 01:54:11-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[121]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[3jk1bvgwj06a6ttsry2jw8sd89q4r0gm]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005860]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[D2649F9C9B867A32D22951F45B05C957]]></sign>
+<time_end><![CDATA[20170110015004]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794571547]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 01:54:11-----------------36EB03049A74F749DE28AC22C461F423
+
+
+-----------2017-01-10 01:54:11-----------------D2649F9C9B867A32D22951F45B05C957
+
+
+-----------2017-01-10 01:54:11-----------------签名失败
+
+
+
+-----------2017-01-10 01:56:18-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 01:56:18-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 01:56:18-----------------10EA047CBD7A400A0EB809A25BF41666
+
+
+-----------2017-01-10 01:56:18-----------------81B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 01:56:18-----------------签名失败
+
+
+
+-----------2017-01-10 01:56:31-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 01:56:31-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 01:56:31-----------------10EA047CBD7A400A0EB809A25BF41666
+
+
+-----------2017-01-10 01:56:31-----------------81B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 01:56:31-----------------签名失败
+
+
+
+-----------2017-01-10 01:56:49-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 01:56:49-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 01:56:49-----------------10EA047CBD7A400A0EB809A25BF41666
+
+
+-----------2017-01-10 01:56:49-----------------81B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 01:56:49-----------------签名失败
+
+
+
+-----------2017-01-10 01:57:21-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 01:57:21-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 01:57:21-----------------10EA047CBD7A400A0EB809A25BF41666
+
+
+-----------2017-01-10 01:57:21-----------------81B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 01:57:21-----------------签名失败
+
+
+
+-----------2017-01-10 02:00:24-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 02:00:24-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 02:00:24-----------------10EA047CBD7A400A0EB809A25BF41666
+
+
+-----------2017-01-10 02:00:24-----------------81B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 02:00:24-----------------签名失败111111
+
+
+
+-----------2017-01-10 02:15:04-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 02:15:04-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 02:15:04-----------------
+
+
+-----------2017-01-10 02:15:04-----------------getSign22222F07BD9ED8EBD91BED173F63BE0FA2160
+
+
+-----------2017-01-10 02:15:04-----------------sign22229A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 02:15:04-----------------签名失败111111
+
+
+
+-----------2017-01-10 02:24:13-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 02:24:13-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[121]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[3jk1bvgwj06a6ttsry2jw8sd89q4r0gm]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005860]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[D2649F9C9B867A32D22951F45B05C957]]></sign>
+<time_end><![CDATA[20170110015004]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794571547]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 02:24:13-----------------
+
+
+-----------2017-01-10 02:24:13-----------------getSign22222E9B2DA6F76404716857AC88501CB370B
+
+
+-----------2017-01-10 02:24:13-----------------sign2222D2649F9C9B867A32D22951F45B05C957
+
+
+-----------2017-01-10 02:24:13-----------------签名失败111111
+
+
+
+-----------2017-01-10 02:30:26-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 02:30:26-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 02:30:26-----------------
+
+
+-----------2017-01-10 02:30:26-----------------getSign22222759FC58A78BA4C012C29C6B88CE7A3A3
+
+
+-----------2017-01-10 02:30:26-----------------sign222281B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 02:30:26-----------------签名失败111111
+
+
+
+-----------2017-01-10 02:43:25-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 02:43:25-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[123]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[0prafkfwtdypvpd61sfacyr81415ct9i]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005076]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[100FAE07AE166D3EBE82FBD0FA7C6C52]]></sign>
+<time_end><![CDATA[20170110020922]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798506450]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 02:43:25-----------------
+
+
+-----------2017-01-10 02:43:25-----------------getSign22222A9504121B13BA1B07E14053950DA9EED
+
+
+-----------2017-01-10 02:43:25-----------------sign2222100FAE07AE166D3EBE82FBD0FA7C6C52
+
+
+-----------2017-01-10 02:43:25-----------------签名失败111111
+
+
+
+-----------2017-01-10 02:54:15-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 02:54:15-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[121]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[3jk1bvgwj06a6ttsry2jw8sd89q4r0gm]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005860]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[D2649F9C9B867A32D22951F45B05C957]]></sign>
+<time_end><![CDATA[20170110015004]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794571547]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 02:54:15-----------------
+
+
+-----------2017-01-10 02:54:15-----------------getSign22222E9B2DA6F76404716857AC88501CB370B
+
+
+-----------2017-01-10 02:54:15-----------------sign2222D2649F9C9B867A32D22951F45B05C957
+
+
+-----------2017-01-10 02:54:15-----------------签名失败111111
+
+
+
+-----------2017-01-10 03:00:29-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 03:00:29-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 03:00:29-----------------
+
+
+-----------2017-01-10 03:00:29-----------------getSign22222759FC58A78BA4C012C29C6B88CE7A3A3
+
+
+-----------2017-01-10 03:00:29-----------------sign222281B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 03:00:29-----------------签名失败111111
+
+
+
+-----------2017-01-10 03:13:28-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 03:13:28-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[123]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[0prafkfwtdypvpd61sfacyr81415ct9i]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005076]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[100FAE07AE166D3EBE82FBD0FA7C6C52]]></sign>
+<time_end><![CDATA[20170110020922]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798506450]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 03:13:28-----------------
+
+
+-----------2017-01-10 03:13:28-----------------getSign22222A9504121B13BA1B07E14053950DA9EED
+
+
+-----------2017-01-10 03:13:28-----------------sign2222100FAE07AE166D3EBE82FBD0FA7C6C52
+
+
+-----------2017-01-10 03:13:28-----------------签名失败111111
+
+
+
+-----------2017-01-10 03:15:06-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 03:15:06-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[118]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[16dr1x6bamsn35zguahv9gttsud6xvc0]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017010913210]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[9A0F29F2BEAE2270D8637EF9FD8F60D5]]></sign>
+<time_end><![CDATA[20170110001052]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701095786449276]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 03:15:06-----------------
+
+
+-----------2017-01-10 03:15:06-----------------getSign22222F07BD9ED8EBD91BED173F63BE0FA2160
+
+
+-----------2017-01-10 03:15:06-----------------sign22229A0F29F2BEAE2270D8637EF9FD8F60D5
+
+
+-----------2017-01-10 03:15:06-----------------签名失败111111
+
+
+
+-----------2017-01-10 03:24:17-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 03:24:17-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[121]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[3jk1bvgwj06a6ttsry2jw8sd89q4r0gm]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005860]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[D2649F9C9B867A32D22951F45B05C957]]></sign>
+<time_end><![CDATA[20170110015004]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794571547]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 03:24:17-----------------
+
+
+-----------2017-01-10 03:24:17-----------------getSign22222E9B2DA6F76404716857AC88501CB370B
+
+
+-----------2017-01-10 03:24:17-----------------sign2222D2649F9C9B867A32D22951F45B05C957
+
+
+-----------2017-01-10 03:24:17-----------------签名失败111111
+
+
+
+-----------2017-01-10 03:30:31-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 03:30:31-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 03:30:31-----------------
+
+
+-----------2017-01-10 03:30:31-----------------getSign22222759FC58A78BA4C012C29C6B88CE7A3A3
+
+
+-----------2017-01-10 03:30:31-----------------sign222281B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 03:30:31-----------------签名失败111111
+
+
+
+-----------2017-01-10 03:43:31-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 03:43:31-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[123]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[0prafkfwtdypvpd61sfacyr81415ct9i]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005076]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[100FAE07AE166D3EBE82FBD0FA7C6C52]]></sign>
+<time_end><![CDATA[20170110020922]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798506450]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 03:43:31-----------------
+
+
+-----------2017-01-10 03:43:31-----------------getSign22222A9504121B13BA1B07E14053950DA9EED
+
+
+-----------2017-01-10 03:43:31-----------------sign2222100FAE07AE166D3EBE82FBD0FA7C6C52
+
+
+-----------2017-01-10 03:43:31-----------------签名失败111111
+
+
+
+-----------2017-01-10 03:54:19-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 03:54:19-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[121]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[3jk1bvgwj06a6ttsry2jw8sd89q4r0gm]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005860]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[D2649F9C9B867A32D22951F45B05C957]]></sign>
+<time_end><![CDATA[20170110015004]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794571547]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 03:54:19-----------------
+
+
+-----------2017-01-10 03:54:19-----------------getSign22222E9B2DA6F76404716857AC88501CB370B
+
+
+-----------2017-01-10 03:54:19-----------------sign2222D2649F9C9B867A32D22951F45B05C957
+
+
+-----------2017-01-10 03:54:19-----------------签名失败111111
+
+
+
+-----------2017-01-10 04:00:33-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 04:00:33-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 04:00:33-----------------
+
+
+-----------2017-01-10 04:00:33-----------------getSign22222759FC58A78BA4C012C29C6B88CE7A3A3
+
+
+-----------2017-01-10 04:00:33-----------------sign222281B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 04:00:33-----------------签名失败111111
+
+
+
+-----------2017-01-10 04:13:33-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 04:13:33-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[123]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[0prafkfwtdypvpd61sfacyr81415ct9i]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005076]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[100FAE07AE166D3EBE82FBD0FA7C6C52]]></sign>
+<time_end><![CDATA[20170110020922]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798506450]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 04:13:33-----------------
+
+
+-----------2017-01-10 04:13:33-----------------getSign22222A9504121B13BA1B07E14053950DA9EED
+
+
+-----------2017-01-10 04:13:33-----------------sign2222100FAE07AE166D3EBE82FBD0FA7C6C52
+
+
+-----------2017-01-10 04:13:33-----------------签名失败111111
+
+
+
+-----------2017-01-10 04:54:22-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 04:54:22-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[121]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[3jk1bvgwj06a6ttsry2jw8sd89q4r0gm]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005860]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[D2649F9C9B867A32D22951F45B05C957]]></sign>
+<time_end><![CDATA[20170110015004]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794571547]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 04:54:22-----------------
+
+
+-----------2017-01-10 04:54:22-----------------getSign22222E9B2DA6F76404716857AC88501CB370B
+
+
+-----------2017-01-10 04:54:22-----------------sign2222D2649F9C9B867A32D22951F45B05C957
+
+
+-----------2017-01-10 04:54:22-----------------签名失败111111
+
+
+
+-----------2017-01-10 05:00:35-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 05:00:35-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[122]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[tr3knwuh5nbnuexwbkq9en9ga1r6zemn]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011066945]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[81B584D362869ACB0B85D1CC8AAED64C]]></sign>
+<time_end><![CDATA[20170110015618]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105794647819]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 05:00:35-----------------
+
+
+-----------2017-01-10 05:00:35-----------------getSign22222759FC58A78BA4C012C29C6B88CE7A3A3
+
+
+-----------2017-01-10 05:00:35-----------------sign222281B584D362869ACB0B85D1CC8AAED64C
+
+
+-----------2017-01-10 05:00:35-----------------签名失败111111
+
+
+
+-----------2017-01-10 05:13:37-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 05:13:37-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[123]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[0prafkfwtdypvpd61sfacyr81415ct9i]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011005076]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[100FAE07AE166D3EBE82FBD0FA7C6C52]]></sign>
+<time_end><![CDATA[20170110020922]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798506450]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 05:13:37-----------------
+
+
+-----------2017-01-10 05:13:37-----------------getSign22222A9504121B13BA1B07E14053950DA9EED
+
+
+-----------2017-01-10 05:13:37-----------------sign2222100FAE07AE166D3EBE82FBD0FA7C6C52
+
+
+-----------2017-01-10 05:13:37-----------------签名失败111111
+
+
+
+-----------2017-01-10 08:03:47-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 08:03:47-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 08:03:55-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 08:03:55-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 08:04:13-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 08:04:13-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 08:04:45-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 08:04:45-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 08:07:48-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 08:07:48-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 08:37:51-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 08:37:51-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 09:07:53-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 09:07:53-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+
+-----------2017-01-10 09:37:55-----------------wx_new_qrcode.php---respond
+
+
+-----------2017-01-10 09:37:55-----------------<xml><appid><![CDATA[wxfb2d35da823285a0]]></appid>
+<attach><![CDATA[125]]></attach>
+<bank_type><![CDATA[CFT]]></bank_type>
+<cash_fee><![CDATA[2]]></cash_fee>
+<fee_type><![CDATA[CNY]]></fee_type>
+<is_subscribe><![CDATA[Y]]></is_subscribe>
+<mch_id><![CDATA[1342269701]]></mch_id>
+<nonce_str><![CDATA[ga6rq663a5uybopei7fdm9lxt0j1rohz]]></nonce_str>
+<openid><![CDATA[o_fypwHt4F0uJu-i8lheviEJ0AzE]]></openid>
+<out_trade_no><![CDATA[2017011051578]]></out_trade_no>
+<result_code><![CDATA[SUCCESS]]></result_code>
+<return_code><![CDATA[SUCCESS]]></return_code>
+<sign><![CDATA[892162684F1C6AA7595682DD0137974C]]></sign>
+<time_end><![CDATA[20170110080340]]></time_end>
+<total_fee>2</total_fee>
+<trade_type><![CDATA[JSAPI]]></trade_type>
+<transaction_id><![CDATA[4009752001201701105798167476]]></transaction_id>
+</xml>
+
+

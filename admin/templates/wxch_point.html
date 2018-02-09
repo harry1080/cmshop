@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>{$wxch_lang.cp_home}{if $wxch_lang.ur_here} - {$wxch_lang.ur_here} {/if}</title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="styles/general.css" rel="stylesheet" type="text/css"/>
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../js/transport.js"></script>
+    <script type="text/javascript" src="../../js/utils.js"></script>
+    <script type="text/javascript" src="../admin/js/common.js"></script>
+    <script type="text/javascript" src="../admin/js/listtable.js"></script>
+    <link href="../../js/calendar/calendar.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="../../js/calendar.php?lang=zh_cn"></script>
+    {insert_scripts files="./js/selectzone.js,./js/colorselector.js}
+</head>
+<body>
+<h1>
+    <span class="action-span1">
+        <a href="index.php?act=main">{$wxch_lang.cp_home}</a> </span>
+    <span id="search_id" class="action-span1"> - {$wxch_lang.ur_here}</span>
+
+    <div style="clear:both"></div>
+</h1>
+{if $warning}
+<ul style="padding:0; margin: 0; list-style-type:none; color: #CC0000;">
+    <li style="border: 1px solid #CC0000; background: #FFFFCC; padding: 10px; margin-bottom: 5px;">{$warning}</li>
+</ul>
+{/if}
+
+<!-- start goods form -->
+<div class="tab-div">
+    <!-- tab bar -->
+    <div id="tabbar-div">
+        <p>
+            <span class="tab-front" id="general-tab">设置</span>
+        </p>
+    </div>
+
+    <!-- tab body -->
+    <div id="tabbody-div">
+        <form enctype="multipart/form-data" action="" method="post" name="theForm">
+            <!-- 通用信息 -->
+            <table width="100%" id="general-table">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td align="center">积分值</td>
+                    <td align="center">有效次数</td>
+                </tr>
+                {foreach from=$data item=item}
+                <tr>
+                    <td align="center">{$item.name}：</td>
+                    <td>
+                        <label><input type="radio" name="autoload[{$item.point_name}]" value="1" {if $item.autoload eq yes}checked="checked" {/if}/>开启</label>
+                        <label><input type="radio" name="autoload[{$item.point_name}]" value="0" {if $item.autoload eq no}checked="checked" {/if}/>关闭</label>
+                    </td>
+                    <td align="center">
+                        <label>&nbsp;&nbsp;<input type="text" name="point_value[{$item.point_name}]"
+                                                  value="{$item.point_value}" size="5"/></label>
+                    </td>
+                    <td align="center">
+                        <label>&nbsp;&nbsp;<input type="text" name="point_num[{$item.point_name}]"
+                                                  value="{$item.point_num}" size="5"/></label>
+                        <input type="hidden" name="point_name[]" value="{$item.point_name}"/>
+                    </td>
+                </tr>
+                {/foreach}
+            </table>
+
+            <div class="button-div">
+                <input type="submit" value="{$lang.button_submit}" class="button"/>
+                <input type="reset" value="{$lang.button_reset}" class="button"/>
+            </div>
+            <input type="hidden" name="act" value="{$form_act}"/>
+        </form>
+    </div>
+</div>
+<!-- end goods form -->
+{include file="wxch_pagefooter.htm"}
