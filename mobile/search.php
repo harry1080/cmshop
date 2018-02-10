@@ -27,7 +27,6 @@
         if ( $string !== false ) {
             $string = unserialize( $string );
             if ( $string !== false ) {
-                /* �û����ض��������µ���һ�η��� */
                 if ( !empty( $string['search_encode_time'] ) ) {
                     if ( time() > $string['search_encode_time'] + 2 ) {
                         define( 'INGORE_VISIT_STATS' , true );
@@ -49,7 +48,6 @@
 
     $_REQUEST['act'] = !empty( $_REQUEST['act'] ) ? trim( $_REQUEST['act'] ) : '';
     /*------------------------------------------------------ */
-//-- �߼�����
     /*------------------------------------------------------ */
     if ( $_REQUEST['act'] == 'advanced_search' ) {
         $goods_type = !empty( $_REQUEST['goods_type'] ) ? intval( $_REQUEST['goods_type'] ) : 0;
@@ -61,12 +59,12 @@
         assign_template();
         assign_dynamic( 'search' );
         $position = assign_ur_here( 0 , $_LANG['advanced_search'] );
-        $smarty->assign( 'page_title' , $position['title'] );    // ҳ�����
-        $smarty->assign( 'ur_here' , $position['ur_here'] );  // ��ǰλ��
+        $smarty->assign( 'page_title' , $position['title'] );
+        $smarty->assign( 'ur_here' , $position['ur_here'] );
 
-        $smarty->assign( 'categories' , get_categories_tree() ); // ������
-        $smarty->assign( 'helps' , get_shop_help() );       // �������
-        $smarty->assign( 'top_goods' , get_top10() );           // ��������
+        $smarty->assign( 'categories' , get_categories_tree() );
+        $smarty->assign( 'helps' , get_shop_help() );
+        $smarty->assign( 'top_goods' , get_top10() );
         $smarty->assign( 'promotion_info' , get_promotion_info() );
         $smarty->assign( 'cat_list' , cat_list( 0 , 0 , true , 2 , false ) );
         $smarty->assign( 'brand_list' , get_brand_list() );
@@ -77,7 +75,6 @@
         exit;
     }
     /*------------------------------------------------------ */
-//-- �������
     /*------------------------------------------------------ */
     else {
         $_REQUEST['keywords'] = !empty( $_REQUEST['keywords'] ) ? htmlspecialchars( trim( $_REQUEST['keywords'] ) ) : '';
@@ -91,7 +88,6 @@
 
         $action = '';
         if ( isset( $_REQUEST['action'] ) && $_REQUEST['action'] == 'form' ) {
-            /* Ҫ��ʾ�߼������� */
             $adv_value['keywords'] = htmlspecialchars( stripcslashes( $_REQUEST['keywords'] ) );
             $adv_value['brand'] = $_REQUEST['brand'];
             $adv_value['min_price'] = $_REQUEST['min_price'];
@@ -100,7 +96,6 @@
 
             $attributes = get_seachable_attributes( $_REQUEST['goods_type'] );
 
-            /* ���ύ�������¸�ֵ */
             foreach ( $attributes['attr'] AS $key => $val ) {
                 if ( !empty( $_REQUEST['attr'][$val['id']] ) ) {
                     if ( $val['type'] == 2 ) {
@@ -125,25 +120,20 @@
 
             $action = 'form';
         }
-        /* ��ʼ���������� */
         $keywords = '';
         $tag_where = '';
         if ( !empty( $_REQUEST['keywords'] ) ) {
             $arr = array();
             if ( stristr( $_REQUEST['keywords'] , ' AND ' ) !== false ) {
-                /* ���ؼ������Ƿ���AND��������ھ��ǲ� */
                 $arr = explode( 'AND' , $_REQUEST['keywords'] );
                 $operator = " AND ";
             } elseif ( stristr( $_REQUEST['keywords'] , ' OR ' ) !== false ) {
-                /* ���ؼ������Ƿ���OR��������ھ��ǻ� */
                 $arr = explode( 'OR' , $_REQUEST['keywords'] );
                 $operator = " OR ";
             } elseif ( stristr( $_REQUEST['keywords'] , ' + ' ) !== false ) {
-                /* ���ؼ������Ƿ��мӺţ�������ھ��ǻ� */
                 $arr = explode( '+' , $_REQUEST['keywords'] );
                 $operator = " OR ";
             } else {
-                /* ���ؼ������Ƿ��пո�������ھ��ǲ� */
                 $arr = explode( ' ' , $_REQUEST['keywords'] );
                 $operator = " AND ";
             }
@@ -184,7 +174,6 @@
         $min_price = $_REQUEST['min_price'] != 0 ? " AND g.shop_price >= '$_REQUEST[min_price]'" : '';
         $max_price = $_REQUEST['max_price'] != 0 || $_REQUEST['min_price'] < 0 ? " AND g.shop_price <= '$_REQUEST[max_price]'" : '';
 
-        /* ������ʾ��ʽ�Լ����� */
         $default_display_type = $_CFG['show_order_type'] == '0' ? 'list' : ( $_CFG['show_order_type'] == '1' ? 'grid' : 'text' );
         $default_sort_order_method = $_CFG['sort_order_method'] == '0' ? 'DESC' : 'ASC';
         $default_sort_order_type = $_CFG['sort_order_type'] == '0' ? 'goods_id' : ( $_CFG['sort_order_type'] == '1' ? 'shop_price' : 'last_update' );
@@ -198,7 +187,7 @@
         $page = !empty( $_REQUEST['page'] ) && intval( $_REQUEST['page'] ) > 0 ? intval( $_REQUEST['page'] ) : 1;
         $size = !empty( $_CFG['page_size'] ) && intval( $_CFG['page_size'] ) > 0 ? intval( $_CFG['page_size'] ) : 10;
 
-        $intromode = '';    //��ʽ�����ھ����������ҳ����ͼƬ
+        $intromode = '';
 
         if ( !empty( $_REQUEST['intro'] ) ) {
             switch ( $_REQUEST['intro'] ) {
@@ -447,7 +436,6 @@
     }
 
     /**
-     * ��ÿ��Լ���������
      *
      * @access  public
      *
@@ -462,13 +450,11 @@
             'attr' => array(),
         );
 
-        /* ��ÿ��õ���Ʒ���� */
         $sql = "SELECT t.cat_id, cat_name FROM " . $GLOBALS['ecs']->table( 'goods_type' ) . " AS t, " .
             $GLOBALS['ecs']->table( 'attribute' ) . " AS a" .
             " WHERE t.cat_id = a.cat_id AND t.enabled = 1 AND a.attr_index > 0 ";
         $cat = $GLOBALS['db']->getAll( $sql );
 
-        /* ��ȡ���Լ��������� */
         if ( !empty( $cat ) ) {
             foreach ( $cat AS $val ) {
                 $attributes['cate'][$val['cat_id']] = $val['cat_name'];
@@ -509,11 +495,9 @@
         return $attributes;
     }
 
-//��  ��100�޸�
 
     function get_sales_volume( $goods_id )
     {
-        /* ��ѯ����Ʒ��ʵ������ */
         $sql = 'SELECT IFNULL(SUM(g.goods_number), 0) ' .
             'FROM ' . $GLOBALS['ecs']->table( 'order_info' ) . ' AS o, ' .
             $GLOBALS['ecs']->table( 'order_goods' ) . ' AS g ' .
@@ -526,4 +510,3 @@
         return intval( $GLOBALS['db']->getOne( $sql ) );
     }
 
-?>
