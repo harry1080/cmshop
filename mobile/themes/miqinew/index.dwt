@@ -145,7 +145,7 @@
     </div>
 </section>
 <!-- 样式5：一行两列 -->
-<section class="channel-floor channel-floor-hw channel-floor-list2" style="margin-bottom: 80px">
+<section class="channel-floor channel-floor-hw channel-floor-list2" >
     <header class="h">
         <h3><span>新品推荐</span></h3>
     </header>
@@ -165,6 +165,35 @@
                     <p class="p-name">{$goods.name}</p>
                     <p class="p-promotion">{$goods.brief}</p>
                     <p class="p-price"><b>{$goods.shop_price}</b></p>
+                </a>
+            </li>
+            <!--{if $smarty.foreach.best_goods.index%3 eq 2 }-->
+                </ul>
+            <!--{/if}-->
+        <!--{/foreach}-->
+    </div>
+</section>
+
+<!-- 样式5：一行两列 -->
+<section class="channel-floor channel-floor-hw channel-floor-list2" style="margin-bottom: 80px">
+    <header class="h">
+        <h3><span>预售商品</span></h3>
+    </header>
+    <div class="b">
+        <!--{foreach from=$presale_goods item=goods name=best_goods}-->
+            <!--{if $smarty.foreach.best_goods.index%3 eq 0 }-->
+                <ul>
+            <!--{/if}-->
+            <li>
+                <a href="{$goods.url}">
+                    <p class="p-img">
+                        <img src="/{$goods.thumb}" width="480" height="480">
+                        <i class="icon-tag">
+                            <img src="https://res0.vmallres.com/pimages//tag/87/1489666525347.png&#10;">
+                        </i>
+                    </p>
+                    <p class="p-name">{$goods.name}</p>
+                    <p class="p-promotion">{$goods.brief}</p>
                 </a>
             </li>
             <!--{if $smarty.foreach.best_goods.index%3 eq 2 }-->

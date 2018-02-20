@@ -55,12 +55,12 @@
     //根据goods_id获得商品评价 by tongwenping
 
     if ( !empty( $_REQUEST['act'] ) && $_REQUEST['act'] == 'getCommentList' ) {
-        $remark['data'] = get_comment_res($_GET['pid']);
+        $remark['data'] = get_comment_res( $_GET['pid'] );
         $remark['info'] = '成功';
         $remark['resultCode'] = '0';
         $json = json_encode( $remark );
         $callback = $_GET['callback'];
-        echo $callback.'('.$json.')';
+        echo $callback . '(' . $json . ')';
         exit;
     }
 
@@ -79,6 +79,44 @@
             $res['prdDetailInfo'] = $goods['goods_desc'];
         }
         die( $json->encode( $res ) );
+    }
+    if ( !empty( $_GET['act'] ) && $_GET['act'] == 'isCanAddCart' ) {
+        $remark['info'] = '成功';
+        $remark['success'] = 1;
+        $remark['retcode'] = '0';
+        $json = json_encode( $remark );
+        $callback = $_GET['callback'];
+        die($json);
+
+    }
+    if ( !empty( $_GET['act'] ) && $_GET['act'] == 'addCart' ) {
+
+
+        $data = $_POST;
+
+        $str = stripslashes( $_GET['cartjson']);
+        $arr = json_decode($str,true);
+
+
+        $remark['info'] = '成功';
+        $remark['success'] = 1;
+        $remark['resultCode'] = '0';
+        $json = json_encode( $remark );
+        $callback = $_GET['callback'];
+        die($json);
+    }
+
+    if ( !empty( $_GET['act'] ) && $_GET['act'] == 'getCartNum' ) {
+
+        $dataS = $_POST;
+//        $remark['data'] = get_comment_res($_GET['pid']);
+        $remark['info'] = '成功';
+        $remark['retcode'] = '0';
+        $remark['resultCode'] = '0';
+        $json = json_encode( $remark );
+        $callback = $_GET['callback'];
+        echo $callback . '(' . $json . ')';
+        exit;
     }
 
 
@@ -716,7 +754,7 @@
 // 统计商品的评论数
     function get_comment_count( $goods_id )
     {
-        $sql = 'SELECT count(*) FROM ' . $GLOBALS['ecs']->table( 'comment' ) . ' WHERE status=1 AND id_value=' . $goods_id;
+        $sql = 'SELECT count(*) FROM ' . $GLOBALS['ecs']->table( 'comment' ) . ' WHERE status=1 AND `id_value`=' . $goods_id;
         $res = $GLOBALS['db']->getOne( $sql );
 
         return intval( $res );
@@ -725,9 +763,6 @@
 
     function get_comment_res( $goods_id )
     {
-
-
-
 
 
         $res['averageScore'] = 5;
@@ -748,7 +783,6 @@
         $comments['images'] = array();
 
 
-
         //评论
         $comments['isTop'] = 1;
         $comments['likes'] = 93;
@@ -761,14 +795,13 @@
         $res['comments'][0] = $comments;
 
 
-
         //热门标签
-        $hotTags[0] = array('count'=>3516,'tagName'=>"反应灵敏");
-        $hotTags[1] = array('count'=>3511,'tagName'=>"系统流畅");
-        $hotTags[3] = array('count'=>3508,'tagName'=>"反应灵敏");
-        $hotTags[4] = array('count'=>3495,'tagName'=>"智能贴心");
-        $hotTags[5] = array('count'=>3494,'tagName'=>"物流快速");
-        $hotTags[6] = array('count'=>3492,'tagName'=>"拍照惊艳");
+        $hotTags[0] = array( 'count' => 3516 , 'tagName' => "反应灵敏" );
+        $hotTags[1] = array( 'count' => 3511 , 'tagName' => "系统流畅" );
+        $hotTags[3] = array( 'count' => 3508 , 'tagName' => "反应灵敏" );
+        $hotTags[4] = array( 'count' => 3495 , 'tagName' => "智能贴心" );
+        $hotTags[5] = array( 'count' => 3494 , 'tagName' => "物流快速" );
+        $hotTags[6] = array( 'count' => 3492 , 'tagName' => "拍照惊艳" );
         $res['hotTags'] = $hotTags;
 
 

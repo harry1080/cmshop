@@ -1,4 +1,4 @@
-<!-- $Id: goods_info.htm 17126 2010-04-23 10:30:26Z liuhui $ -->
+
 {include file="pageheader.htm"}
 {insert_scripts files="../js/utils.js,selectzone.js,colorselector.js"}
 <script type="text/javascript" src="../js/calendar.php?lang={$cfg_lang}"></script>
@@ -29,13 +29,16 @@
     <!-- tab body -->
     <div id="tabbody-div">
       <form enctype="multipart/form-data" action="" method="post" name="theForm" >
-        <!-- 鏈€澶ф枃浠堕檺鍒 -->
         <input type="hidden" name="MAX_FILE_SIZE" value="2097152" />
-        <!-- 閫氱敤淇℃伅 -->
-        <table width="90%" id="general-table" align="center">
+        <table width="90%" id="general-table" align="center" class="goods_info">
           <tr>
             <td class="label">{$lang.lab_goods_name}</td>
-            <td><input type="text" name="goods_name" value="{$goods.goods_name|escape}" style="float:left;color:{$goods_name_color};" size="30" /><div style="background-color:{$goods_name_color};float:left;margin-left:2px;" id="font_color" onclick="ColorSelecter.Show(this);"><img src="images/color_selecter.gif" style="margin-top:-1px;" /></div><input type="hidden" id="goods_name_color" name="goods_name_color" value="{$goods_name_color}" />&nbsp;
+            <td>
+            <input type="text" name="goods_name" value="{$goods.goods_name|escape}" style="float:left;color:{$goods_name_color};" size="30" />
+            <div style="background-color:{$goods_name_color};float:left;margin:10px 0 0 5px;" id="font_color" onclick="ColorSelecter.Show(this);">
+            <img src="images/color_selecter.gif" style="margin-top:-1px;" />
+            </div>
+            <input type="hidden" id="goods_name_color" name="goods_name_color" value="{$goods_name_color}" />&nbsp;
             <select name="goods_name_style">
               <option value="">{$lang.select_font}</option>
               {html_options options=$lang.font_styles selected=$goods_name_style}
@@ -63,15 +66,15 @@
                {$lang.require_field}
             </td>
           </tr>
-          <tr>
-            <td class="label">{$lang.lab_other_cat}</td>
-            <td>
-              <input type="button" value="{$lang.add}" onclick="addOtherCat(this.parentNode)" class="button" />
-              {foreach from=$goods.other_cat item=cat_id}
-              <select name="other_cat[]"><option value="0">{$lang.select_please}</option>{$other_cat_list.$cat_id}</select>
-              {/foreach}
-            </td>
-          </tr>
+          <!--<tr>-->
+            <!--<td class="label">{$lang.lab_other_cat}</td>-->
+            <!--<td>-->
+              <!--<input type="button" value="{$lang.add}" onclick="addOtherCat(this.parentNode)" class="button" />-->
+              <!--{foreach from=$goods.other_cat item=cat_id}-->
+              <!--<select name="other_cat[]"><option value="0">{$lang.select_please}</option>{$other_cat_list.$cat_id}</select>-->
+              <!--{/foreach}-->
+            <!--</td>-->
+          <!--</tr>-->
           <tr>
             <td class="label">{$lang.lab_goods_brand}</td>
             <td><select name="brand_id" onchange="hideBrandDiv()" ><option value="0">{$lang.select_please}{html_options options=$brand_list selected=$goods.brand_id}</select>
@@ -106,7 +109,8 @@
             <td class="label"><a href="javascript:showNotice('noticeUserPrice');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.lab_user_price}</td>
             <td>
               {foreach from=$user_rank_list item=user_rank}
-              {$user_rank.rank_name}<span id="nrank_{$user_rank.rank_id}"></span><input type="text" id="rank_{$user_rank.rank_id}" name="user_price[]" value="{$member_price_list[$user_rank.rank_id]|default:-1}" onkeyup="if(parseInt(this.value)<-1){this.value='-1';};set_price_note({$user_rank.rank_id})" size="8" />
+              {$user_rank.rank_name}<span id="nrank_{$user_rank.rank_id}"></span> 
+              <input type="text" id="rank_{$user_rank.rank_id}" name="user_price[]" value="{$member_price_list[$user_rank.rank_id]|default:-1}" onkeyup="if(parseInt(this.value)<-1){this.value='-1';};set_price_note({$user_rank.rank_id})" size="8" class="input02" />
               <input type="hidden" name="user_rank[]" value="{$user_rank.rank_id}" />
               {/foreach}
               <br />
@@ -128,8 +132,8 @@
                      {else}
                        <a href="javascript:;" onclick="removeVolumePrice(this)">[-]</a>
                      {/if}
-                     {$lang.volume_number} <input type="text" name="volume_number[]" size="8" value="{$volume_price.number}"/>
-                     {$lang.volume_price} <input type="text" name="volume_price[]" size="8" value="{$volume_price.price}"/>
+                     {$lang.volume_number} <input type="text" name="volume_number[]" size="8" value="{$volume_price.number}" class="input02"/>
+                     {$lang.volume_price} <input type="text" name="volume_price[]" size="8" value="{$volume_price.price}" class="input02"/>
                   </td>
                 </tr>
                 {/foreach}
@@ -201,24 +205,10 @@
 
         <!-- 璇︾粏鎻忚堪 -->
         <table width="90%" id="detail-table" style="display:none">
-        <tr>
-            <td>商品详情：</td>
-          </tr>
           <tr>
             <td>{$FCKeditor}</td>
           </tr>
         </table>
-        
-         <table width="90%" id="detail-table" style="display:none">
-          <tr>
-            <td>产品实拍：</td>
-          </tr>
-          <tr>
-            <td>{$goods_shipai}</td>
-          </tr>
-        </table>
-        
-        
 
         <!-- 鍏朵粬淇℃伅 -->
         <table width="90%" id="mix-table" style="display:none" align="center">
@@ -228,7 +218,6 @@
             <td><input type="text" name="goods_weight" value="{$goods.goods_weight_by_unit}" size="20" /> <select name="weight_unit">{html_options options=$unit_list selected=$weight_unit}</select></td>
           </tr>
           {/if}
-          {if $cfg.use_storage}
           <tr>
             <td class="label"><a href="javascript:showNotice('noticeStorage');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_goods_number}</td>
 <!--            <td><input type="text" name="goods_number" value="{$goods.goods_number}" size="20" {if $code neq '' || $goods._attribute neq ''}readonly="readonly"{/if} /><br />-->
@@ -239,7 +228,6 @@
             <td class="label">{$lang.lab_warn_number}</td>
             <td><input type="text" name="warn_number" value="{$goods.warn_number}" size="20" /></td>
           </tr>
-          {/if}
           <tr>
             <td class="label">{$lang.lab_intro}</td>
             <td><input type="checkbox" name="is_best" value="1" {if $goods.is_best}checked="checked"{/if} />{$lang.is_best} <input type="checkbox" name="is_new" value="1" {if $goods.is_new}checked="checked"{/if} />{$lang.is_new} <input type="checkbox" name="is_hot" value="1" {if $goods.is_hot}checked="checked"{/if} />{$lang.is_hot}</td>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>预约商品</title>
+    <link rel="stylesheet" href="{$ectouch_themes}/frozenui/css/frozen.css">
+</head>
+<body ontouchstart="">
+<header class="ui-header  ui-border-b" style="background-color: red;color: white">
+    <i class="ui-icon-return" onclick="history.back()" style="color: white"></i><h1>预约商品</h1>
+</header>
+
+<section class="ui-container">
+    <div class="ui-form ui-border-t">
+        <form method="post">
+            <input type="hidden" placeholder="" name="action" value="post">
+            <div class="ui-form-item ui-border-b">
+                <label>
+                    姓名：
+                </label>
+                <input type="text" placeholder="" name="name">
+                <a href="#" class="ui-icon-close">
+                </a>
+            </div>
+            <div class="ui-form-item ui-form-item-textarea ui-border-b">
+                <label>
+                    详细地址:
+                </label>
+                <textarea placeholder="街道等详细地址" name="address"></textarea>
+            </div>
+            <div class="ui-form-item ui-form-item-l ui-border-b">
+                <label class="ui-border-r">
+                    中国 +86
+                </label>
+                <input type="text" placeholder="请输入手机号码" name="mobile">
+                <a href="#" class="ui-icon-close">
+                </a>
+            </div>
+            <div class="ui-btn-wrap">
+                <button type="submit" class="ui-btn-lg ui-btn-danger" id="showTooltips">
+                    确定
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+<script src="{$ectouch_themes}/js/jquery.min.js"></script>
+<script src="{$ectouch_themes}/frozenui/lib/zepto.min.js"></script>
+<script src="{$ectouch_themes}/frozenui/js/frozen.js"></script>
+<script src="{$ectouch_themes}/js/layer/2.1/layer.js"></script>
+
+<script>
+    $('#showTooltips').on('click', function () {
+        $.ajax({
+            url: 'contact.php',
+            dataType: 'json',
+            type: 'POST',
+            data: $('form').serialize(),
+            success: function (data) {
+
+                if (data.status === 'success') {
+
+                    layer.msg(data.msg);
+
+//                    window.location.href = 'chief.html?bind_id=' + $('#bind_id').val();
+                } else {
+                    layer.msg(data.msg,{icon:2});
+
+                }
+            }
+        });
+
+        return false;
+
+    });
+
+</script>
+</body>
+</html>

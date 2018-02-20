@@ -15,20 +15,24 @@
         var mediaPath = "/";
 
 
+
+//        var url_custom = "http://cmshop.mbizzone.com/mobile";
+        var url_custom = "http://www.cmshop.com/mobile";
+
         var cartMaxNum = 100000;
-        var cartDomain = "http://cmshop.mbizzone.com/mobile";
-        var remarkDomain = "http://cmshop.mbizzone.com/mobile";
-        var rmsDomain = "http://cmshop.mbizzone.com/mobile";
-        var addressDomain = "http://cmshop.mbizzone.com/mobile";
-        var b2cDomain = "https://cmshop.mbizzone.com/mobile";
-        var provinceIpDomain = "http://cmshop.mbizzone.com/mobile";
-        var ucDomain = "http://cmshop.mbizzone.com/mobile";
-        var wapDomain = "http://cmshop.mbizzone.com/mobile";
-        var rbDomain = 'http://cmshop.mbizzone.com/mobile';
-        var yyDomain = 'http://cmshop.mbizzone.com/mobile';
-        var bIDomain = 'http://cmshop.mbizzone.com/mobile';
-        var cdsDomain = 'http://cmshop.mbizzone.com/mobile';
-        var amsDomain = 'http://cmshop.mbizzone.com/mobile';
+        var cartDomain = url_custom;
+        var remarkDomain = url_custom;
+        var rmsDomain = url_custom;
+        var addressDomain = url_custom;
+        var b2cDomain = url_custom;
+        var provinceIpDomain = url_custom;
+        var ucDomain = url_custom;
+        var wapDomain = url_custom;
+        var rbDomain = url_custom;
+        var yyDomain = url_custom;
+        var bIDomain = url_custom;
+        var cdsDomain = url_custom;
+        var amsDomain = url_custom;
         var imagePath = "{$ectouch_themes}/images/"
 
     </script>
@@ -100,7 +104,8 @@
         <div id="slider" class="swiper-container-horizontal swiper-container-android">
             <ul class="swiper-wrapper">
                 <!-- {foreach from=$pictures item=picture name=no}-->
-                <li class="swiper-slide" data-swiper-slide-index="{$picture.img_id}" onclick="ecWap.prodDetial.showImg({$picture.img_id})">
+                <li class="swiper-slide" data-swiper-slide-index="{$picture.img_id}"
+                    onclick="ecWap.prodDetial.showImg({$picture.img_id})">
                     <img src="/{$picture.img_original}">
                 </li>
                 <!--{/foreach}-->
@@ -128,6 +133,7 @@
                 <div class="hide">
                     <p class="p-point hide" id="skuWeight"></p>
                 </div>
+                <!--{if $goods.is_presale eq 0}-->
                 <p class="p-price">
                     <b>
                         <em id="pro-price">
@@ -137,7 +143,8 @@
 
                     <del><em id="pro-prime-price">{$goods.market_price}</em></del>
                 </p>
-
+                <!-- {/if} -->
+                <!--{if $goods.is_presale eq 0}-->
                 <div class="j_promotionBox p-promotion-box" style="">
                     <p class="p-promotion j_pro-skuPromWord">
                         <span class="j_pagetimerPromWord" style="display: inline;">
@@ -153,7 +160,9 @@
                     <i class="j_iconmore icon-more-bottom" style="display:none;"></i>
 
                 </div>
+                <!-- {/if} -->
             </div>
+            <!--{if $goods.is_presale eq 0}-->
             <div class="pro-meta-match">
                 <table border="0" class="t-product j_gif-prd-areawrap" style="display: none;">
                     <!-- 赠品信息start -->
@@ -170,9 +179,10 @@
                     <span>赠送积分</span><i class="icon-more-right"></i>
                 </p>
             </div>
+            <!-- {/if} -->
 
         </article>
-
+        <!--{if $goods.is_presale eq 0}-->
         <!-- 20170518-基本信息-名称价格-end -->
         <!-- 20171016-sku属性-start -->
         <article class="pro-meta-area">
@@ -209,8 +219,12 @@
                             </dt>
                             <dd>
                                 <p class="textbox">
-                                    <b class="minus minus-disabled" id="product-delNum" onclick="ecWap.prodDetial.delPrdNum()"></b>
-                                    <input id="quantity" type="tel" value="1" maxlength="3" oninput="ecWap.prodDetial.editPrdNum(this);" data-price="{$goods.shop_price_formated}" data-inventory="999" readonly="readonly">
+                                    <b class="minus minus-disabled" id="product-delNum"
+                                       onclick="ecWap.prodDetial.delPrdNum()"></b>
+                                    <input id="quantity" type="tel" value="1" maxlength="3"
+                                           oninput="ecWap.prodDetial.editPrdNum(this);"
+                                           data-price="{$goods.shop_price_formated}" data-inventory="999"
+                                           readonly="readonly">
                                     <b id="product-addNum" class="add" onclick="ecWap.prodDetial.addPrdNum()"></b>
                                 </p>
                             </dd>
@@ -229,10 +243,10 @@
                     <div class="pro-service" id="guaranteeMessage">
                         <div class="pro-service-box"><p class="p-guarantee"><span>保障服务</span><em>为商品保驾护航</em></p></div>
                     </div>
-                    <div class="pro-service hide" id="extMessage" >
+                    <div class="pro-service hide" id="extMessage">
                         <div class="pro-service-box"><p class="p-guarantee"><span></span><span></span></p></div>
                     </div>
-                    <div class="pro-service hide" id="accMessage" >
+                    <div class="pro-service hide" id="accMessage">
                         <div class="pro-service-box"><p class="p-guarantee"><span></span><span></span></p></div>
                     </div>
                     <i class="icon-more-right"></i>
@@ -271,7 +285,8 @@
             <header class="h">
                 <h3>
                     <span>用户评价<em id="totalwRecord">（{$goods.comment_count}条）</em></span>
-                    <a href="javascript:;"  onclick="$('#prdDetailreview').click();">查看全部评价<i class="icon-more-right"></i>
+                    <a href="javascript:;" onclick="$('#prdDetailreview').click();">查看全部评价<i
+                                class="icon-more-right"></i>
                     </a>
                 </h3>
             </header>
@@ -289,7 +304,8 @@
                                     <span><b><em>{$comment.username|escape:html}</em><time>{$comment.add_time}</time></b></span>
                                 </p>
                                 <p class="fr">
-                                    <span class="laud-area" onclick="$('#prdDetailreview').click();"><i></i><em>{$comment}</em></span>
+                                    <span class="laud-area"
+                                          onclick="$('#prdDetailreview').click();"><i></i><em>{$comment}</em></span>
                                 </p>
                             </div>
                             <div class="word">{$comment.content}</div>
@@ -301,7 +317,7 @@
             </div>
         </section>
         <!--20170521 用户评论 end-->
-
+        <!-- {/if} -->
 
 
         <!-- 关联商品start -->
@@ -313,18 +329,19 @@
                 <!--{foreach from=$related_goods item=goods name=relate_goods}-->
                 <!--{if $smarty.foreach.relate_goods.index%3 eq 0 }-->
                 <ul>
-                 <!--{/if}-->
+                    <!--{/if}-->
                     <li>
                         <a href="{$goods.url}">
                             <p class="p-img">
-                                <img src="/{$goods.goods_img}" onerror="javascript:this.src='{$ectouch_themes}/images/mask.png'">
+                                <img src="/{$goods.goods_img}"
+                                     onerror="javascript:this.src='{$ectouch_themes}/images/mask.png'">
                             </p>
                             <p class="p-name"><span>{$goods.goods_name}</span></p>
                         </a>
                     </li>
-                <!--{if $smarty.foreach.relate_goods.index%3 eq 2 }-->
+                    <!--{if $smarty.foreach.relate_goods.index%3 eq 2 }-->
                 </ul>
-                 <!--{/if}-->
+                <!--{/if}-->
 
                 <!--{/foreach}-->
             </section>
@@ -349,7 +366,6 @@
 <!-- 20170518-详情-end -->
 
 
-
 <!-- 20170518-参数-start -->
 <div id="specification" class="tab">
 </div>
@@ -372,7 +388,6 @@
         </div>
     </section>
     <!-- 20170518-好评率-end -->
-
 
 
     <!-- 评论的类型-end -->
@@ -410,10 +425,9 @@
     <!-- 20170518-系统提示-空数据-end -->
 
 
-
 </div>
 <!-- 底部已选显示区域-start -->
-<div class="pro-property-selected j_showSkuBtn hide" id="skuResultBottom" >
+<div class="pro-property-selected j_showSkuBtn hide" id="skuResultBottom">
     <div class="pro-selected-box clearfix">
         <p class="pro-sku-selected-title">已选</p>
         <div class="pro-sku-selected"><em>&nbsp; x<i class="j_skuItemAmt"></i></em>
@@ -444,6 +458,8 @@
 <!-- 底部抢购还有机会显示区域-start -->
 
 
+<!--{if $goods.is_presale eq 0}-->
+
 <!-- 底部按钮区域-start -->
 <section class="pro-property-action-area-big">
     <div class="pro-property-action-area-btn">
@@ -452,8 +468,8 @@
             <p>首页</p>
         </div>
         <div class="pro-property-shoppingCart">
-            <a id="prdDetailShoppingCart" onclick="_hmt.push(['_trackEvent', 'click icon2', 'click', '记录【购物车】图标按钮的点击次数'])" href="flow.php?step=cart" title="购物车">
-                <em><i id="cartNum">0</i></em>
+            <a id="prdDetailShoppingCart" href="flow.php?step=cart" title="购物车">
+                <em><i id="cartNum">{$goods.goods_number}</i></em>
             </a>
             <p>购物车</p>
         </div>
@@ -467,6 +483,25 @@
     </div>
 </section>
 
+
+<!--{else}-->
+<section class="pro-property-action-area-big">
+    <div class="pro-property-action-area-btn">
+        <div class="pro-property-home">
+            <a href="/"></a>
+            <p>首页</p>
+        </div>
+
+    </div>
+    <div class="pro-property-action-area-right" >
+        <section class="pro-property-action-area">
+            <article class="pro-property-action">
+                <a href="contact.php" class="j_prdDetailAppointment button-style-1-big"><span>预约购买</span></a>
+            </article>
+        </section>
+    </div>
+</section>
+<!--{/if}-->
 <!--商品详情页免责信息 -->
 <input type="hidden" id="prdDetailDisclaimerTemplate" name="prdDetailDisclaimerTemplate"
        value="<p><span style=&quot;color:#c0504d;&quot;>特别提醒：</span><br /></p><p style=&quot;text-indent:2em;&quot;><span style=&quot;color:#262626;&quot;>※以上页面中的产品图片及屏幕内容仅作示意，实物产品效果（包括但不限于外观、颜色、尺寸）和屏幕显示内容（包括但不限于背景、<span>UI</span>、配图）可能略有差异，请以实物为准。</span></p><p style=&quot;text-indent:2em;&quot;><span style=&quot;color:#262626;&quot;>※以上页面中的数据为理论值，均来自</span><span style=&quot;color:red;&quot;>中移铁通智能产品分公司内部实验室</span><span style=&quot;color:#262626;&quot;>，于特定测试环境下所得（请见各项具体说明），实际使用中可能因产品个体差异、软件版本、使用条件和环境因素不同略有不同，请以实际使用的情况为准。</span></p><p style=&quot;text-indent:2em;&quot;><span style=&quot;color:#262626;&quot;>※为提供尽可能准确的产品信息、规格参数、产品特性，</span><span style=&quot;color:red;&quot;>中移铁通智能产品分公司或荣耀</span><span style=&quot;color:#262626;&quot;>可能实时调整和修订以上页面中的文字表述、图片效果等内容，以求与实际产品性能、规格、指数、零部件等信息相匹配，由于产品批次和生产供应因素实时变化，如遇确有进行上述修改和调整必要的情形，恕不专门通知。</span></p><p><br /></p><p><br /></p>">
@@ -651,7 +686,8 @@
 
 </script>
 
-<div class="ecWap-mask" id="ecWap-box-bg-promotionMainBox" style="height:1586px; width:412px;position: absolute; left:0; top:0; z-index:990;display:none;"></div>
+<div class="ecWap-mask" id="ecWap-box-bg-promotionMainBox"
+     style="height:1586px; width:412px;position: absolute; left:0; top:0; z-index:990;display:none;"></div>
 <article class="ecWap-box-em ecWap-box-lower" id="ecWap-box-promotionMainBox"
          style="position: fixed; left: 0px; width: 100%; z-index: 991; display: none; top: auto; height: 396px;">
     <header class="ecWap-box-header"><span class="ecWap-box-title">促销</span>

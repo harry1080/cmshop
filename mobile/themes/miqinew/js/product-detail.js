@@ -1511,6 +1511,8 @@ ecWap.prodDetial.updateHrHeight = function () {
 //添加购物车
 ecWap.prodDetial.addCart = function (g) {
 
+
+    console.log('start----');
     //判断库存
     var n = [ecWap.prodDetial.getSku()],
         //输入数量

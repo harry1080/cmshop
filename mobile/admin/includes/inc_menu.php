@@ -6,24 +6,23 @@
         die( 'Hacking attempt' );
     }
 
-//    $modules['02_cat_and_goods']['01_goods_list']       = 'goods.php?act=list';         // 商品列表
+    $modules['02_cat_and_goods']['01_goods_list']       = 'goods.php?act=list';         // 商品列表
 //    $modules['02_cat_and_goods']['02_goods_add']        = 'goods.php?act=add';          // 添加商品
-//    $modules['02_cat_and_goods']['03_category_list']    = 'category.php?act=list';
-    //$modules['02_cat_and_goods']['04_comment_manage']    = 'comment_manage.php?act=list';
-    //$modules['02_cat_and_goods']['05_comment_manage']   = 'comment_manage.php?act=list';
-    //$modules['02_cat_and_goods']['06_goods_brand_list'] = 'brand.php?act=list';
+    $modules['02_cat_and_goods']['03_category_list']    = 'category.php?act=list';
+    $modules['02_cat_and_goods']['05_comment_manage']   = 'comment_manage.php?act=list';
+    $modules['02_cat_and_goods']['06_goods_brand_list'] = 'brand.php?act=list';
 //    $modules['02_cat_and_goods']['08_goods_type']       = 'goods_type.php?act=manage';
-    /* $modules['02_cat_and_goods']['11_goods_trash']      = 'goods.php?act=trash';        // 商品回收站
-    $modules['02_cat_and_goods']['12_batch_pic']        = 'picture_batch.php';
-    $modules['02_cat_and_goods']['13_batch_add']        = 'goods_batch.php?act=add';    // 商品批量上传
-    $modules['02_cat_and_goods']['14_goods_export']     = 'goods_export.php?act=goods_export';
-    $modules['02_cat_and_goods']['15_batch_edit']       = 'goods_batch.php?act=select'; // 商品批量修改
-    $modules['02_cat_and_goods']['16_goods_script']     = 'gen_goods_script.php?act=setup';
-    $modules['02_cat_and_goods']['17_tag_manage']       = 'tag_manage.php?act=list';
-    $modules['02_cat_and_goods']['50_virtual_card_list']   = 'goods.php?act=list&extension_code=virtual_card';
-    $modules['02_cat_and_goods']['51_virtual_card_add']    = 'goods.php?act=add&extension_code=virtual_card';
-    $modules['02_cat_and_goods']['52_virtual_card_change'] = 'virtual_card.php?act=change';
-    $modules['02_cat_and_goods']['goods_auto']             = 'goods_auto.php?act=list'; */
+    $modules['02_cat_and_goods']['11_goods_trash']      = 'goods.php?act=trash';        // 商品回收站
+//    $modules['02_cat_and_goods']['12_batch_pic']        = 'picture_batch.php';
+//    $modules['02_cat_and_goods']['13_batch_add']        = 'goods_batch.php?act=add';    // 商品批量上传
+//    $modules['02_cat_and_goods']['14_goods_export']     = 'goods_export.php?act=goods_export';
+//    $modules['02_cat_and_goods']['15_batch_edit']       = 'goods_batch.php?act=select'; // 商品批量修改
+//    $modules['02_cat_and_goods']['16_goods_script']     = 'gen_goods_script.php?act=setup';
+//    $modules['02_cat_and_goods']['17_tag_manage']       = 'tag_manage.php?act=list';
+//    $modules['02_cat_and_goods']['50_virtual_card_list']   = 'goods.php?act=list&extension_code=virtual_card';
+//    $modules['02_cat_and_goods']['51_virtual_card_add']    = 'goods.php?act=add&extension_code=virtual_card';
+//    $modules['02_cat_and_goods']['52_virtual_card_change'] = 'virtual_card.php?act=change';
+//    $modules['02_cat_and_goods']['goods_auto']             = 'goods_auto.php?act=list';
 
 
     //$modules['03_promotion']['02_snatch_list']          = 'snatch.php?act=list';
@@ -40,18 +39,18 @@
     //$modules['03_promotion']['15_exchange_goods']       = 'exchange_goods.php?act=list';//
 
 
-//    $modules['04_order']['02_order_list']               = 'order.php?act=list';
-    //$modules['04_order']['03_order_query']              = 'order.php?act=order_query';
-    //$modules['04_order']['04_merge_order']              = 'order.php?act=merge';
-    //$modules['04_order']['05_edit_order_print']         = 'order.php?act=templates';
-    //$modules['04_order']['06_undispose_booking']        = 'goods_booking.php?act=list_all';
-    //$modules['04_order']['07_repay_application']        = 'repay.php?act=list_all';
-    //$modules['04_order']['08_add_order']                = 'order.php?act=add';
-    //$modules['04_order']['09_delivery_order']           = 'order.php?act=delivery_list';
-    //$modules['04_order']['10_back_order']               = 'order.php?act=back_list';
+    $modules['04_order']['02_order_list']               = 'order.php?act=list';
+//    $modules['04_order']['03_order_query']              = 'order.php?act=order_query';
+//    $modules['04_order']['04_merge_order']              = 'order.php?act=merge';
+//    $modules['04_order']['05_edit_order_print']         = 'order.php?act=templates';
+//    $modules['04_order']['06_undispose_booking']        = 'goods_booking.php?act=list_all';
+//    $modules['04_order']['07_repay_application']        = 'repay.php?act=list_all';
+//    $modules['04_order']['08_add_order']                = 'order.php?act=add';
+    $modules['04_order']['09_delivery_order']           = 'order.php?act=delivery_list';
+    $modules['04_order']['10_back_order']               = 'order.php?act=back_list';
 
-    //$modules['05_banner']['ad_position']                = 'ad_position.php?act=list';
-    //$modules['05_banner']['ad_list']                    = 'ads.php?act=list';
+    $modules['05_banner']['ad_position']                = 'ad_position.php?act=list';
+    $modules['05_banner']['ad_list']                    = 'ads.php?act=list';
 
     /* $modules['06_stats']['flow_stats']                  = 'flow_stats.php?act=view';
     $modules['06_stats']['searchengine_stats']          = 'searchengine_stats.php?act=view';
@@ -72,19 +71,19 @@
     //$modules['07_content']['shop_info']                 = 'shopinfo.php?act=list';
 
 
-    //$modules['08_members']['03_users_list']             = 'users.php?act=list';//
-    //$modules['08_members']['04_users_add']              = 'users.php?act=add';//
-    //$modules['08_members']['05_user_rank_list']         = 'user_rank.php?act=list';
-    //$modules['08_members']['06_list_integrate']         = 'integrate.php?act=list';
-    //$modules['08_members']['08_unreply_msg']            = 'user_msg.php?act=list_all';
-    //$modules['08_members']['09_user_account']           = 'user_account.php?act=list';//
-    //$modules['08_members']['10_user_account_manage']    = 'user_account_manage.php?act=list';
+    $modules['08_members']['03_users_list']             = 'users.php?act=list';//
+//    $modules['08_members']['04_users_add']              = 'users.php?act=add';//
+//    $modules['08_members']['05_user_rank_list']         = 'user_rank.php?act=list';//会员等级
+//    $modules['08_members']['06_list_integrate']         = 'integrate.php?act=list';
+    $modules['08_members']['08_unreply_msg']            = 'user_msg.php?act=list_all';
+//    $modules['08_members']['09_user_account']           = 'user_account.php?act=list';//
+//    $modules['08_members']['10_user_account_manage']    = 'user_account_manage.php?act=list';
 
-    //$modules['10_priv_admin']['admin_logs']             = 'admin_logs.php?act=list';
-    //$modules['10_priv_admin']['admin_list']             = 'privilege.php?act=list';
-    //$modules['10_priv_admin']['admin_role']             = 'role.php?act=list';
-    //$modules['10_priv_admin']['agency_list']            = 'agency.php?act=list';
-    //$modules['10_priv_admin']['suppliers_list']         = 'suppliers.php?act=list'; // 供货商
+//    $modules['10_priv_admin']['admin_logs']             = 'admin_logs.php?act=list';
+    $modules['10_priv_admin']['admin_list']             = 'privilege.php?act=list';
+    $modules['10_priv_admin']['admin_role']             = 'role.php?act=list';
+//    $modules['10_priv_admin']['agency_list']            = 'agency.php?act=list';
+//    $modules['10_priv_admin']['suppliers_list']         = 'suppliers.php?act=list'; // 供货商
 
     $modules['11_system']['01_shop_config'] = 'shop_config.php?act=list_edit';//网站基本设置
     //$modules['11_system']['06_goods_brand_list'] 		= 'brand.php?act=list';
@@ -111,10 +110,9 @@
 
 
     //$modules['03_template']['02_template_select']       = 'template.php?act=list';
-    $modules['03_template']['03_template_setup'] = 'template.php?act=setup';
-    $modules['03_template']['04_template_library'] = 'template.php?act=library';
+//    $modules['03_template']['03_template_setup'] = 'template.php?act=setup';
+//    $modules['03_template']['04_template_library'] = 'template.php?act=library';//样式编辑
     $modules['03_template']['navigator'] = 'navigator.php?act=list';//菜单管理
-    $modules['03_template']['ad_position'] = 'ad_position.php?act=list';//广告管理
 
 //    $modules['03_template']['05_edit_languages']        = 'edit_languages.php?act=list';
     //$modules['03_template']['06_template_backup']       = 'template.php?act=backup_setting';
@@ -148,7 +146,7 @@
     $modules['01_wechat']['wx_22api'] = 'wxch-ent.php?act=wxconfig';//微信接口
 ////    $modules['01_wechat']['wx_21menu'] = 'wxch-ent.php?act=menu';             //微信菜单
     $modules['01_wechat']['wx_20config'] = 'wxch-ent.php?act=config';      //微信通设置
-    $modules['01_wechat']['wx_19autoreg'] = 'wxch-ent.php?act=autoreg';    //微信自动登录
+//    $modules['01_wechat']['wx_19autoreg'] = 'wxch-ent.php?act=autoreg';    //微信自动登录
 //    $modules['01_wechat']['wx_18bonus'] = 'wxch-ent.php?act=bonus';        //送红包
 //    $modules['01_wechat']['wx_17regmsg'] = 'wxch-ent.php?act=regmsg';      //自动注册
 //    $modules['01_wechat']['wx_23lang'] = 'wxch-ent.php?act=lang';          //语言设置

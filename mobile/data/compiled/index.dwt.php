@@ -158,7 +158,7 @@ if ($this->_foreach['best_goods']['total'] > 0):
     </div>
 </section>
 
-<section class="channel-floor channel-floor-hw channel-floor-list2" style="margin-bottom: 80px">
+<section class="channel-floor channel-floor-hw channel-floor-list2" >
     <header class="h">
         <h3><span>新品推荐</span></h3>
     </header>
@@ -182,6 +182,39 @@ if ($this->_foreach['best_goods']['total'] > 0):
                     <p class="p-name"><?php echo $this->_var['goods']['name']; ?></p>
                     <p class="p-promotion"><?php echo $this->_var['goods']['brief']; ?></p>
                     <p class="p-price"><b><?php echo $this->_var['goods']['shop_price']; ?></b></p>
+                </a>
+            </li>
+            <?php if (($this->_foreach['best_goods']['iteration'] - 1) % 3 == 2): ?>
+                </ul>
+            <?php endif; ?>
+        <?php endforeach; endif; unset($_from); ?><?php $this->pop_vars();; ?>
+    </div>
+</section>
+
+
+<section class="channel-floor channel-floor-hw channel-floor-list2" style="margin-bottom: 80px">
+    <header class="h">
+        <h3><span>预售商品</span></h3>
+    </header>
+    <div class="b">
+        <?php $_from = $this->_var['presale_goods']; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array'); }; $this->push_vars('', 'goods');$this->_foreach['best_goods'] = array('total' => count($_from), 'iteration' => 0);
+if ($this->_foreach['best_goods']['total'] > 0):
+    foreach ($_from AS $this->_var['goods']):
+        $this->_foreach['best_goods']['iteration']++;
+?>
+            <?php if (($this->_foreach['best_goods']['iteration'] - 1) % 3 == 0): ?>
+                <ul>
+            <?php endif; ?>
+            <li>
+                <a href="<?php echo $this->_var['goods']['url']; ?>">
+                    <p class="p-img">
+                        <img src="/<?php echo $this->_var['goods']['thumb']; ?>" width="480" height="480">
+                        <i class="icon-tag">
+                            <img src="https://res0.vmallres.com/pimages//tag/87/1489666525347.png&#10;">
+                        </i>
+                    </p>
+                    <p class="p-name"><?php echo $this->_var['goods']['name']; ?></p>
+                    <p class="p-promotion"><?php echo $this->_var['goods']['brief']; ?></p>
                 </a>
             </li>
             <?php if (($this->_foreach['best_goods']['iteration'] - 1) % 3 == 2): ?>

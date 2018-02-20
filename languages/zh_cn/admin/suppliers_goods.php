@@ -85,7 +85,7 @@
     //-- 添加/编辑商品信息
     /*------------------------------------------------------ */
     $_LANG['tab_general'] = '通用信息';
-    $_LANG['tab_detail'] = '详细描述';
+    $_LANG['tab_detail'] = '商品详情';
     $_LANG['tab_mix'] = '其他信息';
     $_LANG['tab_properties'] = '商品属性';
     $_LANG['tab_gallery'] = '商品相册';

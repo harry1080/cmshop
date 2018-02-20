@@ -44,7 +44,9 @@
 
         $smarty->assign( 'lang_list' , $lang_list );
         $smarty->assign( 'ur_here' , $_LANG['01_shop_config'] );
-        $smarty->assign( 'group_list' , get_settings( null , array( '5' ) ) );
+
+
+        $smarty->assign( 'group_list' , get_settings( null , array( '5','8' ,'3') ) );
         $smarty->assign( 'countries' , get_regions() );
 
         if ( strpos( strtolower( $_SERVER['SERVER_SOFTWARE'] ) , 'iis' ) !== false ) {

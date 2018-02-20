@@ -15,9 +15,9 @@
     //订单管理
     $modules['02_order']['02_order_list'] = 'order.php?act=list';//订单列表
 //    $modules['02_order']['03_order_query'] = 'order.php?act=order_query';//订单查询
-    $modules['02_order']['04_merge_order'] = 'order.php?act=merge';//合并订单
+//    $modules['02_order']['04_merge_order'] = 'order.php?act=merge';//合并订单
 //    $modules['02_order']['05_edit_order_print'] = 'order.php?act=templates';//订单打印
-    $modules['02_order']['06_undispose_booking'] = 'goods_booking.php?act=list_all';//缺货登记
+//    $modules['02_order']['06_undispose_booking'] = 'goods_booking.php?act=list_all';//缺货登记
     //$modules['04_order']['07_repay_application']        = 'repay.php?act=list_all';
 //    $modules['02_order']['08_add_order'] = 'order.php?act=add';//添加订单
     $modules['02_order']['09_delivery_order'] = 'order.php?act=delivery_list';//发货单
@@ -27,7 +27,7 @@
     //用户管理
     $modules['03_members']['03_users_list'] = 'users.php?act=list';//会员列表
     //    $modules['03_members']['04_users_add'] = 'users.php?act=add';//添加会员
-    $modules['03_members']['05_user_rank_list'] = 'user_rank.php?act=list';//会员等级
+//    $modules['03_members']['05_user_rank_list'] = 'user_rank.php?act=list';//会员等级
     //    $modules['03_members']['06_list_integrate'] = 'integrate.php?act=list';//整合会员资源
     $modules['03_members']['08_unreply_msg'] = 'user_msg.php?act=list_all';//用户留言
 
@@ -75,10 +75,10 @@
 //    $modules['05_cat_and_goods']['goods_auto'] = 'goods_auto.php?act=list';//商品自动上下架
 
 
-    //广告展位
+    //广告展位ad
     $modules['06_banner']['ad_position'] = 'ad_position.php?act=list';
     $modules['06_banner']['ad_list'] = 'ads.php?act=list';
-    $modules['06_banner']['flashplay'] = 'flashplay.php?act=list';//pc首页幻灯片
+//    $modules['06_banner']['flashplay'] = 'flashplay.php?act=list';//pc首页幻灯片 ---------
 
     //pc端界面
     //    $modules['07_template']['02_template_select'] = 'template.php?act=list';
@@ -120,7 +120,7 @@
 //    $modules['09_wechat']['wx_05list'] = 'users_invite.php?act=list';//推荐人列表
 
     //权限管理
-    $modules['10_priv_admin']['admin_logs'] = 'admin_logs.php?act=list';
+//    $modules['10_priv_admin']['admin_logs'] = 'admin_logs.php?act=list';
     $modules['10_priv_admin']['admin_list'] = 'privilege.php?act=list';
     $modules['10_priv_admin']['admin_role'] = 'role.php?act=list';
 
@@ -173,10 +173,18 @@
 
     //短信管理
 //    $modules['14_sms']['02_sms_my_info']                = 'sms.php?act=display_my_info';
-    $modules['14_sms']['03_sms_send'] = 'sms.php?act=display_send_ui';
-    $modules['14_sms']['aliSendSmsList'] = 'aliSendSms.php?act=aliSendSmsList';
-    $modules['14_sms']['aliSendSmsConfig'] = 'aliSendSms.php?act=aliSendSmsConfig';
-    $modules['14_sms']['aliSendSmsSend'] = 'aliSendSms.php?act=aliSendSmsSend';
+
+
+    //短信管理
+
+//    $modules['14_sms']['03_sms_send'] = 'sms.php?act=display_send_ui';
+//    $modules['14_sms']['aliSendSmsList'] = 'aliSendSms.php?act=aliSendSmsList';
+//    $modules['14_sms']['aliSendSmsConfig'] = 'aliSendSms.php?act=aliSendSmsConfig';
+//    $modules['14_sms']['aliSendSmsSend'] = 'aliSendSms.php?act=aliSendSmsSend';
+//
+
+
+
     //    $modules['14_sms']['04_sms_charge']                 = 'sms.php?act=display_charge_ui';
     //    $modules['14_sms']['05_sms_send_history']           = 'sms.php?act=display_send_history_ui';
     //    $modules['14_sms']['06_sms_charge_history']         = 'sms.php?act=display_charge_history_ui';

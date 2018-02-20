@@ -15,14 +15,14 @@
     <!-- tab bar -->
     <div id="tabbar-div">
       <p>
-        <span class="tab-front" id="general-tab">{$lang.tab_general}</span><span
-        class="tab-back" id="detail-tab">{$lang.tab_detail}</span><span
-        class="tab-back" id="mix-tab">{$lang.tab_mix}</span>{if $goods_type_list}<span
-        class="tab-back" id="properties-tab">{$lang.tab_properties}</span>{/if}<span
-        class="tab-back" id="gallery-tab">{$lang.tab_gallery}</span><span
-        class="tab-back" id="linkgoods-tab">{$lang.tab_linkgoods}</span>{if $code eq ''}<span
-        class="tab-back" id="groupgoods-tab">{$lang.tab_groupgoods}</span>{/if}<span
-        class="tab-back" id="article-tab">{$lang.tab_article}</span>
+        <span class="tab-front" id="general-tab">{$lang.tab_general}</span>
+        <span class="tab-back" id="detail-tab">{$lang.tab_detail}</span>
+        <!--<span class="tab-back" id="mix-tab">{$lang.tab_mix}</span>{if $goods_type_list}-->
+        <!--<span class="tab-back" id="properties-tab">{$lang.tab_properties}</span>{/if}-->
+        <span class="tab-back" id="gallery-tab">{$lang.tab_gallery}</span>
+        <span class="tab-back" id="linkgoods-tab">{$lang.tab_linkgoods}</span>{if $code eq ''}
+        <!--<span class="tab-back" id="groupgoods-tab">{$lang.tab_groupgoods}</span>{/if}-->
+        <!--<span class="tab-back" id="article-tab">{$lang.tab_article}</span>-->
       </p>
     </div>
 
@@ -47,12 +47,15 @@
             </select>
             {$lang.require_field}</td>
           </tr>
-          <tr>
-            <td class="label">
-            <a href="javascript:showNotice('noticeGoodsSN');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_goods_sn} </td>
-            <td><input type="text" name="goods_sn" value="{$goods.goods_sn|escape}" size="20" onblur="checkGoodsSn(this.value,'{$goods.goods_id}')" /><span id="goods_sn_notice"></span><br />
-            <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeGoodsSN">{$lang.notice_goods_sn}</span></td>
-          </tr>
+          <!--<tr>-->
+            <!--<td class="label">-->
+            <!--<a href="javascript:showNotice('noticeGoodsSN');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_goods_sn} </td>-->
+            <!--<td>-->
+              <input type="hidden" name="goods_sn" value="{$goods.goods_sn|escape}" size="20" onblur="checkGoodsSn(this.value,'{$goods.goods_id}')" />
+              <!--&lt;!&ndash;<span id="goods_sn_notice"></span><br />&ndash;&gt;-->
+            <!--<span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeGoodsSN">{$lang.notice_goods_sn}</span>-->
+            <!--</td>-->
+          <!--</tr>-->
           <tr>
             <td class="label">{$lang.lab_goods_cat}</td>
             <td><select name="cat_id" onchange="hideCatDiv()" ><option value="0">{$lang.select_please}</option>{$cat_list}</select>
@@ -68,15 +71,15 @@
                {$lang.require_field}
             </td>
           </tr>
-          <tr>
-            <td class="label">{$lang.lab_other_cat}</td>
-            <td>
-              <input type="button" value="{$lang.add}" onclick="addOtherCat(this.parentNode)" class="button" />
-              {foreach from=$goods.other_cat item=cat_id}
-              <select name="other_cat[]"><option value="0">{$lang.select_please}</option>{$other_cat_list.$cat_id}</select>
-              {/foreach}
-            </td>
-          </tr>
+          <!--<tr>-->
+            <!--<td class="label">{$lang.lab_other_cat}</td>-->
+            <!--<td>-->
+              <!--<input type="button" value="{$lang.add}" onclick="addOtherCat(this.parentNode)" class="button" />-->
+              <!--{foreach from=$goods.other_cat item=cat_id}-->
+              <!--<select name="other_cat[]"><option value="0">{$lang.select_please}</option>{$other_cat_list.$cat_id}</select>-->
+              <!--{/foreach}-->
+            <!--</td>-->
+          <!--</tr>-->
           <tr>
             <td class="label">{$lang.lab_goods_brand}</td>
             <td><select name="brand_id" onchange="hideBrandDiv()" ><option value="0">{$lang.select_please}{html_options options=$brand_list selected=$goods.brand_id}</select>
@@ -94,10 +97,12 @@
          {if $suppliers_exists eq 1}
           <tr>
             <td class="label">{$lang.label_suppliers}</td>
-            <td><select name="suppliers_id" id="suppliers_id">
-        <option value="0">{$lang.suppliers_no}</option>
-        {html_options options=$suppliers_list_name selected=$goods.suppliers_id}
-      </select></td>
+            <td>
+              <select name="suppliers_id" id="suppliers_id">
+               <option value="0">{$lang.suppliers_no}</option>
+              {html_options options=$suppliers_list_name selected=$goods.suppliers_id}
+              </select>
+            </td>
           </tr>
          {/if}
           <tr>
@@ -107,66 +112,64 @@
             {$lang.require_field}</td>
           </tr>
           {if $user_rank_list}
-          <tr>
-            <td class="label"><a href="javascript:showNotice('noticeUserPrice');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.lab_user_price}</td>
-            <td>
-              {foreach from=$user_rank_list item=user_rank}
-              {$user_rank.rank_name}<span id="nrank_{$user_rank.rank_id}"></span>
-              <input type="text" id="rank_{$user_rank.rank_id}" name="user_price[]" value="{$member_price_list[$user_rank.rank_id]|default:-1}" onkeyup="if(parseInt(this.value)<-1){this.value='-1';};set_price_note({$user_rank.rank_id})" size="8" class="input02" />
-              <input type="hidden" name="user_rank[]" value="{$user_rank.rank_id}" />
-              {/foreach}
-              <br />
-              <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeUserPrice">{$lang.notice_user_price}</span>
-            </td>
-          </tr>
+          <!--<tr>-->
+            <!--<td class="label"><a href="javascript:showNotice('noticeUserPrice');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.lab_user_price}</td>-->
+            <!--<td>-->
+              <!--{foreach from=$user_rank_list item=user_rank}-->
+              <!--{$user_rank.rank_name}<span id="nrank_{$user_rank.rank_id}"></span>-->
+              <!--<input type="text" id="rank_{$user_rank.rank_id}" name="user_price[]" value="{$member_price_list[$user_rank.rank_id]|default:-1}" onkeyup="if(parseInt(this.value)<-1){this.value='-1';};set_price_note({$user_rank.rank_id})" size="8" class="input02" />-->
+              <!--<input type="hidden" name="user_rank[]" value="{$user_rank.rank_id}" />-->
+              <!--{/foreach}-->
+              <!--<br />-->
+              <!--<span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="noticeUserPrice">{$lang.notice_user_price}</span>-->
+            <!--</td>-->
+          <!--</tr>-->
           {/if}
 
-          <!--鍟嗗搧浼樻儬浠锋牸-->
-          <tr>
-            <td class="label"><a href="javascript:showNotice('volumePrice');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.lab_volume_price}</td>
-            <td>
-              <table width="100%" id="tbody-volume" align="center">
-                {foreach from=$volume_price_list item=volume_price name="volume_price_tab"}
-                <tr>
-                  <td>
-                     {if $smarty.foreach.volume_price_tab.iteration eq 1}
-                       <a href="javascript:;" onclick="addVolumePrice(this)">[+]</a>
-                     {else}
-                       <a href="javascript:;" onclick="removeVolumePrice(this)">[-]</a>
-                     {/if}
-                     {$lang.volume_number} <input type="text" name="volume_number[]" size="8" value="{$volume_price.number}" class="input02"/>
-                     {$lang.volume_price} <input type="text" name="volume_price[]" size="8" value="{$volume_price.price}" class="input02"/>
-                  </td>
-                </tr>
-                {/foreach}
-              </table>
-              <span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="volumePrice">{$lang.notice_volume_price}</span>
-            </td>
-          </tr>
-          <!--鍟嗗搧浼樻儬浠锋牸 end -->
-		  
+          <!--<tr>-->
+            <!--<td class="label"><a href="javascript:showNotice('volumePrice');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a>{$lang.lab_volume_price}</td>-->
+            <!--<td>-->
+              <!--<table width="100%" id="tbody-volume" align="center">-->
+                <!--{foreach from=$volume_price_list item=volume_price name="volume_price_tab"}-->
+                <!--<tr>-->
+                  <!--<td>-->
+                     <!--{if $smarty.foreach.volume_price_tab.iteration eq 1}-->
+                       <!--<a href="javascript:;" onclick="addVolumePrice(this)">[+]</a>-->
+                     <!--{else}-->
+                       <!--<a href="javascript:;" onclick="removeVolumePrice(this)">[-]</a>-->
+                     <!--{/if}-->
+                     <!--{$lang.volume_number} <input type="text" name="volume_number[]" size="8" value="{$volume_price.number}" class="input02"/>-->
+                     <!--{$lang.volume_price} <input type="text" name="volume_price[]" size="8" value="{$volume_price.price}" class="input02"/>-->
+                  <!--</td>-->
+                <!--</tr>-->
+                <!--{/foreach}-->
+              <!--</table>-->
+              <!--<span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="volumePrice">{$lang.notice_volume_price}</span>-->
+            <!--</td>-->
+          <!--</tr>-->
+
 		  <!--甜心100新增分成金额设定-->
-          <tr>
-            <td class="label">分成金额</td>
-            <td><input type="text" name="fencheng" value="{$goods.fencheng}" size="20" />
-            <br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="rankIntegral">该商品出售后，需要用于分成的金额</span></td>
-          </tr>
+          <!--<tr>-->
+            <!--<td class="label">分成金额</td>-->
+            <!--<td><input type="text" name="fencheng" value="{$goods.fencheng}" size="20" />-->
+            <!--<br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="rankIntegral">该商品出售后，需要用于分成的金额</span></td>-->
+          <!--</tr>-->
           <tr>
             <td class="label">{$lang.lab_market_price}</td>
             <td><input type="text" name="market_price" value="{$goods.market_price}" size="20" />
               <input type="button" value="{$lang.integral_market_price}" onclick="integral_market_price()" />
             </td>
           </tr>
-          <tr>
-            <td class="label"><a href="javascript:showNotice('giveIntegral');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_give_integral}</td>
-            <td><input type="text" name="give_integral" value="{$goods.give_integral}" size="20" />
-            <br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="giveIntegral">{$lang.notice_give_integral}</span></td>
-          </tr>
-          <tr>
-            <td class="label"><a href="javascript:showNotice('rankIntegral');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_rank_integral}</td>
-            <td><input type="text" name="rank_integral" value="{$goods.rank_integral}" size="20" />
-            <br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="rankIntegral">{$lang.notice_rank_integral}</span></td>
-          </tr>
+          <!--<tr>-->
+            <!--<td class="label"><a href="javascript:showNotice('giveIntegral');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_give_integral}</td>-->
+            <!--<td><input type="text" name="give_integral" value="{$goods.give_integral}" size="20" />-->
+            <!--<br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="giveIntegral">{$lang.notice_give_integral}</span></td>-->
+          <!--</tr>-->
+          <!--<tr>-->
+            <!--<td class="label"><a href="javascript:showNotice('rankIntegral');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_rank_integral}</td>-->
+            <!--<td><input type="text" name="rank_integral" value="{$goods.rank_integral}" size="20" />-->
+            <!--<br /><span class="notice-span" {if $help_open}style="display:block" {else} style="display:none" {/if} id="rankIntegral">{$lang.notice_rank_integral}</span></td>-->
+          <!--</tr>-->
           <tr>
             <td class="label"><a href="javascript:showNotice('noticPoints');" title="{$lang.form_notice}"><img src="images/notice.gif" width="16" height="16" border="0" alt="{$lang.form_notice}"></a> {$lang.lab_integral}</td>
             <td><input type="text" name="integral" value="{$goods.integral}" size="20" onblur="parseint_integral()";/>

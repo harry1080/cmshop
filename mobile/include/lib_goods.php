@@ -168,7 +168,7 @@
      */
     function get_recommend_goods( $type = '' , $cats = '' )
     {
-        if ( !in_array( $type , array( 'best' , 'new' , 'hot' ) ) ) {
+        if ( !in_array( $type , array( 'best' , 'new' , 'hot' , 'presale' ) ) ) {
             return array();
         }
 
@@ -181,7 +181,7 @@
             $type_goods['hot'] = array();
             $data = read_static_cache( 'recommend_goods' );
             if ( $data === false ) {
-                $sql = 'SELECT g.goods_id, g.is_best, g.is_new, g.is_hot, g.is_promote, b.brand_name,g.sort_order ' .
+                $sql = 'SELECT g.goods_id, g.is_best, g.is_new, g.is_hot, g.is_promote,g.is_presale, b.brand_name,g.sort_order ' .
                     ' FROM ' . $GLOBALS['ecs']->table( 'goods' ) . ' AS g ' .
                     ' LEFT JOIN ' . $GLOBALS['ecs']->table( 'brand' ) . ' AS b ON b.brand_id = g.brand_id ' .
                     ' WHERE g.is_on_sale = 1 AND g.is_alone_sale = 1 AND g.is_delete = 0 AND (g.is_best = 1 OR g.is_new =1 OR g.is_hot = 1)' .
@@ -191,6 +191,7 @@
                 $goods_data['best'] = array();
                 $goods_data['new'] = array();
                 $goods_data['hot'] = array();
+                $goods_data['presale'] = array();
                 $goods_data['brand'] = array();
                 if ( !empty( $goods_res ) ) {
                     foreach ( $goods_res as $data ) {
@@ -202,6 +203,9 @@
                         }
                         if ( $data['is_hot'] == 1 ) {
                             $goods_data['hot'][] = array( 'goods_id' => $data['goods_id'] , 'sort_order' => $data['sort_order'] );
+                        }
+                        if ( $data['is_presale'] == 1 ) {
+                            $goods_data['presale'][] = array( 'goods_id' => $data['goods_id'] , 'sort_order' => $data['sort_order'] );
                         }
                         if ( $data['brand_name'] != '' ) {
                             $goods_data['brand'][$data['goods_id']] = $data['brand_name'];
@@ -218,7 +222,7 @@
 
             //按推荐数量及排序取每一项推荐显示的商品 order_type可以根据后台设定进行各种条件显示
             static $type_array = array();
-            $type2lib = array( 'best' => 'recommend_best' , 'new' => 'recommend_new' , 'hot' => 'recommend_hot' );
+            $type2lib = array( 'best' => 'recommend_best' , 'new' => 'recommend_new' , 'hot' => 'recommend_hot', 'presale' => 'recommend_presale' );
             if ( empty( $type_array ) ) {
                 foreach ( $type2lib as $key => $data ) {
                     if ( !empty( $goods_data[$key] ) ) {
@@ -290,6 +294,9 @@
                 }
                 if ( in_array( $row['goods_id'] , $type_array['hot'] ) ) {
                     $type_goods['hot'][] = $goods[$idx];
+                }
+                if ( in_array( $row['goods_id'] , $type_array['presale'] ) ) {
+                    $type_goods['presale'][] = $goods[$idx];
                 }
             }
         }

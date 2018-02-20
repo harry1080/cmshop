@@ -1,29 +1,20 @@
 <?php
 
-    /**
-     * 云动商圈广告位置管理程序
-     * ============================================================================
-     * * 版权所有 2017-2027 中移铁通智能产品分公司，并保留所有权利。
-     * 网站地址: http://www.mbizzone.com；
-     * ----------------------------------------------------------------------------
-     * 这不是一个自由软件！您只能在不用于商业目的的前提下对程序代码进行修改和
-     * 使用；不允许对程序代码以任何形式任何目的的再发布。
-     * ============================================================================
-     * $Author: liubo $
-     * $Id: ad_position.php 17217 2011-01-19 06:29:08Z liubo $
-     */
 
     define( 'IN_PC' , true );
 
-    require( dirname( __FILE__ ) . '/includes/init.php' );
-    require_once( ROOT_PATH . 'languages/' . $_CFG['lang'] . '/admin/ads.php' );
+    require_once "includes/init.php";
+    require_once "../languages/". $_CFG['lang'] . '/admin/ads.php';
 
     /* act操作项的初始化 */
-
-    $_REQUEST['act'] = isset( $_REQUEST['act'] ) ? trim( $_REQUEST['act'] ) : 'list';
+    if ( empty( $_REQUEST['act'] ) ) {
+        $_REQUEST['act'] = 'list';
+    } else {
+        $_REQUEST['act'] = trim( $_REQUEST['act'] );
+    }
 
     $smarty->assign( 'lang' , $_LANG );
-    $exc = new exchange( $ecs->table( "ad_position" ) , $db , 'position_id' , 'position_name' );
+    $exc = new exchange( $ecs->table( "touch_ad_position" ) , $db , 'position_id' , 'position_name' );
 
     /*------------------------------------------------------ */
 //-- 广告位置列表
@@ -71,7 +62,7 @@
         /* 查看广告位是否有重复 */
         if ( $exc->num( "position_name" , $position_name ) == 0 ) {
             /* 将广告位置的信息插入数据表 */
-            $sql = 'INSERT INTO ' . $ecs->table( 'ad_position' ) . ' (position_name, ad_width, ad_height, position_desc, position_style) ' .
+            $sql = 'INSERT INTO ' . $ecs->table( 'touch_ad_position' ) . ' (position_name, ad_width, ad_height, position_desc, position_style) ' .
                 "VALUES ('$position_name', '$ad_width', '$ad_height', '$position_desc', '$_POST[position_style]')";
 
             $db->query( $sql );
@@ -104,7 +95,7 @@
         $id = !empty( $_GET['id'] ) ? intval( $_GET['id'] ) : 0;
 
         /* 获取广告位数据 */
-        $sql = 'SELECT * FROM ' . $ecs->table( 'ad_position' ) . " WHERE position_id='$id'";
+        $sql = 'SELECT * FROM ' . $ecs->table( 'touch_ad_position' ) . " WHERE position_id='$id'";
         $posit_arr = $db->getRow( $sql );
 
         $smarty->assign( 'ur_here' , $_LANG['position_edit'] );
@@ -124,10 +115,10 @@
         $ad_height = !empty( $_POST['ad_height'] ) ? intval( $_POST['ad_height'] ) : 0;
         $position_id = !empty( $_POST['id'] ) ? intval( $_POST['id'] ) : 0;
         /* 查看广告位是否与其它有重复 */
-        $sql = 'SELECT COUNT(*) FROM ' . $ecs->table( 'ad_position' ) .
+        $sql = 'SELECT COUNT(*) FROM ' . $ecs->table( 'touch_ad_position' ) .
             " WHERE position_name = '$position_name' AND position_id <> '$position_id'";
         if ( $db->getOne( $sql ) == 0 ) {
-            $sql = "UPDATE " . $ecs->table( 'ad_position' ) . " SET " .
+            $sql = "UPDATE " . $ecs->table( 'touch_ad_position' ) . " SET " .
                 "position_name    = '$position_name', " .
                 "ad_width         = '$ad_width', " .
                 "ad_height        = '$ad_height', " .
@@ -152,7 +143,7 @@
     }
 
     /*------------------------------------------------------ */
-    //-- 排序、分页、查询
+//-- 排序、分页、查询
     /*------------------------------------------------------ */
     elseif ( $_REQUEST['act'] == 'query' ) {
         $position_list = ad_position_list();
@@ -167,7 +158,7 @@
     }
 
     /*------------------------------------------------------ */
-    //-- 编辑广告位置名称
+//-- 编辑广告位置名称
     /*------------------------------------------------------ */
     elseif ( $_REQUEST['act'] == 'edit_position_name' ) {
         check_authz_json( 'ad_manage' );
@@ -189,7 +180,7 @@
     }
 
     /*------------------------------------------------------ */
-    //-- 编辑广告位宽高
+//-- 编辑广告位宽高
     /*------------------------------------------------------ */
     elseif ( $_REQUEST['act'] == 'edit_ad_width' ) {
         check_authz_json( 'ad_manage' );
@@ -217,7 +208,7 @@
     }
 
     /*------------------------------------------------------ */
-    //-- 编辑广告位宽高
+//-- 编辑广告位宽高
     /*------------------------------------------------------ */
     elseif ( $_REQUEST['act'] == 'edit_ad_height' ) {
         check_authz_json( 'ad_manage' );
@@ -245,7 +236,7 @@
     }
 
     /*------------------------------------------------------ */
-    //-- 删除广告位置
+//-- 删除广告位置
     /*------------------------------------------------------ */
     elseif ( $_REQUEST['act'] == 'remove' ) {
         check_authz_json( 'ad_manage' );
@@ -253,7 +244,7 @@
         $id = intval( $_GET['id'] );
 
         /* 查询广告位下是否有广告存在 */
-        $sql = "SELECT COUNT(*) FROM " . $GLOBALS['ecs']->table( 'ad' ) . " WHERE position_id = '$id'";
+        $sql = "SELECT COUNT(*) FROM " . $GLOBALS['ecs']->table( 'touch_ad' ) . " WHERE position_id = '$id'";
 
         if ( $db->getOne( $sql ) > 0 ) {
             make_json_error( $_LANG['not_del_adposit'] );
@@ -274,14 +265,14 @@
         $filter = array();
 
         /* 记录总数以及页数 */
-        $sql = 'SELECT COUNT(*) FROM ' . $GLOBALS['ecs']->table( 'ad_position' );
+        $sql = 'SELECT COUNT(*) FROM ' . $GLOBALS['ecs']->table( 'touch_ad_position' );
         $filter['record_count'] = $GLOBALS['db']->getOne( $sql );
 
         $filter = page_and_size( $filter );
 
         /* 查询数据 */
         $arr = array();
-        $sql = 'SELECT * FROM ' . $GLOBALS['ecs']->table( 'ad_position' ) . ' ORDER BY position_id DESC';
+        $sql = 'SELECT * FROM ' . $GLOBALS['ecs']->table( 'touch_ad_position' ) . ' ORDER BY position_id DESC';
         $res = $GLOBALS['db']->selectLimit( $sql , $filter['page_size'] , $filter['start'] );
         while ( $rows = $GLOBALS['db']->fetchRow( $res ) ) {
             $position_desc = !empty( $rows['position_desc'] ) ? sub_str( $rows['position_desc'] , 50 , true ) : '';

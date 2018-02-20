@@ -22,9 +22,11 @@
     <th><a href="javascript:listTable.sort('is_best'); ">{$lang.is_best}</a>{$sort_is_best}</th>
     <th><a href="javascript:listTable.sort('is_new'); ">{$lang.is_new}</a>{$sort_is_new}</th>
     <th><a href="javascript:listTable.sort('is_hot'); ">{$lang.is_hot}</a>{$sort_is_hot}</th>
+    <th><a href="javascript:listTable.sort('is_presale'); ">预售</a>{$sort_is_presale}</th>
+
     <th><a href="javascript:listTable.sort('sort_order'); ">{$lang.sort_order}</a>{$sort_sort_order}</th>
     {if $use_storage}
-    <th><a href="javascript:listTable.sort('goods_number'); ">{$lang.goods_number}</a>{$sort_goods_number}</th>
+    <th><a href="javascript:listTable.sort('is_presalegoods_number'); ">{$lang.goods_number}</a>{$sort_goods_number}</th>
     {/if}
     <th>{$lang.handler}</th>
   <tr>
@@ -40,6 +42,7 @@
     <td align="center"><img src="images/{if $goods.is_best}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_best', {$goods.goods_id})" /></td>
     <td align="center"><img src="images/{if $goods.is_new}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_new', {$goods.goods_id})" /></td>
     <td align="center"><img src="images/{if $goods.is_hot}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_hot', {$goods.goods_id})" /></td>
+    <td align="center"><img src="images/{if $goods.is_hot}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_presale', {$goods.goods_id})" /></td>
     <td align="center"><span onclick="listTable.edit(this, 'edit_sort_order', {$goods.goods_id})">{$goods.sort_order}</span></td>
     {if $use_storage}
     <td align="center"><span onclick="listTable.edit(this, 'edit_goods_number', {$goods.goods_id})">{$goods.goods_number}</span></td>

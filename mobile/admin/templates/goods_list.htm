@@ -1,5 +1,3 @@
-<!-- $Id: goods_list.htm 17126 2010-04-23 10:30:26Z liuhui $ -->
-
 {if $full_page}
 {include file="pageheader.htm"}
 {insert_scripts files="../data/static/js/utils.js,./js/listtable.js"}
@@ -24,11 +22,14 @@
     <th><a href="javascript:listTable.sort('is_best'); ">{$lang.is_best}</a>{$sort_is_best}</th>
     <th><a href="javascript:listTable.sort('is_new'); ">{$lang.is_new}</a>{$sort_is_new}</th>
     <th><a href="javascript:listTable.sort('is_hot'); ">{$lang.is_hot}</a>{$sort_is_hot}</th>
+    <th><a href="javascript:listTable.sort('is_presale'); ">预售</a>{$sort_is_hot}</th>
+
     <th><a href="javascript:listTable.sort('sort_order'); ">{$lang.sort_order}</a>{$sort_sort_order}</th>
     {if $use_storage}
     <th><a href="javascript:listTable.sort('goods_number'); ">{$lang.goods_number}</a>{$sort_goods_number}</th>
     {/if}
-	<th><a href="javascript:listTable.sort('sales_volume_base'); ">销量基数</a>{$sort_sales_volume_base}</th>
+
+    <!--<th><a href="javascript:listTable.sort('sales_volume_base'); ">销量基数</a>{$sort_sales_volume_base}</th>-->
     <th>{$lang.handler}</th>
   <tr>
   {foreach from=$goods_list item=goods}
@@ -36,18 +37,21 @@
     <td><input type="checkbox" name="checkboxes[]" value="{$goods.goods_id}" />{$goods.goods_id}</td>
     <td class="first-cell" style="{if $goods.is_promote}color:red;{/if}"><span onclick="listTable.edit(this, 'edit_goods_name', {$goods.goods_id})">{$goods.goods_name|escape:html}</span></td>
     <td align="center"><span onclick="listTable.edit(this, 'edit_goods_sn', {$goods.goods_id})">{$goods.goods_sn}</span></td>
-    <td align="center"><span onclick="listTable.edit(this, 'edit_goods_price', {$goods.goods_id})">{$goods.shop_price}
-
-    </span></td>
+    <td align="center"><span onclick="listTable.edit(this, 'edit_goods_price', {$goods.goods_id})">{$goods.shop_price}</span></td>
     <td align="center"><img src="images/{if $goods.is_on_sale}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_on_sale', {$goods.goods_id})" /></td>
     <td align="center"><img src="images/{if $goods.is_best}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_best', {$goods.goods_id})" /></td>
     <td align="center"><img src="images/{if $goods.is_new}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_new', {$goods.goods_id})" /></td>
     <td align="center"><img src="images/{if $goods.is_hot}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_hot', {$goods.goods_id})" /></td>
-    <td align="center"><span onclick="listTable.edit(this, 'edit_sort_order', {$goods.goods_id})">{$goods.sort_order}</span></td>
+  <td align="center"><img src="images/{if $goods.is_presale}yes{else}no{/if}.gif" onclick="listTable.toggle(this, 'toggle_presale', {$goods.goods_id})" /></td>
+
+
+
+  <td align="center"><span onclick="listTable.edit(this, 'edit_sort_order', {$goods.goods_id})">{$goods.sort_order}</span></td>
     {if $use_storage}
     <td align="center"><span onclick="listTable.edit(this, 'edit_goods_number', {$goods.goods_id})">{$goods.goods_number}</span></td>
     {/if}
-	<td align="center"><span onclick="listTable.edit(this, 'edit_sales_volume_base', {$goods.goods_id})">{$goods.sales_volume_base}</span></td>
+
+  <!--<td align="center"><span onclick="listTable.edit(this, 'edit_sales_volume_base', {$goods.goods_id})">{$goods.sales_volume_base}</span></td>-->
     <td align="center">
       <a href="../goods.php?id={$goods.goods_id}" target="_blank" title="{$lang.view}"><img src="images/icon_view.gif" width="21" height="21" border="0" /></a>
       <a href="goods.php?act=edit&goods_id={$goods.goods_id}{if $code neq 'real_goods'}&extension_code={$code}{/if}" title="{$lang.edit}"><img src="images/icon_edit.gif" width="21" height="21" border="0" /></a>

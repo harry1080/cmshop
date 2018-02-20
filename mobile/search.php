@@ -346,8 +346,6 @@
             $arr[$row['goods_id']]['goods_thumb'] = get_image_path( $row['goods_id'] , $row['goods_thumb'] , true );
             $arr[$row['goods_id']]['goods_img'] = get_image_path( $row['goods_id'] , $row['goods_img'] );
             $arr[$row['goods_id']]['url'] = build_uri( 'goods' , array( 'gid' => $row['goods_id'] ) , $row['goods_name'] );
-
-            //�� ��  1 0 0�޸���������ʾ����
             $arr[$row['goods_id']]['sales_count'] = get_sales_volume( $row['goods_id'] ) + $row['sales_volume_base']; //��ʾ������ by wang
         }
         if ( $display == 'grid' ) {
@@ -390,7 +388,7 @@
             'intro'      => empty( $intromode ) ? '' : trim( $intromode ) ,
             'goods_type' => $_REQUEST['goods_type'] ,
             'sc_ds'      => $_REQUEST['sc_ds'] ,
-            'outstock'   => $_REQUEST['outstock'],
+            'outstock'   => $_REQUEST['outstock'] ,
         );
         $pager['search'] = array_merge( $pager['search'] , $attr_arg );
 
@@ -436,7 +434,6 @@
     }
 
     /**
-     *
      * @access  public
      *
      * @params  integer $cat_id
@@ -447,7 +444,7 @@
     {
         $attributes = array(
             'cate' => array() ,
-            'attr' => array(),
+            'attr' => array() ,
         );
 
         $sql = "SELECT t.cat_id, cat_name FROM " . $GLOBALS['ecs']->table( 'goods_type' ) . " AS t, " .
@@ -480,13 +477,13 @@
                         'id'      => $row['attr_id'] ,
                         'attr'    => $row['attr_name'] ,
                         'options' => $attr_value ,
-                        'type'    => 3,
+                        'type'    => 3 ,
                     );
                 } else {
                     $attributes['attr'][] = array(
                         'id'   => $row['attr_id'] ,
                         'attr' => $row['attr_name'] ,
-                        'type' => $row['attr_index'],
+                        'type' => $row['attr_index'] ,
                     );
                 }
             }

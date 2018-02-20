@@ -1302,7 +1302,22 @@
             make_json_result( $is_hot );
         }
     }
+    /*------------------------------------------------------ */
+//-- 修改热销推荐状态
+    /*------------------------------------------------------ */
+    elseif ($_REQUEST['act'] == 'toggle_presale')
+    {
+        check_authz_json('goods_manage');
 
+        $goods_id       = intval($_POST['id']);
+        $is_hot         = intval($_POST['val']);
+
+        if ($exc->edit("is_presale = '$is_hot', last_update=" .gmtime(), $goods_id))
+        {
+            clear_cache_files();
+            make_json_result($is_hot);
+        }
+    }
     /*------------------------------------------------------ */
 //-- 修改商品排序
     /*------------------------------------------------------ */

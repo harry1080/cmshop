@@ -184,7 +184,7 @@
                             <h2>{$spec.name}:</h2>
                             <!-- {* 判断属性是复选还是单选 *} -->
                             <!-- {if $spec.attr_type eq 1} -->
-
+                            <!-- {if $cfg.goodsattr_style eq 1} -->
                             <!-- {if $cfg.goodsattr_style eq 1} -->
                             <!-- {if $spec.name eq '颜色'}-->
                             <!-- {foreach from=$spec.values item=value key=key} -->

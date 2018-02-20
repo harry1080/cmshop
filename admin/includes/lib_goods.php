@@ -852,6 +852,9 @@ function goods_list($is_delete, $real_goods=1, $conditions = '')
             case 'is_new':
                 $where .= ' AND is_new=1';
                 break;
+            case 'is_presale':
+                $where .= ' AND is_presale=1';
+                break;
             case 'is_promote':
                 $where .= " AND is_promote = 1 AND promote_price > 0 AND promote_start_date <= '$today' AND promote_end_date >= '$today'";
                 break;
@@ -909,7 +912,7 @@ function goods_list($is_delete, $real_goods=1, $conditions = '')
         /* 分页大小 */
         $filter = page_and_size($filter);
 
-        $sql = "SELECT goods_id, goods_name, goods_type, goods_sn, shop_price, is_on_sale, is_best, is_new, is_hot, sort_order, goods_number, integral, " .
+        $sql = "SELECT goods_id, goods_name, goods_type, goods_sn, shop_price, is_on_sale, is_best, is_new, is_hot,is_presale, sort_order, goods_number, integral, " .
                     " (promote_price > 0 AND promote_start_date <= '$today' AND promote_end_date >= '$today') AS is_promote ".
                     " FROM " . $GLOBALS['ecs']->table('goods') . " AS g WHERE is_delete='$is_delete' $where" .
                     " ORDER BY $filter[sort_by] $filter[sort_order] ".
