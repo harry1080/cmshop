@@ -80,7 +80,7 @@
     <div class="header-menu">
         <nav>
             <ul>
-                <li><a href="/search/index"
+                <li><a href="search.php"
                        onclick="_paq.push(['trackLink', 'wap-pdp-search-click_event', 'link', '']);"><i
                                 class="icon-menu-search"></i><span>搜索</span></a></li>
                 <li><a href="cat_all.php"

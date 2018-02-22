@@ -15,9 +15,9 @@
             $ret = $db->query( "UPDATE `wxch_config` SET `token`='$token',`appid`='$appid',`appsecret`='$appsecret' WHERE `id`=1;" );
             $link[] = array( 'href' => 'wxch-ent.php?act=wxconfig' , 'text' => '微信接口' );
             if ( $ret ) {
-                sys_msg( '云动商圈提示您设置成功' , 0 , $link );
+                sys_msg( '提示您设置成功' , 0 , $link );
             } else {
-                sys_msg( '云动商圈提示您设置失败' , 0 , $link );
+                sys_msg( '提示您设置失败' , 0 , $link );
             }
         } else {
             $ret = $db->getRow( "SELECT * FROM `wxch_config` WHERE `id` = 1" );

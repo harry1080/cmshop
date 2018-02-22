@@ -65,7 +65,8 @@
 //        $smarty->assign( 'group_buy_goods' , index_get_group_buy() );      // 团购商品
 //        $smarty->assign( 'auction_list' , index_get_auction() );        // 拍卖活动
 //        $smarty->assign( 'shop_notice' , $_CFG['shop_notice'] );       // 商店公告
-        $smarty->assign( 'ads' , index_get_ads() );
+        $smarty->assign( 'ads' , index_get_ads(1) );
+        $smarty->assign( 'ads2' , index_get_ads(3) );
 
         /* links */
         $links = index_get_links();
@@ -93,7 +94,7 @@
     if ( !empty( $userid ) ) {
         $affiliate = unserialize( $GLOBALS['_CFG']['affiliate'] );
         $level_register_up = (float) $affiliate['config']['level_register_up'];
-        $rank_points = $GLOBALS['db']->getOne( "SELECT rank_points FROM " . $GLOBALS['ecs']->table( 'users' ) . "where user_id=" . $_SESSION["user_id"] );
+        $rank_points = $GLOBALS['db']->getOne( "SELECT rank_points FROM " . $GLOBALS['ecs']->table( 'users' ) . "where user_id='$userid'" );
         if ( $rank_points > $level_register_up || $rank_points == $level_register_up ) {
             $url = $config['site_url'] . "mobile/index.php?u=" . $userid;
             //20141204新增分享返积分
@@ -121,13 +122,13 @@
     /*甜心100修改*/
     /*甜心100开发显示店铺名称*/
     if ( !empty( $u ) ) {
-        $sql = 'SELECT nicheng FROM ' . $ecs->table( "users" ) . ' WHERE user_id=' . $u . '';
+        $sql = 'SELECT nicheng FROM ' . $ecs->table( "users" ) .  " WHERE user_id='$u'";
         $name = $db->getOne( $sql );
 
     }
 
     if ( !empty( $user_id ) ) {
-        $sql = 'SELECT nicheng FROM ' . $ecs->table( "users" ) . ' WHERE user_id=' . $user_id . '';
+        $sql = 'SELECT nicheng FROM ' . $ecs->table( "users" ) . " WHERE user_id='$user_id'";
         $name = $db->getOne( $sql );
     }
     /*甜   心100  修复开发*/
@@ -139,11 +140,11 @@
     $smarty->display( 'index.dwt' , $cache_id );
 
 
-    function index_get_ads()
+    function index_get_ads($position_id)
     {
 
 
-        $sql = 'SELECT ad_link,ad_code FROM ' . $GLOBALS['ecs']->table( 'touch_ad' );
+        $sql = 'SELECT ad_link,ad_code FROM ' . $GLOBALS['ecs']->table( 'touch_ad' )."  where position_id='$position_id' AND enabled=1 ";
 
         $res = $GLOBALS['db']->getAll( $sql );
 

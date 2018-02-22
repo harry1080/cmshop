@@ -10,7 +10,7 @@
 //    $modules['02_cat_and_goods']['02_goods_add']        = 'goods.php?act=add';          // 添加商品
     $modules['02_cat_and_goods']['03_category_list']    = 'category.php?act=list';
     $modules['02_cat_and_goods']['05_comment_manage']   = 'comment_manage.php?act=list';
-    $modules['02_cat_and_goods']['06_goods_brand_list'] = 'brand.php?act=list';
+//    $modules['02_cat_and_goods']['06_goods_brand_list'] = 'brand.php?act=list';
 //    $modules['02_cat_and_goods']['08_goods_type']       = 'goods_type.php?act=manage';
     $modules['02_cat_and_goods']['11_goods_trash']      = 'goods.php?act=trash';        // 商品回收站
 //    $modules['02_cat_and_goods']['12_batch_pic']        = 'picture_batch.php';
@@ -76,6 +76,7 @@
 //    $modules['08_members']['05_user_rank_list']         = 'user_rank.php?act=list';//会员等级
 //    $modules['08_members']['06_list_integrate']         = 'integrate.php?act=list';
     $modules['08_members']['08_unreply_msg']            = 'user_msg.php?act=list_all';
+    $modules['08_members']['09_contact']            = 'contact.php?act=list';
 //    $modules['08_members']['09_user_account']           = 'user_account.php?act=list';//
 //    $modules['08_members']['10_user_account_manage']    = 'user_account_manage.php?act=list';
 

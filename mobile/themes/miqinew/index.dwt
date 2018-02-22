@@ -44,6 +44,7 @@
                 </li>
             </ul>
         </section>
+
     </header>
     <!-- 21030531-头部-start -->
 </div>
@@ -94,21 +95,27 @@
 </section>
 <!-- 20160328-华为子频道首页宫格菜单-end -->
 
+<!--{if $ads2}-->
 <!-- 20160328-华为子频道首页按钮对称广告图-start -->
 <section class="channel-floor">
     <div class="hot-area">
         <div class="b">
             <ul>
-                <li><a href="https://msale.vmall.com/hwmate10.html"><img
-                                src="https://res.vmallres.com/pimages//sale/2017-11/20171114201730217.jpg"
-                                title="移动端小图.jpg" style="float:none;"></a></li>
-                <li><a href="https://m.vmall.com/product/879920339.html"><img
-                                src="https://res.vmallres.com/pimages//sale/2017-12/20171207172216866.jpg" title="4.jpg"
-                                style="float:none;"></a></li>
+                <!--{foreach from=$ads2 item=ad}-->
+                <li>
+                    <a href="{$ad.ad_link}">
+                        <img src="data/afficheimg/{$ad.ad_code}" onerror="javascript:this.src='{$ectouch_themes}/images/mask.png'" ></a>
+                </li>
+                <!--{/foreach}-->
+
             </ul>
         </div>
     </div>
 </section>
+<!--{/if}-->
+
+
+
 <!-- 20160328-华为子频道首页按钮对称广告图-end -->
 
 <!-- 20160328-华为子频道首页区域行-start -->
@@ -144,8 +151,16 @@
 
     </div>
 </section>
+
+<!--{if $new_goods}-->
 <!-- 样式5：一行两列 -->
+<!--{if $presale_goods}-->
 <section class="channel-floor channel-floor-hw channel-floor-list2" >
+    <!--{else}-->
+    <section class="channel-floor channel-floor-hw channel-floor-list2" style="margin-bottom: 80px">
+
+    <!--{/if}-->
+
     <header class="h">
         <h3><span>新品推荐</span></h3>
     </header>
@@ -173,7 +188,8 @@
         <!--{/foreach}-->
     </div>
 </section>
-
+<!--{/if}-->
+<!--{if $presale_goods}-->
 <!-- 样式5：一行两列 -->
 <section class="channel-floor channel-floor-hw channel-floor-list2" style="margin-bottom: 80px">
     <header class="h">
@@ -202,6 +218,7 @@
         <!--{/foreach}-->
     </div>
 </section>
+<!--{/if}-->
 
 
 <!-- #BeginLibraryItem "/library/my_page_footer.lbi" --><!-- #EndLibraryItem -->

@@ -158,7 +158,7 @@ $_LANG['charge_history']  = '充值记录 ';
 //商创微信通
 $_LANG['wx_api']         = '微信接口';
 $_LANG['wx_menu']        = '微信菜单设置';
-$_LANG['wx_config']         = 'Ecshop微信通设置';
+$_LANG['wx_config']         = '微信通设置';
 $_LANG['wx_bonus']         = '关注送红包';
 $_LANG['wx_regmsg']         = '关注回复内容';
 $_LANG['wx_lang']         = '语言设置';
